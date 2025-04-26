@@ -3,7 +3,7 @@ amqp==5.3.1
 annotated-types==0.7.0
 anyio==4.9.0
 asyncpg==0.30.0
-authx==1.4.2
+authx==1.4.0
 bcrypt==4.3.0
 billiard==4.2.1
 boto3==1.37.37
