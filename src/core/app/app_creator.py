@@ -6,6 +6,9 @@ from src.api.http.api_router import router as api_router
 from src.core.logger.logger import logger, Logger
 from authx.exceptions import MissingTokenError
 from .handlers import missing_token_handler
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
+import os
 
 class AppCreator:
     def __init__(self, lifespan: callable) -> None:
@@ -37,7 +40,12 @@ class AppCreator:
     def add_exception_handler(self, exception: type[Exception], handler: callable) -> None:
         self._app.add_exception_handler(exception, handler)
 
-        
+    def add_templates(self, templates_dir: str = "src/templates") -> None:
+        self.templates = Jinja2Templates(directory=templates_dir)
+
+    def mount_static(self, static_url: str = "/static", static_dir: str = "src/static") -> None:
+        if os.path.isdir(static_dir):
+            self._app.mount(static_url, StaticFiles(directory=static_dir), name="static")
             
 
         
