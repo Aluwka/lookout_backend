@@ -52,7 +52,7 @@ class AppCreator:
         
 
 app_creator = AppCreator(lifespan=lifespan)
-app_creator.add_router(api_router)
+# app_creator.add_router(api_router)
 app_creator.add_cors(allow_origins=["*"])
 app_creator.add_logging(logger)
 app_creator.add_exception_handler(

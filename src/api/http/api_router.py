@@ -1,12 +1,5 @@
 from fastapi import APIRouter
 from .v1.router import router as v1_router
 
-router = APIRouter(prefix="/api")
-
-
-router.include_router(v1_router)
-
-
-@router.get("/")
-async def root():
-    return {"message": "Welcome to the API!"}
+router = APIRouter()
+router.include_router(v1_router, prefix="/v1")  # важно! prefix="/v1"

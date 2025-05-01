@@ -5,10 +5,10 @@ from .endpoints.logs import router as logs_router
 from .endpoints.video import router as video_router
 from .endpoints.analysis_result import router as analysis_result_router
 from .endpoints.model import router as model_router
-from .endpoints import auth_html
+from .endpoints import auth_html, upload_html
+
 
 router = APIRouter(prefix="/v1")
-
 
 router.include_router(auth_router)
 router.include_router(payment_router)
@@ -17,3 +17,4 @@ router.include_router(video_router)
 router.include_router(analysis_result_router)
 router.include_router(model_router)
 router.include_router(auth_html.router)
+router.include_router(upload_html.router)
