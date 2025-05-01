@@ -867,3 +867,77 @@
 2025-05-01 15:36:20,354 - INFO - Response: 404
 2025-05-01 15:36:20,588 - INFO - Request: GET http://localhost:8000/v1/signup
 2025-05-01 15:36:20,588 - INFO - Response: 404
+2025-05-01 15:55:45,143 - INFO - Request: GET http://localhost:8000/docs
+2025-05-01 15:55:45,145 - INFO - Response: 200
+2025-05-01 15:55:45,303 - INFO - Request: GET http://localhost:8000/openapi.json
+2025-05-01 15:55:45,306 - INFO - Response: 200
+2025-05-01 15:55:45,423 - INFO - Starting up the application...
+2025-05-01 15:55:45,508 - INFO - Application started up successfully.
+2025-05-01 15:55:46,301 - INFO - Request: GET http://localhost:8000/docs
+2025-05-01 15:55:46,301 - INFO - Response: 200
+2025-05-01 15:55:46,368 - INFO - Request: GET http://localhost:8000/openapi.json
+2025-05-01 15:55:46,369 - INFO - Response: 200
+2025-05-01 16:00:23,120 - INFO - Shutting down the application...
+2025-05-01 16:00:23,126 - INFO - Disconnected from the database
+2025-05-01 16:00:23,127 - INFO - Application shut down successfully.
+2025-05-01 16:03:29,451 - INFO - Starting up the application...
+2025-05-01 16:03:29,534 - INFO - Application started up successfully.
+2025-05-01 16:03:33,950 - INFO - Request: GET http://localhost:8000/docs
+2025-05-01 16:03:33,951 - INFO - Response: 200
+2025-05-01 16:03:34,010 - INFO - Request: GET http://localhost:8000/openapi.json
+2025-05-01 16:03:34,011 - INFO - Response: 200
+2025-05-01 16:03:35,196 - INFO - Request: GET http://localhost:8000/docs
+2025-05-01 16:03:35,196 - INFO - Response: 200
+2025-05-01 16:03:35,257 - INFO - Request: GET http://localhost:8000/openapi.json
+2025-05-01 16:03:35,258 - INFO - Response: 200
+2025-05-01 16:04:06,975 - INFO - Starting up the application...
+2025-05-01 16:04:07,056 - INFO - Application started up successfully.
+2025-05-01 16:04:09,221 - INFO - Request: GET http://localhost:8000/docs
+2025-05-01 16:04:09,222 - INFO - Response: 200
+2025-05-01 16:04:09,270 - INFO - Request: GET http://localhost:8000/openapi.json
+2025-05-01 16:04:09,271 - INFO - Response: 200
+2025-05-01 16:04:12,494 - INFO - Request: GET http://127.0.0.1:8000/
+2025-05-01 16:04:12,494 - INFO - Response: 404
+2025-05-01 16:04:12,523 - INFO - Request: GET http://127.0.0.1:8000/favicon.ico
+2025-05-01 16:04:12,524 - INFO - Response: 404
+2025-05-01 16:04:19,891 - INFO - Request: GET http://127.0.0.1:8000/
+2025-05-01 16:04:19,891 - INFO - Response: 404
+2025-05-01 16:04:19,940 - INFO - Request: GET http://127.0.0.1:8000/favicon.ico
+2025-05-01 16:04:19,940 - INFO - Response: 404
+2025-05-01 16:04:27,612 - INFO - Request: GET http://localhost:8000/docs
+2025-05-01 16:04:27,612 - INFO - Response: 200
+2025-05-01 16:04:27,647 - INFO - Request: GET http://localhost:8000/openapi.json
+2025-05-01 16:04:27,648 - INFO - Response: 200
+2025-05-01 16:04:41,782 - INFO - Request: GET http://localhost:8000/v1/signup
+2025-05-01 16:04:41,783 - INFO - Response: 404
+2025-05-01 16:04:42,224 - INFO - Request: GET http://localhost:8000/v1/signup
+2025-05-01 16:04:42,225 - INFO - Response: 404
+2025-05-01 16:04:58,464 - INFO - Request: GET http://localhost:8000/v1/signup
+2025-05-01 16:04:58,465 - INFO - Response: 404
+2025-05-01 16:04:59,045 - INFO - Request: GET http://localhost:8000/v1/signup
+2025-05-01 16:04:59,046 - INFO - Response: 404
+2025-05-01 16:13:52,344 - INFO - Shutting down the application...
+2025-05-01 16:13:52,351 - INFO - Disconnected from the database
+2025-05-01 16:13:52,352 - INFO - Application shut down successfully.
+2025-05-01 16:15:54,250 - INFO - Starting up the application...
+2025-05-01 16:15:54,334 - INFO - Application started up successfully.
+2025-05-01 16:16:29,212 - INFO - Starting up the application...
+2025-05-01 16:16:29,393 - INFO - Application started up successfully.
+2025-05-01 16:16:34,800 - INFO - Shutting down the application...
+2025-05-01 16:16:34,803 - INFO - Disconnected from the database
+2025-05-01 16:16:34,804 - INFO - Application shut down successfully.
+2025-05-01 16:16:54,983 - INFO - Starting up the application...
+2025-05-01 16:16:55,060 - INFO - Application started up successfully.
+2025-05-01 16:35:28,320 - INFO - Shutting down the application...
+2025-05-01 16:35:28,326 - INFO - Disconnected from the database
+2025-05-01 16:35:28,326 - INFO - Application shut down successfully.
+2025-05-01 16:37:12,137 - INFO - Starting up the application...
+2025-05-01 16:37:12,221 - INFO - Application started up successfully.
+2025-05-01 16:37:57,545 - INFO - Shutting down the application...
+2025-05-01 16:37:57,551 - INFO - Disconnected from the database
+2025-05-01 16:37:57,551 - INFO - Application shut down successfully.
+2025-05-01 16:38:09,784 - INFO - Starting up the application...
+2025-05-01 16:38:09,866 - INFO - Application started up successfully.
+2025-05-01 16:39:41,327 - INFO - Shutting down the application...
+2025-05-01 16:39:41,333 - INFO - Disconnected from the database
+2025-05-01 16:39:41,333 - INFO - Application shut down successfully.
