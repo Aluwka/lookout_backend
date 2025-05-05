@@ -40,7 +40,7 @@ async def login(
             value=access_token,
             httponly=True,
             secure=True,
-            samesite="strict"
+            samesite="lax"
         )
 
         response.set_cookie(
@@ -48,7 +48,7 @@ async def login(
             value=refresh_token,
             httponly=True,
             secure=True,
-            samesite="strict"
+            samesite="lax"
         )
 
         return AuthResponse(
@@ -92,14 +92,14 @@ async def register(
             value=access_token,
             httponly=True,
             secure=True,
-            samesite="strict"
+            samesite="lax"
         )
         response.set_cookie(
             key="refresh_token_cookie",
             value=refresh_token,
             httponly=True,
             secure=True,
-            samesite="strict"
+            samesite="lax"
         )
 
         return AuthResponse(
@@ -156,7 +156,7 @@ async def refresh(request: Request, response: Response, refresh_data: RefreshBod
             value=access_token,
             httponly=True,
             secure=True,
-            samesite="strict"
+            samesite="lax"
         )
         return RefreshResponse(
             access_token=access_token,

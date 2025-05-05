@@ -21,8 +21,7 @@ class AppCreator:
         self._app.add_middleware(
             CORSMiddleware,
             allow_origins=[
-                "http://localhost:63342",       # ← Your frontend origin
-                "http://127.0.0.1:63342",       # ← Some browsers rewrite localhost to 127.0.0.1
+                "http://localhost:63342"      # ← Some browsers rewrite localhost to 127.0.0.1
             ],
             allow_credentials=True,
             allow_methods=["*"],
