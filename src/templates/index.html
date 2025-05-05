@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page - LookOut</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="desktop">
+          <div class="vector"></div>
+        <div class="frame" id="header">
+        <!-- Logo -->
+        <div class="logo">
+          <div class="logo-icon"></div>
+          <span class="logo-text">LOOKOUT</span>
+        </div>
+
+        <!-- Hamburger menu (mobile only) -->
+        <div class="hamburger" onclick="toggleMobileMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Navigation (Desktop) -->
+        <nav class="navbar-links desktop-only">
+          <a href="#about" class="nav-link">ABOUT</a>
+          <a href="#why-lookout" class="nav-link">WHY LOOKOUT</a>
+          <a href="#how-it-works" class="nav-link">HOW IT WORKS</a>
+          <a href="#try-it-out" class="nav-link">TRY IT OUT</a>
+        </nav>
+
+        <!-- Action Buttons (Desktop) -->
+        <a href="login.html" class="login-btn desktop-only">LOG IN</a>
+        <a href="signin.html" class="sign-btn desktop-only">SIGN UP</a>
+
+        <!-- Mobile Dropdown -->
+        <div class="mobile-nav" id="mobileNav">
+          <a href="#about">ABOUT</a>
+          <a href="#why-lookout">WHY LOOKOUT</a>
+          <a href="#how-it-works">HOW IT WORKS</a>
+          <a href="#try-it-out">TRY IT OUT</a>
+          <a href="login.html" class="login-btn">LOG IN</a>
+          <a href="signin.html" class="sign-btn">SIGN IN</a>
+        </div>
+      </div>
+            <div class="hero-section">
+              <div class="protect-the-truth">
+                <span class="protect-the">Protect</span>
+                <span>the</span>
+                <span class="truth">truth</span>
+              </div>
+
+              <div class="detect-deepfakes" style="margin-top: 0.6rem">
+                <span class="detect">Detect</span>
+                <span class="deepfakes">Deepfakes</span>
+                <span class="protect-the">in seconds</span>
+              </div>
+
+              <p class="ml-powered-detection">
+                ML-powered detection for fake videos and audio. <br />
+                Fast, accurate, and reliable.
+              </p>
+              <div class="cta-container">
+                <button class="cta-button"><a href="#try-it-out" style="text-decoration: none; color: white">TRY IT NOW</a></button>
+<!--                <div class="arrow-icon"></div>-->
+              </div>
+            </div>
+
+
+            <div class="contact-info-box">
+              <div class="contact-item">
+                <img src="https://img.icons8.com/ios-filled/50/artificial-intelligence.png" alt="location icon" class="icon" />
+                <div>
+                  <div class="contact-title">AI + Security</div>
+                  <div class="contact-text">Truth in Every Frame</div>
+                </div>
+              </div>
+
+<!--              <div class="contact-divider"></div>-->
+
+              <div class="contact-item">
+                <img src="https://img.icons8.com/ios-filled/50/combo-chart.png" alt="phone icon" class="icon" />
+                <div>
+                  <div class="contact-title">Accuracy & Performance</div>
+                  <div class="contact-text">Real or Fake? We Know the Difference.</div>
+                </div>
+              </div>
+
+<!--              <div class="contact-divider"></div>-->
+
+              <div class="contact-item">
+                <img src="https://img.icons8.com/ios-filled/50/privacy.png" alt="email icon" class="icon" />
+                <div>
+                  <div class="contact-title">Privacy & Trust</div>
+                  <div class="contact-text">Private Detection. Public Protection.</div>
+                </div>
+              </div>
+            </div>
+            <section class="intro-section">
+              <div class="intro-left">
+                <div class="intro-title">INTRODUCTION</div>
+                <div class="intro-subtitle">TO LOOKOUT </div>
+                <img class="single-arrow" src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/inxVG9Hn3W.png" alt="arrow" />
+              </div>
+              <div class="intro-right">
+                <p>
+                  We use advanced ML algorithms to analyze video and audio,<br />
+                  exposing hidden fakes. <br />
+                  Stay confident in what you see and hear. Protect your<br />
+                  content and your reputation.
+                </p>
+              </div>
+            </section>
+            <section class="about-section" id="about">
+              <div class="about-bg-overlay"></div>
+              <div class="vector-55"></div>
+              <div class="about-content">
+                <div class="about-image">
+                  <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/kydnSgQXgF.png" alt="About LookOut" />
+                </div>
+                <div class="about-text">
+                  <h2 class="about-title">ABOUT</h2>
+                  <h3 class="about-subtitle">LookOut</h3>
+                  <p>
+                    We are a team of researchers and engineers, driven by a shared mission: to fight the spread of fake content using cutting-edge machine learning technologies.<br>
+                    Our goal is to make the digital world safer and more transparent. We believe everyone deserves access to genuine information. That’s why we’ve built a tool that detects deepfakes — quickly, accurately, and effortlessly.<br>
+                    We work for people, we care about trust, and we grow every day. Technology, for good.</p>
+<!--                  <p>-->
+<!--                    Our goal is to make the digital world safer and more transparent. We believe everyone deserves access to genuine information. That’s why we’ve built a tool that detects deepfakes — quickly, accurately, and effortlessly.-->
+<!--                  </p>-->
+<!--                  <p>-->
+<!--                    We work for people, we care about trust, and we grow every day. Technology, for good.-->
+<!--                  </p>-->
+<!--                  <button class="about-button">LET’S GET IN TOUCH</button>-->
+                </div>
+              </div>
+            </section>
+            <section class="solutions-section" id="why-lookout">
+              <div class="solutions-header">
+                <div>
+                  <h2>SOLUTIONS FOR</h2>
+                  <h3>EVERYONE</h3>
+                </div>
+                <img class="solutions-arrow" src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/inxVG9Hn3W.png" alt="arrow" />
+                <div class="solutions-desc">
+                  <p>Automated deepfake detection system:</p>
+                  <ul>
+                    <li>Deepfake face detection</li>
+                    <li>Synthetic voice detection</li>
+                    <li>Confidence scoring</li>
+                  </ul>
+                  <p>Simple. Precise. Secure.</p>
+                </div>
+              </div>
+
+              <div class="solutions-grid">
+                <!-- Card 1 -->
+                <div class="solution-card">
+                  <div class="circle">
+                    <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/Rm04gJeA8S.png" alt="Media & Journalism">
+                  </div>
+                  <h4>Media & Journalism</h4>
+                  <hr />
+                  <p>Verify content before publishing. Prevent misinformation and protect your audience.</p>
+                  <button class="try-btn" ><a href="#try-it-out" style="text-decoration: none; color: white">TRY IT NOW</a></button>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="solution-card">
+                  <div class="circle">
+                    <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/uDrDq1U1WG.png" alt="Business & Corporate">
+                  </div>
+                  <h4>Business & Corporate</h4>
+                  <hr />
+                  <p>Detect fake campaigns and safeguard your brand reputation.</p>
+                  <button class="try-btn" ><a href="#try-it-out" style="text-decoration: none; color: white">TRY IT NOW</a></button>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="solution-card">
+                  <div class="circle">
+                    <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/PhJs2jCUUc.png" alt="Security & Investigation">
+                  </div>
+                  <h4>Security & Investigation</h4>
+                  <hr />
+                  <p>Support legal cases and forensic analysis with trusted authenticity checks.</p>
+                  <button class="try-btn" ><a href="#try-it-out" style="text-decoration: none; color: white">TRY IT NOW</a></button>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="solution-card">
+                  <div class="circle">
+                    <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/mU5vUh4sB3.png" alt="Personal & Education">
+                  </div>
+                  <h4>Personal & Education</h4>
+                  <hr />
+                  <p>Learn about deepfakes or verify personal videos to stay safe online.</p>
+                  <button class="try-btn" ><a href="#try-it-out" style="text-decoration: none; color: white">TRY IT NOW</a></button>
+                </div>
+              </div>
+            </section>
+            <section class="how-it-works" id="how-it-works">
+              <div class="hiw-header">
+                <div class="hiw-title">
+<!--                  <div style="display: flex; flex-direction: column">-->
+                  <h2>HOW LOOKOUT<h3>WORKS?</h3><img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/CecFYkuOhY.png" alt="arrow"></h2>
+                </div>
+                <p class="hiw-description">
+                  We start by decomposing video and audio into frames and time-based segments to ensure frame-level and temporal precision.
+                  Next, we extract multimodal features — visual patterns, motion dynamics, and audio spectrograms — capturing even subtle traces of manipulation.
+                  Finally, our AI models perform cross-modal analysis, combining visual and audio signals to detect inconsistencies and deliver an accurate, confidence-scored result.
+                </p>
+              </div>
+            <div class="hiw-carousel-wrapper">
+              <div class="hiw-steps">
+                <div class="hiw-step">
+                  <div class="hiw-circle"><span>01</span></div>
+                  <p><img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/gPy4WAmKO7.png" class="arrow" /> Upload your video or audio</p>
+                </div>
+                <div class="hiw-step">
+                  <div class="hiw-circle"><span>02</span></div>
+                  <p><img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/Rg4jA196YK.png" class="arrow" /> Processing & Analysis</p>
+                </div>
+                <div class="hiw-step">
+                  <div class="hiw-circle"><span>03</span></div>
+                  <p><img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/340khfPGeR.png" class="arrow" /> Detection & Confidence scoring</p>
+                </div>
+                <div class="hiw-step">
+                  <div class="hiw-circle"><span>04</span></div>
+                  <p><img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/AjqN0KOCnm.png" class="arrow" /> Get Your Report</p>
+                </div>
+              </div>
+            </div>
+            </section>
+            <section class="upload-section" id="try-it-out">
+              <div class="upload-wrapper">
+                 <div class="upload-content" >
+                  <div class="upload-box">
+                    <div class="upload-icon">
+                      <img
+                        src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/QChYT49XhD.png"
+                        alt="Upload Icon"
+                      />
+                    </div>
+                    <p class="click-upload">Click to Upload</p>
+                    <p class="drop-file">or <br />drop your file here</p>
+                    <p class="mp4-mov-supported">(MP4, MOV supported)</p>
+                  </div>
+                  <div class="upload-bg">
+                    <img
+                      src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/54hFLNu7Ph.png"
+                      alt="Upload Background"
+                    />
+                  </div>
+                </div>
+                <div class="upload-arrow" style="position: absolute; margin-top: 6em; z-index: -2">
+                  <img
+                    src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/Kwrjem8BQ0.png"
+                    alt="Vector Arrow"
+                  />
+                </div>
+              </div>
+            </section>
+            <section class="faq-section" id="faq">
+              <div class="faq-header">
+                <h2>DO YOU HAVE</h2>
+                <h2 class="light">QUESTIONS?</h2>
+                <div class="faq-arrow"></div>
+              </div>
+              <div style="margin-top: -10vw">
+                <div class="faq-row right">
+                  <div class="faq-box">
+                    <h3>Q: What types of content can you analyze?</h3>
+                    <div class="divider"></div>
+                    <p>A: We analyze videos with embedded audio in standard formats (MP4, MOV). We focus on both video and audio deepfakes.</p>
+                  </div>
+                </div>
+
+                <div class="faq-row left">
+                  <div class="faq-box">
+                    <h3>Q: How accurate is your detection?</h3>
+                    <div class="divider"></div>
+                    <p>A: Our models are trained on diverse, real-world datasets to ensure high accuracy. We also provide a confidence percentage for every result.</p>
+                  </div>
+                </div>
+
+                <div class="faq-row right">
+                  <div class="faq-box">
+                    <h3>Q: Is my data safe?</h3>
+                    <div class="divider"></div>
+                    <p>A: Absolutely. We take privacy seriously. All data is processed securely and deleted after analysis.</p>
+                  </div>
+                </div>
+
+                <div class="faq-row left">
+                  <div class="faq-box">
+                    <h3>Q: Can I try it for free?</h3>
+                    <div class="divider"></div>
+                    <p>A: Yes, after a quick registration, you can explore all features and run your first analysis for free.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <footer class="footer">
+              <div class="footer-background"></div>
+
+              <div class="footer-content">
+                <div class="footer-logo" >
+                  <div class="footer-logo-icon"></div>
+                  <span class="footer-logo-text">LOOKOUT</span>
+                </div>
+
+                <div class="footer-divider"></div>
+
+                <div class="footer-column">
+                  <h5><a href="#about" style="text-decoration: none; color: white">About</a></h5>
+                  <h5><a href="#why-lookout" style="text-decoration: none; color: white">Why Lookout</a></h5>
+                  <h5><a href="#how-it-works" style="text-decoration: none; color: white">How it Works</a></h5>
+<!--                  <h5><a href="#why-lookout" style="text-decoration: none; color: white">How To</a></h5>-->
+                </div>
+
+                <div class="footer-divider"></div>
+
+                <div class="footer-column">
+                  <h5><a href="#faq" style="text-decoration: none; color: white">F.A.Q</a></h5>
+                  <h5><a href="#header" style="text-decoration: none; color: white">Sitemap</a></h5>
+<!--                  <h5>Conditions</h5>-->
+<!--                  <h5>Licenses</h5>-->
+                </div>
+
+                <div class="footer-divider"></div>
+
+                <div class="footer-column">
+                  <h5>Socialize with Lookout</h5>
+                  
+                  <div class="social-icons">
+                    <a href="https://www.facebook.com/lookoutapp" target="_blank" aria-label="Facebook">
+                      <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/c7z2ZSvmCj.png" alt="Facebook" />
+                    </a>
+                    <a href="https://twitter.com/lookoutapp" target="_blank" aria-label="Twitter">
+                      <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/i4Y310fnY6.png" alt="Twitter" />
+                    </a>
+                    <a href="https://www.linkedin.com/company/lookoutapp" target="_blank" aria-label="LinkedIn">
+                      <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/bQOUO7mF4k.png" alt="LinkedIn" />
+                    </a>
+                    <a href="https://www.youtube.com/@lookoutapp" target="_blank" aria-label="YouTube">
+                      <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/DpEvVZuXOE.png" alt="YouTube" />
+                    </a>
+                    <a href="https://www.instagram.com/lookoutapp" target="_blank" aria-label="Instagram">
+                      <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/M2DwYnSJiQ.png" alt="Instagram" />
+                    </a>
+                    <a href="https://www.pinterest.com/lookoutapp" target="_blank" aria-label="Pinterest">
+                      <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-17/ZZaQ5CYZ3H.png" alt="Pinterest" />
+                    </a>
+                  </div>
+
+                  <div class="footer-button">PROTECT THE TRUTH</div>
+                </div>
+              </div>
+
+              <hr class="footer-line" />
+              <p class="copyright">2025© LOOKOUT - ALL RIGHTS RESERVED</p>
+            </footer>
+     </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <script>
+      function toggleMobileMenu() {
+        const nav = document.getElementById("mobileNav");
+        nav.classList.toggle("show");
+      }
+
+      // Optional: auto-close on link click
+      document.querySelectorAll(".mobile-nav a").forEach(link =>
+        link.addEventListener("click", () => {
+          document.getElementById("mobileNav").classList.remove("show");
+        })
+      );
+    </script>
+
+
+
+
+  </body>
+</html>
