@@ -14,7 +14,7 @@ Welcome to the **Lookout** project! This repository is designed to analyze video
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/mkhmtolzhas/lookout
+    git clone https://github.com/Aluwka/lookout_backend.git
     ```
 
 2. Navigate to the project directory:
