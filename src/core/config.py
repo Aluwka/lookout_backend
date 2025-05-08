@@ -45,7 +45,7 @@ settings = Settings()
 auth_settings = AuthXConfig(
     JWT_ALGORITHM="HS256",
     JWT_SECRET_KEY=settings.jwt_secret,
-    JWT_TOKEN_LOCATION=["cookies"],
+    JWT_TOKEN_LOCATION=["cookies", "headers"],
     JWT_COOKIE_CSRF_PROTECT=False
 )
 

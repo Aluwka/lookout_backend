@@ -5,9 +5,12 @@ from src.schemas.responses.general_response import GeneralResponse
 from src.usecases.model_usecase import ModelUseCase, get_model_use_case
 from src.usecases.user_usecase import UserUseCase, get_user_use_case
 from src.api.http.dependencies import security
-
+from pydantic import BaseModel
 
 router = APIRouter(prefix="/model", tags=["model"])
+
+class VideoURLRequest(BaseModel):
+    video_url: str
 
 @router.post("/analyze", response_model=GeneralResponse[ModelSchema])
 async def analyze_video(
@@ -37,18 +40,16 @@ async def analyze_video(
 
 @router.post("/analyze/url", response_model=GeneralResponse[ModelSchema])
 async def analyze_video_url(
-    video_url: str,
+    request: VideoURLRequest,
     model_use_case: ModelUseCase = Depends(get_model_use_case),
     user_use_case: UserUseCase = Depends(get_user_use_case),
     token_payload: TokenPayload = Depends(security.access_token_required),
 ) -> GeneralResponse[ModelSchema]:
-    """
-    Analyze a video URL and return the result.
-    """
     user = await user_use_case.get_user_by_fields(email=token_payload.sub)
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
 
+    video_url = request.video_url
     result = await model_use_case.analyze_video(user_id=user.id, file=video_url, file_name=video_url)
 
     return GeneralResponse[ModelSchema](

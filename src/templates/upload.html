@@ -6,7 +6,7 @@
     <title>Upload page - Lookout</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="upload.css" />
+    <link rel="stylesheet" href="../templates/css/upload.css" />
   </head>
   <body>
     <div class="main-container">
@@ -28,34 +28,36 @@
 
         <!-- Navigation (Desktop) -->
         <nav class="navbar-links desktop-only">
-          <a href="../../lookout/src/templates/index.html#about" class="nav-link">ABOUT</a>
-          <a href="../../lookout/src/templates/index.html#why-lookout" class="nav-link">WHY LOOKOUT</a>
-          <a href="../../lookout/src/templates/index.html#how-it-works" class="nav-link">HOW IT WORKS</a>
-          <a href="../../lookout/src/templates/index.html#try-it-out" class="nav-link">TRY IT OUT</a>
+          <a href="index.html#about" class="nav-link">ABOUT</a>
+          <a href="index.html#why-lookout" class="nav-link">WHY LOOKOUT</a>
+          <a href="index.html#how-it-works" class="nav-link">HOW IT WORKS</a>
+          <a href="index.html#try-it-out" class="nav-link">TRY IT OUT</a>
         </nav>
 
         <!-- Action Buttons (Desktop) -->
         <div class="header-right desktop-only">
-            <div class="user-name">Alua Kusman</div>
-            <a href="../../lookout/src/templates/profile.html" class="icon-circle" aria-label="Profile">
+            <div class="user-name">??</div>
+
+            <a href="profile.html" class="icon-circle" aria-label="Profile">
               <div class="profile-icon-gradient"></div>
             </a>
+
+
             <div class="icon logout-icon"></div>
-            
         </div>
-        <div class="user-name-mobile">Alua Kusman</div>
+        <div class="user-name-mobile">??</div>
         <!-- Mobile Dropdown -->
         <div class="mobile-nav" id="mobileNav">
           <div style="display: flex; flex-direction: row; justify-content: space-between; width: 100%">
-            <a href="../../lookout/src/templates/profile.html" class="icon-circle" aria-label="Profile">
+            <a href="profile.html" class="icon-circle" aria-label="Profile">
               <div class="profile-icon-gradient"></div>
             </a>
           <div class="icon logout-icon"></div>
           </div>
-          <a href="#about">ABOUT</a>
-          <a href="#why-lookout">WHY LOOKOUT</a>
-          <a href="#how-it-works">HOW IT WORKS</a>
-          <a href="#try-it-out">TRY IT OUT</a>
+          <a href="index.html#about">ABOUT</a>
+          <a href="index.html#why-lookout">WHY LOOKOUT</a>
+          <a href="index.html#how-it-works">HOW IT WORKS</a>
+          <a href="index.html#try-it-out">TRY IT OUT</a>
         </div>
       </div>
 <!--        WRITE YOUR CODE HERE  -->
@@ -64,56 +66,45 @@
 
 
          <!-- ✅ MAIN CONTENT -->
-              <main class="upload-section">
-                <h1 class="upload-title">ANALYZE YOUR CONTENT IN SECONDS</h1>
-                <p class="upload-subtitle">DROP IT RIGHT HERE AND LET LOOKOUT DO THE REST</p>
-<!--                 <div class="upload-content">-->
-<!--                  <div class="upload-box">-->
-<!--                    <div class="upload-icon">-->
-<!--                      <img-->
-<!--                        src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/QChYT49XhD.png"-->
-<!--                        alt="Upload Icon"-->
-<!--                      />-->
-<!--                    </div>-->
-<!--                    <p class="click-upload">Click to Upload</p>-->
-<!--                    <p class="drop-file">or <br />drop your file here</p>-->
-<!--                    <p class="mp4-mov-supported">(MP4, MOV supported)</p>-->
-<!--                  </div>-->
-<!--                  <div class="upload-bg">-->
-<!--                    <img-->
-<!--                      src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/54hFLNu7Ph.png"-->
-<!--                      alt="Upload Background"-->
-<!--                    />-->
-<!--                  </div>-->
-<!--                </div>-->
-              <div class="upload-wrapper">
-                 <div class="upload-content" >
-                  <div class="upload-box">
-                    <div class="upload-icon">
-                      <img
-                        src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/QChYT49XhD.png"
-                        alt="Upload Icon"
-                      />
-                    </div>
-                    <p class="click-upload">Click to Upload</p>
-                    <p class="drop-file">or <br />drop your file here</p>
-                    <p class="mp4-mov-supported">(MP4, MOV supported)</p>
-                  </div>
-                  <div class="upload-bg">
-                    <img
-                      src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/54hFLNu7Ph.png"
-                      alt="Upload Background"
-                    />
-                  </div>
-                </div>
-                <div class="upload-arrow" style="position: absolute; margin-top: 6em; z-index: -2">
-                </div>
-              </div>
-                <div class="upload-buttons">
-                  <button class="btn-outline">CLEAR SELECTION</button>
-                  <button class="btn-filled">VIEW RESULTS</button>
-                </div>
-              </main>
+<main class="upload-section" id="upload-section">
+  <h1 class="upload-title">ANALYZE YOUR CONTENT IN SECONDS</h1>
+  <p class="upload-subtitle">DROP IT RIGHT HERE AND LET LOOKOUT DO THE REST</p>
+
+  <div class="upload-wrapper">
+    <div class="upload-content" id="uploadContent">
+      <div class="upload-box" id="drop-zone">
+        <input type="file" id="fileInput" accept="video/mp4,video/quicktime" hidden />
+        <div class="upload-icon">
+          <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/QChYT49XhD.png" alt="Upload Icon" />
+        </div>
+        <p class="click-upload">Click to Upload</p>
+        <p class="drop-file">or <br />drop your file here</p>
+        <p class="mp4-mov-supported">(MP4, MOV supported)</p>
+      </div>
+      <div class="upload-bg">
+        <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/54hFLNu7Ph.png" alt="Upload Background" />
+      </div>
+      <div class="spinner-section" id="spinner-section">
+        <div class="spinner"></div>
+        <p class="loading-text">Analyzing your video...</p>
+      </div>
+    </div>
+    <div class="upload-arrow" style="position: absolute; margin-top: 6em; z-index: -2"></div>
+  </div>
+
+  <div style="margin-top: 20px; text-align: center">
+    <div class="upload-buttons mt-3">
+      <button class="btn-outline" id="clearBtn">CLEAR SELECTION</button>
+      <button class="btn-filled" id="submitBtn">VIEW RESULTS</button>
+    </div>
+  </div>
+</main>
+
+<!-- 🔄 Spinner Section -->
+<!--<div class="spinner-section" id="spinner-section">-->
+<!--  <div class="spinner"></div>-->
+<!--  <p class="loading-text">Analyzing your video...</p>-->
+<!--</div>-->
 
 
 
@@ -183,17 +174,161 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
         <script>
-      function toggleMobileMenu() {
-        const nav = document.getElementById("mobileNav");
-        nav.classList.toggle("show");
+          function toggleMobileMenu() {
+            const nav = document.getElementById("mobileNav");
+            nav.classList.toggle("show");
+          }
+
+
+          document.querySelectorAll(".mobile-nav a").forEach(link =>
+            link.addEventListener("click", () => {
+              document.getElementById("mobileNav").classList.remove("show");
+            })
+          );
+        </script>
+<script>
+  const dropZone = document.getElementById("drop-zone");
+  const fileInput = document.getElementById("fileInput");
+  const submitBtn = document.getElementById("submitBtn");
+  const clearBtn = document.getElementById("clearBtn");
+  const progressBar = document.getElementById("progressBar");
+
+  let selectedFile = null;
+
+  dropZone.addEventListener("click", () => fileInput.click());
+
+  fileInput.addEventListener("change", (e) => {
+    selectedFile = e.target.files[0];
+    dropZone.querySelector(".click-upload").textContent = selectedFile.name;
+  });
+
+  dropZone.addEventListener("dragover", (e) => {
+    e.preventDefault();
+    dropZone.classList.add("dragover");
+  });
+
+  dropZone.addEventListener("dragleave", () => {
+    dropZone.classList.remove("dragover");
+  });
+
+  dropZone.addEventListener("drop", (e) => {
+    e.preventDefault();
+    selectedFile = e.dataTransfer.files[0];
+    dropZone.querySelector(".click-upload").textContent = selectedFile.name;
+  });
+
+  clearBtn.addEventListener("click", () => {
+    selectedFile = null;
+    fileInput.value = "";
+    dropZone.querySelector(".click-upload").textContent = "Click to Upload";
+  });
+
+  submitBtn.addEventListener("click", async () => {
+    const token = localStorage.getItem("access_token");
+    if (!token) {
+      alert("Please log in first.");
+      window.location.href = "login.html";
+      return;
+    }
+
+    if (!selectedFile) {
+      alert("Please upload a file first.");
+      return;
+    }
+
+    try {
+      const body = new FormData();
+      body.append("file", selectedFile);
+      document.getElementById("drop-zone").style.display = "none";
+      document.getElementById("spinner-section").style.display = "block";
+
+
+      const response = await fetch("http://127.0.0.1:8000/api/v1/model/analyze", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`
+        },
+        body: body
+      });
+
+      const result = await response.json();
+      const taskId = result?.data?.task_id;
+      if (!taskId) throw new Error("Task ID not returned");
+
+      const checkInterval = setInterval(async () => {
+        const res = await fetch(`http://127.0.0.1:8000/api/v1/model/result/${taskId}`, {
+          headers: { Authorization: `Bearer ${token}` }
+        });
+
+        const resultData = await res.json();
+        if (resultData?.data?.status === "pending") return;
+
+        clearInterval(checkInterval);
+
+        const verdict = resultData?.data?.result?.prediction?.toLowerCase();
+        const confidence = resultData?.data?.result?.confidence;
+        const now = new Date().toLocaleString();
+        const filenameEncoded = encodeURIComponent(selectedFile.name);
+        const uploadedEncoded = encodeURIComponent(now);
+       if (verdict === "real") {
+          window.location.href = `real result.html?confidence=${confidence}&filename=${filenameEncoded}&uploaded=${uploadedEncoded}`;
+        } else if (verdict === "fake") {
+          window.location.href = `fake result.html?confidence=${confidence}&filename=${filenameEncoded}&uploaded=${uploadedEncoded}`;
+        } else {
+          alert("Unexpected result: " + JSON.stringify(resultData));
+        }
+      }, 2000);
+
+      setTimeout(() => {
+        clearInterval(checkInterval);
+        alert("Timeout: analysis still pending.");
+      }, 30000);
+
+    } catch (err) {
+      alert("Error: " + err.message);
+    }
+  });
+    document.addEventListener("DOMContentLoaded", async () => {
+    try {
+      const token = localStorage.getItem("access_token");
+
+      if (!token) return; // silently fail on other pages
+
+      const response = await fetch("http://127.0.0.1:8000/api/v1/auth/info", {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      });
+
+      if (!response.ok) {
+        console.warn("User token invalid, logging out");
+        localStorage.removeItem("access_token");
+        return;
       }
 
-      // Optional: auto-close on link click
-      document.querySelectorAll(".mobile-nav a").forEach(link =>
-        link.addEventListener("click", () => {
-          document.getElementById("mobileNav").classList.remove("show");
-        })
-      );
-    </script>
+      const data = await response.json();
+
+      const userDesktop = document.querySelector(".user-name");
+      const userMobile = document.querySelector(".user-name-mobile");
+
+      if (userDesktop) userDesktop.textContent = data.username;
+      if (userMobile) userMobile.textContent = data.username;
+    } catch (err) {
+      console.error("User fetch error:", err);
+    }
+  });
+
+  document.querySelectorAll(".logout-icon").forEach(btn => {
+    btn.addEventListener("click", () => {
+      localStorage.removeItem("access_token");
+      window.location.href = "login.html";
+    });
+  });
+
+
+</script>
+
+
   </body>
 </html>

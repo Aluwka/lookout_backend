@@ -1,7 +1,7 @@
 from pydantic import BaseModel, Field, FileUrl
 from .mixins.id_mixin import IDMixin
 from .mixins.time_mixin import TimeMixin
-
+from typing import Optional
 
 
 class VideoBase(BaseModel):
@@ -10,6 +10,7 @@ class VideoBase(BaseModel):
     """
     user_id: int = Field(..., description="ID of the user who uploaded the video")
     file_url: str = Field(..., description="URL of the video file")
+    file_name: Optional[str] = Field(None, description="Original name of the uploaded file")
 
     class Config:
         from_attributes = True

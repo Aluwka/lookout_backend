@@ -886,3 +886,976 @@
 2025-05-05 22:59:09,715 - INFO - Shutting down the application...
 2025-05-05 22:59:09,719 - INFO - Disconnected from the database
 2025-05-05 22:59:09,719 - INFO - Application shut down successfully.
+2025-05-07 10:20:37,497 - INFO - Starting up the application...
+2025-05-07 10:20:37,607 - INFO - Application started up successfully.
+2025-05-07 10:20:37,717 - INFO - Request: GET http://127.0.0.1:8000/
+2025-05-07 10:20:37,718 - INFO - Response: 404
+2025-05-07 10:20:37,851 - INFO - Request: GET http://127.0.0.1:8000/favicon.ico
+2025-05-07 10:20:37,851 - INFO - Response: 404
+2025-05-07 10:20:44,343 - INFO - Request: GET http://127.0.0.1:8000/docs
+2025-05-07 10:20:44,344 - INFO - Response: 200
+2025-05-07 10:20:44,428 - INFO - Request: GET http://127.0.0.1:8000/openapi.json
+2025-05-07 10:20:44,462 - INFO - Response: 200
+2025-05-07 10:22:30,449 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 10:22:30,450 - INFO - Response: 200
+2025-05-07 10:22:30,453 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 10:22:30,454 - INFO - Response: 401
+2025-05-07 10:22:38,978 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 10:22:38,979 - INFO - Response: 200
+2025-05-07 10:22:38,986 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 10:22:39,612 - INFO - Response: 200
+2025-05-07 10:22:41,628 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 10:22:41,631 - INFO - Response: 401
+2025-05-07 10:30:31,730 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 10:30:32,198 - INFO - Response: 200
+2025-05-07 10:30:33,678 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 10:30:33,678 - INFO - Response: 401
+2025-05-07 11:21:06,964 - INFO - Shutting down the application...
+2025-05-07 11:21:06,970 - INFO - Disconnected from the database
+2025-05-07 11:21:06,970 - INFO - Application shut down successfully.
+2025-05-07 11:21:36,099 - INFO - Starting up the application...
+2025-05-07 11:21:36,165 - INFO - Application started up successfully.
+2025-05-07 11:21:58,933 - INFO - Shutting down the application...
+2025-05-07 11:21:58,935 - INFO - Disconnected from the database
+2025-05-07 11:21:58,935 - INFO - Application shut down successfully.
+2025-05-07 12:38:11,223 - INFO - Starting up the application...
+2025-05-07 12:38:11,427 - INFO - Application started up successfully.
+2025-05-07 12:38:14,926 - INFO - Request: GET http://127.0.0.1:8000/
+2025-05-07 12:38:14,930 - INFO - Response: 404
+2025-05-07 12:38:14,981 - INFO - Request: GET http://127.0.0.1:8000/favicon.ico
+2025-05-07 12:38:14,983 - INFO - Response: 404
+2025-05-07 12:38:17,686 - INFO - Request: GET http://127.0.0.1:8000/docs
+2025-05-07 12:38:17,686 - INFO - Response: 200
+2025-05-07 12:38:18,095 - INFO - Request: GET http://127.0.0.1:8000/openapi.json
+2025-05-07 12:38:18,132 - INFO - Response: 200
+2025-05-07 12:38:27,270 - INFO - Request: GET http://localhost:8000/signup
+2025-05-07 12:38:27,270 - INFO - Response: 404
+2025-05-07 12:38:42,275 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 12:38:42,275 - INFO - Response: 200
+2025-05-07 12:38:42,279 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 12:38:42,898 - INFO - Response: 200
+2025-05-07 12:38:45,488 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 12:38:45,488 - INFO - Response: 401
+2025-05-07 12:39:04,350 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 12:39:04,843 - INFO - Response: 200
+2025-05-07 12:39:07,166 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 12:39:07,166 - INFO - Response: 401
+2025-05-07 12:39:32,347 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/register
+2025-05-07 12:39:32,347 - INFO - Response: 200
+2025-05-07 12:39:32,356 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/register
+2025-05-07 12:39:32,868 - INFO - Response: 200
+2025-05-07 12:39:54,917 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 12:39:54,923 - INFO - Response: 401
+2025-05-07 12:40:03,755 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 12:40:04,227 - INFO - Response: 401
+2025-05-07 12:40:12,105 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 12:40:12,586 - INFO - Response: 401
+2025-05-07 12:42:27,659 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 12:42:28,152 - INFO - Response: 401
+2025-05-07 12:43:49,414 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/register
+2025-05-07 12:43:49,906 - INFO - Response: 200
+2025-05-07 12:44:00,944 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 12:44:01,434 - INFO - Response: 200
+2025-05-07 12:44:03,027 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 12:44:03,030 - INFO - Response: 401
+2025-05-07 13:15:32,977 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 13:15:32,977 - INFO - Response: 200
+2025-05-07 13:15:32,981 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 13:15:33,466 - INFO - Response: 401
+2025-05-07 13:15:41,767 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 13:15:42,251 - INFO - Response: 200
+2025-05-07 13:15:45,654 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 13:15:45,654 - INFO - Response: 401
+2025-05-07 13:16:10,425 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 13:16:10,425 - INFO - Response: 401
+2025-05-07 13:17:31,013 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 13:17:31,014 - INFO - Response: 401
+2025-05-07 13:20:12,701 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 13:20:13,182 - INFO - Response: 200
+2025-05-07 13:20:16,625 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 13:20:16,625 - INFO - Response: 401
+2025-05-07 13:22:36,266 - INFO - Shutting down the application...
+2025-05-07 13:22:36,334 - INFO - Disconnected from the database
+2025-05-07 13:22:36,334 - INFO - Application shut down successfully.
+2025-05-07 13:22:56,994 - INFO - Starting up the application...
+2025-05-07 13:22:57,120 - INFO - Application started up successfully.
+2025-05-07 13:23:01,758 - INFO - Shutting down the application...
+2025-05-07 13:23:01,760 - INFO - Disconnected from the database
+2025-05-07 13:23:01,765 - INFO - Application shut down successfully.
+2025-05-07 13:23:15,541 - INFO - Starting up the application...
+2025-05-07 13:23:15,674 - INFO - Application started up successfully.
+2025-05-07 13:23:17,992 - INFO - Shutting down the application...
+2025-05-07 13:23:18,001 - INFO - Disconnected from the database
+2025-05-07 13:23:18,001 - INFO - Application shut down successfully.
+2025-05-07 13:24:40,938 - INFO - Starting up the application...
+2025-05-07 13:24:41,139 - INFO - Application started up successfully.
+2025-05-07 13:24:50,923 - INFO - Request: GET http://127.0.0.1:8000/
+2025-05-07 13:24:50,925 - INFO - Response: 404
+2025-05-07 13:24:53,440 - INFO - Request: GET http://127.0.0.1:8000/docs
+2025-05-07 13:24:53,442 - INFO - Response: 200
+2025-05-07 13:24:53,795 - INFO - Request: GET http://127.0.0.1:8000/openapi.json
+2025-05-07 13:24:53,855 - INFO - Response: 200
+2025-05-07 13:25:24,392 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 13:25:24,993 - INFO - Response: 200
+2025-05-07 13:25:26,587 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 13:25:26,590 - INFO - Response: 401
+2025-05-07 13:27:00,435 - INFO - Shutting down the application...
+2025-05-07 13:27:00,442 - INFO - Disconnected from the database
+2025-05-07 13:27:00,442 - INFO - Application shut down successfully.
+2025-05-07 13:27:14,220 - INFO - Starting up the application...
+2025-05-07 13:27:14,350 - INFO - Application started up successfully.
+2025-05-07 13:29:00,138 - INFO - Shutting down the application...
+2025-05-07 13:29:00,143 - INFO - Disconnected from the database
+2025-05-07 13:29:00,143 - INFO - Application shut down successfully.
+2025-05-07 13:29:14,156 - INFO - Starting up the application...
+2025-05-07 13:29:14,394 - INFO - Application started up successfully.
+2025-05-07 13:30:28,294 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 13:30:28,294 - INFO - Response: 200
+2025-05-07 13:30:28,299 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 13:30:28,848 - INFO - Response: 200
+2025-05-07 13:30:36,002 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 13:30:36,010 - INFO - Response: 401
+2025-05-07 13:31:25,370 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 13:31:25,873 - INFO - Response: 200
+2025-05-07 13:31:27,411 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 13:31:27,413 - INFO - Response: 401
+2025-05-07 13:34:25,923 - INFO - Shutting down the application...
+2025-05-07 13:34:25,923 - INFO - Disconnected from the database
+2025-05-07 13:34:25,923 - INFO - Application shut down successfully.
+2025-05-07 13:34:39,852 - INFO - Starting up the application...
+2025-05-07 13:34:39,989 - INFO - Application started up successfully.
+2025-05-07 13:34:41,863 - INFO - Shutting down the application...
+2025-05-07 13:34:41,863 - INFO - Disconnected from the database
+2025-05-07 13:34:41,863 - INFO - Application shut down successfully.
+2025-05-07 13:35:13,672 - INFO - Starting up the application...
+2025-05-07 13:35:13,819 - INFO - Application started up successfully.
+2025-05-07 13:35:46,340 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 13:35:46,340 - INFO - Response: 200
+2025-05-07 13:35:46,340 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 13:35:46,906 - INFO - Response: 200
+2025-05-07 13:35:49,694 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 13:35:49,698 - INFO - Response: 401
+2025-05-07 13:43:50,554 - INFO - Shutting down the application...
+2025-05-07 13:43:50,556 - INFO - Disconnected from the database
+2025-05-07 13:43:50,556 - INFO - Application shut down successfully.
+2025-05-07 13:43:58,256 - INFO - Starting up the application...
+2025-05-07 13:43:58,329 - INFO - Application started up successfully.
+2025-05-07 13:44:38,394 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 13:44:38,394 - INFO - Response: 200
+2025-05-07 13:44:38,394 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 13:44:38,650 - INFO - Response: 200
+2025-05-07 13:44:40,080 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 13:44:40,081 - INFO - Response: 200
+2025-05-07 13:44:40,088 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 13:44:40,089 - INFO - Response: 401
+2025-05-07 13:51:37,731 - INFO - Shutting down the application...
+2025-05-07 13:51:37,737 - INFO - Disconnected from the database
+2025-05-07 13:51:37,737 - INFO - Application shut down successfully.
+2025-05-07 13:51:44,365 - INFO - Starting up the application...
+2025-05-07 13:51:44,426 - INFO - Application started up successfully.
+2025-05-07 13:51:56,579 - INFO - Shutting down the application...
+2025-05-07 13:51:56,582 - INFO - Disconnected from the database
+2025-05-07 13:51:56,582 - INFO - Application shut down successfully.
+2025-05-07 14:34:30,668 - INFO - Starting up the application...
+2025-05-07 14:34:30,751 - INFO - Application started up successfully.
+2025-05-07 14:35:17,603 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 14:35:17,603 - INFO - Response: 200
+2025-05-07 14:35:17,608 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 14:35:17,845 - INFO - Response: 200
+2025-05-07 14:35:20,489 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 14:35:20,490 - INFO - Response: 200
+2025-05-07 14:35:20,493 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 14:35:20,501 - INFO - Response: 200
+2025-05-07 14:38:37,179 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 14:38:37,383 - INFO - Response: 200
+2025-05-07 14:38:38,659 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 14:38:38,662 - INFO - Response: 200
+2025-05-07 14:40:28,488 - INFO - Shutting down the application...
+2025-05-07 14:40:28,488 - INFO - Disconnected from the database
+2025-05-07 14:40:28,488 - INFO - Application shut down successfully.
+2025-05-07 14:40:44,532 - INFO - Starting up the application...
+2025-05-07 14:40:44,646 - INFO - Application started up successfully.
+2025-05-07 14:43:19,287 - INFO - Shutting down the application...
+2025-05-07 14:43:19,288 - INFO - Disconnected from the database
+2025-05-07 14:43:19,288 - INFO - Application shut down successfully.
+2025-05-07 14:46:31,533 - INFO - Starting up the application...
+2025-05-07 14:46:31,686 - INFO - Application started up successfully.
+2025-05-07 14:47:33,329 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 14:47:33,334 - INFO - Response: 200
+2025-05-07 14:47:33,335 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 14:47:45,217 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 14:47:45,218 - INFO - Response: 200
+2025-05-07 14:47:45,223 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 14:47:45,785 - INFO - Response: 200
+2025-05-07 14:47:47,102 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 14:47:47,109 - INFO - Response: 200
+2025-05-07 14:50:07,717 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 14:50:08,194 - INFO - Response: 401
+2025-05-07 14:50:14,858 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 14:50:15,344 - INFO - Response: 200
+2025-05-07 14:50:16,629 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 14:50:16,634 - INFO - Response: 200
+2025-05-07 14:50:27,857 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 14:50:27,864 - INFO - Response: 200
+2025-05-07 14:50:29,658 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 14:50:29,666 - INFO - Response: 200
+2025-05-07 14:51:19,682 - INFO - Shutting down the application...
+2025-05-07 14:51:19,687 - INFO - Disconnected from the database
+2025-05-07 14:51:19,687 - INFO - Application shut down successfully.
+2025-05-07 15:26:52,618 - INFO - Starting up the application...
+2025-05-07 15:26:52,762 - INFO - Application started up successfully.
+2025-05-07 15:28:33,915 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 15:28:33,915 - INFO - Response: 200
+2025-05-07 15:28:33,923 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 15:28:34,481 - INFO - Response: 200
+2025-05-07 15:28:35,913 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 15:28:35,913 - INFO - Response: 200
+2025-05-07 15:28:35,919 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 15:28:35,926 - INFO - Response: 200
+2025-05-07 15:28:55,312 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 15:28:55,312 - INFO - Response: 200
+2025-05-07 15:28:55,316 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 15:29:14,240 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 15:31:17,815 - INFO - Shutting down the application...
+2025-05-07 15:31:17,817 - INFO - Disconnected from the database
+2025-05-07 15:31:17,817 - INFO - Application shut down successfully.
+2025-05-07 15:54:27,495 - INFO - Starting up the application...
+2025-05-07 15:54:27,631 - INFO - Application started up successfully.
+2025-05-07 15:54:51,220 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 15:54:51,220 - INFO - Response: 200
+2025-05-07 15:54:51,227 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 15:55:11,493 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 15:55:57,879 - INFO - Shutting down the application...
+2025-05-07 15:55:57,879 - INFO - Disconnected from the database
+2025-05-07 15:55:57,879 - INFO - Application shut down successfully.
+2025-05-07 15:57:34,885 - INFO - Starting up the application...
+2025-05-07 15:57:35,077 - INFO - Application started up successfully.
+2025-05-07 15:57:54,923 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 15:57:54,923 - INFO - Response: 200
+2025-05-07 15:57:54,923 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 15:57:55,492 - INFO - Response: 200
+2025-05-07 15:57:56,839 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 15:57:56,841 - INFO - Response: 200
+2025-05-07 15:57:56,845 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 15:57:56,845 - INFO - Response: 200
+2025-05-07 15:58:10,682 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 15:58:10,683 - INFO - Response: 200
+2025-05-07 15:58:10,684 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 15:58:57,218 - INFO - Response: 200
+2025-05-07 16:02:34,910 - INFO - Shutting down the application...
+2025-05-07 16:02:34,913 - INFO - Disconnected from the database
+2025-05-07 16:02:34,913 - INFO - Application shut down successfully.
+2025-05-07 16:10:25,440 - INFO - Starting up the application...
+2025-05-07 16:10:25,504 - INFO - Application started up successfully.
+2025-05-07 16:10:43,077 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 16:10:43,078 - INFO - Response: 200
+2025-05-07 16:10:43,080 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 16:10:43,328 - INFO - Response: 200
+2025-05-07 16:10:44,816 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 16:10:44,817 - INFO - Response: 200
+2025-05-07 16:10:44,822 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 16:10:44,827 - INFO - Response: 200
+2025-05-07 16:11:04,598 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 16:11:04,598 - INFO - Response: 200
+2025-05-07 16:11:04,600 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 16:11:28,359 - INFO - Response: 200
+2025-05-07 16:12:09,430 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 16:12:34,433 - INFO - Response: 200
+2025-05-07 16:13:03,259 - INFO - Shutting down the application...
+2025-05-07 16:13:03,261 - INFO - Disconnected from the database
+2025-05-07 16:13:03,261 - INFO - Application shut down successfully.
+2025-05-07 16:21:25,768 - INFO - Starting up the application...
+2025-05-07 16:21:25,844 - INFO - Application started up successfully.
+2025-05-07 16:21:55,014 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 16:21:55,014 - INFO - Response: 200
+2025-05-07 16:21:55,017 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 16:21:55,265 - INFO - Response: 200
+2025-05-07 16:21:58,753 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 16:21:58,753 - INFO - Response: 200
+2025-05-07 16:21:58,756 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 16:21:58,760 - INFO - Response: 200
+2025-05-07 16:22:30,050 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 16:22:30,050 - INFO - Response: 200
+2025-05-07 16:22:30,051 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 16:23:59,046 - INFO - Response: 200
+2025-05-07 16:24:01,061 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/result/b14ed0f4-cb6b-4e33-8f78-49225bbc41d7
+2025-05-07 16:24:01,061 - INFO - Response: 200
+2025-05-07 16:24:01,064 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/b14ed0f4-cb6b-4e33-8f78-49225bbc41d7
+2025-05-07 16:24:01,089 - INFO - Response: 200
+2025-05-07 16:24:03,098 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/b14ed0f4-cb6b-4e33-8f78-49225bbc41d7
+2025-05-07 16:24:03,098 - INFO - Response: 200
+2025-05-07 16:24:05,107 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/b14ed0f4-cb6b-4e33-8f78-49225bbc41d7
+2025-05-07 16:24:05,107 - INFO - Response: 200
+2025-05-07 16:24:07,124 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/b14ed0f4-cb6b-4e33-8f78-49225bbc41d7
+2025-05-07 16:24:07,124 - INFO - Response: 200
+2025-05-07 16:24:09,134 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/b14ed0f4-cb6b-4e33-8f78-49225bbc41d7
+2025-05-07 16:24:09,135 - INFO - Response: 200
+2025-05-07 16:24:11,155 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/b14ed0f4-cb6b-4e33-8f78-49225bbc41d7
+2025-05-07 16:24:11,155 - INFO - Response: 200
+2025-05-07 16:24:13,172 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/b14ed0f4-cb6b-4e33-8f78-49225bbc41d7
+2025-05-07 16:24:13,172 - INFO - Response: 200
+2025-05-07 16:24:15,183 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/b14ed0f4-cb6b-4e33-8f78-49225bbc41d7
+2025-05-07 16:24:15,183 - INFO - Response: 200
+2025-05-07 16:24:17,191 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/b14ed0f4-cb6b-4e33-8f78-49225bbc41d7
+2025-05-07 16:24:17,194 - INFO - Response: 200
+2025-05-07 16:24:19,200 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/b14ed0f4-cb6b-4e33-8f78-49225bbc41d7
+2025-05-07 16:24:19,200 - INFO - Response: 200
+2025-05-07 16:24:21,222 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/b14ed0f4-cb6b-4e33-8f78-49225bbc41d7
+2025-05-07 16:24:21,222 - INFO - Response: 200
+2025-05-07 16:24:23,239 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/b14ed0f4-cb6b-4e33-8f78-49225bbc41d7
+2025-05-07 16:24:23,241 - INFO - Response: 200
+2025-05-07 16:24:25,247 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/b14ed0f4-cb6b-4e33-8f78-49225bbc41d7
+2025-05-07 16:24:25,248 - INFO - Response: 200
+2025-05-07 16:24:27,258 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/b14ed0f4-cb6b-4e33-8f78-49225bbc41d7
+2025-05-07 16:24:27,258 - INFO - Response: 200
+2025-05-07 16:24:29,262 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/b14ed0f4-cb6b-4e33-8f78-49225bbc41d7
+2025-05-07 16:24:29,265 - INFO - Response: 200
+2025-05-07 16:25:26,423 - INFO - Shutting down the application...
+2025-05-07 16:25:26,425 - INFO - Disconnected from the database
+2025-05-07 16:25:26,426 - INFO - Application shut down successfully.
+2025-05-07 16:29:17,338 - INFO - Starting up the application...
+2025-05-07 16:29:17,401 - INFO - Application started up successfully.
+2025-05-07 16:29:31,782 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 16:29:31,783 - INFO - Response: 200
+2025-05-07 16:29:31,785 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 16:29:32,041 - INFO - Response: 200
+2025-05-07 16:29:33,954 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 16:29:33,954 - INFO - Response: 200
+2025-05-07 16:29:33,956 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 16:29:33,959 - INFO - Response: 200
+2025-05-07 16:29:47,983 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 16:29:47,984 - INFO - Response: 200
+2025-05-07 16:29:47,985 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 16:30:29,687 - INFO - Response: 200
+2025-05-07 16:30:31,691 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/result/f07bb20b-a96c-4946-9f76-fcb6c9bf30d2
+2025-05-07 16:30:31,692 - INFO - Response: 200
+2025-05-07 16:30:31,693 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/f07bb20b-a96c-4946-9f76-fcb6c9bf30d2
+2025-05-07 16:30:31,707 - INFO - Response: 200
+2025-05-07 16:31:15,007 - INFO - Shutting down the application...
+2025-05-07 16:31:15,010 - INFO - Disconnected from the database
+2025-05-07 16:31:15,010 - INFO - Application shut down successfully.
+2025-05-07 16:32:08,430 - INFO - Starting up the application...
+2025-05-07 16:32:08,494 - INFO - Application started up successfully.
+2025-05-07 16:32:14,927 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 16:32:14,927 - INFO - Response: 200
+2025-05-07 16:32:14,929 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 16:32:15,202 - INFO - Response: 200
+2025-05-07 16:32:16,804 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 16:32:16,804 - INFO - Response: 200
+2025-05-07 16:32:16,808 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 16:32:16,811 - INFO - Response: 200
+2025-05-07 16:32:28,851 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 16:32:28,851 - INFO - Response: 200
+2025-05-07 16:32:28,854 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 16:32:58,851 - INFO - Response: 200
+2025-05-07 16:33:00,856 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/result/166e4e39-cf5a-4d3b-bcb9-8674add4076b
+2025-05-07 16:33:00,856 - INFO - Response: 200
+2025-05-07 16:33:00,858 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/166e4e39-cf5a-4d3b-bcb9-8674add4076b
+2025-05-07 16:33:00,862 - INFO - Response: 200
+2025-05-07 16:36:42,825 - INFO - Shutting down the application...
+2025-05-07 16:36:42,827 - INFO - Disconnected from the database
+2025-05-07 16:36:42,827 - INFO - Application shut down successfully.
+2025-05-07 17:48:00,262 - INFO - Starting up the application...
+2025-05-07 17:48:00,409 - INFO - Application started up successfully.
+2025-05-07 17:52:28,194 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 17:52:28,194 - INFO - Response: 200
+2025-05-07 17:52:28,198 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 17:52:28,782 - INFO - Response: 200
+2025-05-07 17:52:30,599 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 17:52:30,599 - INFO - Response: 200
+2025-05-07 17:52:30,605 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 17:52:30,612 - INFO - Response: 200
+2025-05-07 17:52:43,929 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze/url
+2025-05-07 17:52:43,930 - INFO - Response: 200
+2025-05-07 17:52:43,934 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze/url
+2025-05-07 17:52:43,937 - INFO - Response: 422
+2025-05-07 17:52:56,775 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze/url
+2025-05-07 17:52:56,778 - INFO - Response: 422
+2025-05-07 17:57:53,006 - INFO - Shutting down the application...
+2025-05-07 17:57:53,009 - INFO - Disconnected from the database
+2025-05-07 17:57:53,009 - INFO - Application shut down successfully.
+2025-05-07 17:58:23,398 - INFO - Starting up the application...
+2025-05-07 17:58:23,520 - INFO - Application started up successfully.
+2025-05-07 17:59:27,425 - INFO - Starting up the application...
+2025-05-07 17:59:27,554 - INFO - Application started up successfully.
+2025-05-07 18:01:58,462 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 18:01:59,018 - INFO - Response: 200
+2025-05-07 18:02:02,158 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 18:02:02,166 - INFO - Response: 200
+2025-05-07 18:02:32,755 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze/url
+2025-05-07 18:02:32,757 - INFO - Response: 422
+2025-05-07 18:03:25,064 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze/url
+2025-05-07 18:03:25,067 - INFO - Response: 200
+2025-05-07 18:03:25,071 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze/url
+2025-05-07 18:03:25,071 - INFO - Response: 422
+2025-05-07 18:07:34,009 - INFO - Shutting down the application...
+2025-05-07 18:07:34,012 - INFO - Disconnected from the database
+2025-05-07 18:07:34,012 - INFO - Application shut down successfully.
+2025-05-07 18:35:30,099 - INFO - Starting up the application...
+2025-05-07 18:35:30,252 - INFO - Application started up successfully.
+2025-05-07 18:36:29,580 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 18:36:29,580 - INFO - Response: 200
+2025-05-07 18:36:29,585 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 18:38:11,392 - INFO - Shutting down the application...
+2025-05-07 18:38:11,397 - INFO - Disconnected from the database
+2025-05-07 18:38:11,397 - INFO - Application shut down successfully.
+2025-05-07 18:39:14,637 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 18:39:14,637 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 18:39:14,637 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 18:39:14,637 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 18:39:14,637 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 18:39:14,637 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 18:39:14,637 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 18:39:14,637 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 18:39:14,637 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 18:39:14,637 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 18:39:14,637 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 18:39:14,653 - INFO - Response: 200
+2025-05-07 18:39:14,653 - INFO - Response: 200
+2025-05-07 18:39:14,653 - INFO - Response: 200
+2025-05-07 18:39:14,653 - INFO - Response: 200
+2025-05-07 18:39:14,653 - INFO - Response: 200
+2025-05-07 18:39:14,653 - INFO - Response: 200
+2025-05-07 18:39:14,653 - INFO - Response: 200
+2025-05-07 18:39:14,653 - INFO - Response: 200
+2025-05-07 18:39:14,653 - INFO - Response: 200
+2025-05-07 18:39:14,653 - INFO - Response: 200
+2025-05-07 18:39:14,653 - INFO - Response: 200
+2025-05-07 18:59:59,484 - INFO - Starting up the application...
+2025-05-07 18:59:59,681 - INFO - Application started up successfully.
+2025-05-07 19:00:12,044 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze/url
+2025-05-07 19:00:12,047 - INFO - Response: 200
+2025-05-07 19:00:12,047 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze/url
+2025-05-07 19:00:24,058 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 19:00:24,058 - INFO - Response: 200
+2025-05-07 19:00:24,062 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 19:00:31,768 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 19:00:31,768 - INFO - Response: 200
+2025-05-07 19:00:31,771 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 19:00:32,375 - INFO - Response: 200
+2025-05-07 19:00:33,739 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 19:00:33,743 - INFO - Response: 200
+2025-05-07 19:00:45,040 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze/url
+2025-05-07 19:01:21,464 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze/url
+2025-05-07 19:04:01,207 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze/url?video_url=https%3A%2F%2Fstorage.googleapis.com%2Fkagglesdsdata%2Fdatasets%2F6248577%2F10125851%2FFaceForensics%252B%252B_C23%2FDeepfakes%2F002_006.mp4%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddatabundle-worker-v2%2540kaggle-161607.iam.gserviceaccount.com%252F20250507%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20250507T115912Z%26X-Goog-Expires%3D345600%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D388251bfc43441f0b1a68c9795ffc5f7a063b8c9b787f16adfec9ecf36d70b3be086095359e300f36515dccdeb9cdd798e5aefe3e5da1839bbc906f06b9300bcc3c8b007382d58151059cf7432a2b67706e1a569eb30a30cb2b20ed95300d6e72cf999fa367d25df3c3317a11d64cbc399a012d97e7eb2cfa835c9227f60cd39627d66e67d9dff2767560f2df53d383a587cb6155781ee58d3afbd9587760dea1729b6117140bed474aee170c13076e765c3582db4d80a6a2bde51b9e7e8a9233bf600084e41f9a6610400cba48f5065705bcf08ad65b6a47318c79df5d45c6ec566eb304d313303eb69f3e4d5d1fd033f959a8af4662533dcd3d5df2a01909a
+2025-05-07 19:04:01,209 - INFO - Response: 401
+2025-05-07 19:05:06,210 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 19:05:06,224 - INFO - Response: 401
+2025-05-07 19:07:10,251 - INFO - Shutting down the application...
+2025-05-07 19:07:10,267 - INFO - Disconnected from the database
+2025-05-07 19:07:10,267 - INFO - Application shut down successfully.
+2025-05-07 19:08:17,560 - INFO - Starting up the application...
+2025-05-07 19:08:17,728 - INFO - Application started up successfully.
+2025-05-07 19:08:19,137 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 19:08:19,687 - INFO - Response: 200
+2025-05-07 19:08:20,915 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 19:08:20,922 - INFO - Response: 200
+2025-05-07 19:13:26,621 - INFO - Shutting down the application...
+2025-05-07 19:13:26,625 - INFO - Disconnected from the database
+2025-05-07 19:13:26,625 - INFO - Application shut down successfully.
+2025-05-07 19:17:19,361 - INFO - Starting up the application...
+2025-05-07 19:17:19,437 - INFO - Application started up successfully.
+2025-05-07 19:17:30,839 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 19:17:30,839 - INFO - Response: 200
+2025-05-07 19:17:30,841 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 19:17:31,098 - INFO - Response: 200
+2025-05-07 19:17:33,122 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 19:17:33,122 - INFO - Response: 200
+2025-05-07 19:17:33,125 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 19:17:33,129 - INFO - Response: 200
+2025-05-07 19:18:03,025 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 19:18:03,026 - INFO - Response: 200
+2025-05-07 19:18:03,028 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 19:18:24,378 - INFO - Response: 200
+2025-05-07 19:18:26,383 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/result/3a3d61f0-e8d0-4438-996f-7e01c98faf35
+2025-05-07 19:18:26,383 - INFO - Response: 200
+2025-05-07 19:18:26,385 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/3a3d61f0-e8d0-4438-996f-7e01c98faf35
+2025-05-07 19:18:26,401 - INFO - Response: 200
+2025-05-07 19:18:37,552 - INFO - Shutting down the application...
+2025-05-07 19:18:37,555 - INFO - Disconnected from the database
+2025-05-07 19:18:37,555 - INFO - Application shut down successfully.
+2025-05-07 19:51:35,065 - INFO - Starting up the application...
+2025-05-07 19:51:35,143 - INFO - Application started up successfully.
+2025-05-07 19:51:51,145 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 19:51:51,145 - INFO - Response: 200
+2025-05-07 19:51:51,147 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 19:51:51,414 - INFO - Response: 200
+2025-05-07 19:51:53,325 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 19:51:53,325 - INFO - Response: 200
+2025-05-07 19:51:53,329 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 19:51:53,334 - INFO - Response: 200
+2025-05-07 19:52:28,991 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 19:52:28,991 - INFO - Response: 200
+2025-05-07 19:52:28,994 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 19:52:54,881 - INFO - Response: 200
+2025-05-07 19:52:56,894 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/result/cca61af3-bf4d-4dbb-bb73-5b4a8e280631
+2025-05-07 19:52:56,894 - INFO - Response: 200
+2025-05-07 19:52:56,896 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/cca61af3-bf4d-4dbb-bb73-5b4a8e280631
+2025-05-07 19:52:56,899 - INFO - Response: 200
+2025-05-07 19:53:12,256 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 19:53:12,260 - INFO - Response: 200
+2025-05-07 19:53:51,564 - INFO - Shutting down the application...
+2025-05-07 19:53:51,566 - INFO - Disconnected from the database
+2025-05-07 19:53:51,566 - INFO - Application shut down successfully.
+2025-05-07 20:00:59,690 - INFO - Starting up the application...
+2025-05-07 20:00:59,752 - INFO - Application started up successfully.
+2025-05-07 20:01:10,015 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 20:01:10,252 - INFO - Response: 200
+2025-05-07 20:01:11,365 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:01:11,365 - INFO - Response: 200
+2025-05-07 20:02:33,934 - INFO - Shutting down the application...
+2025-05-07 20:02:33,937 - INFO - Disconnected from the database
+2025-05-07 20:02:33,937 - INFO - Application shut down successfully.
+2025-05-07 20:03:10,193 - INFO - Starting up the application...
+2025-05-07 20:03:10,264 - INFO - Application started up successfully.
+2025-05-07 20:03:18,300 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 20:03:18,300 - INFO - Response: 200
+2025-05-07 20:03:18,302 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 20:03:18,552 - INFO - Response: 200
+2025-05-07 20:03:20,084 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:03:20,085 - INFO - Response: 200
+2025-05-07 20:03:20,088 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:03:20,092 - INFO - Response: 200
+2025-05-07 20:03:30,592 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 20:03:30,593 - INFO - Response: 200
+2025-05-07 20:03:30,595 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 20:03:51,029 - INFO - Response: 200
+2025-05-07 20:03:53,238 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/result/68ff50de-e023-49c7-a17f-e85b4bbca977
+2025-05-07 20:03:53,239 - INFO - Response: 200
+2025-05-07 20:03:53,241 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/68ff50de-e023-49c7-a17f-e85b4bbca977
+2025-05-07 20:03:53,255 - INFO - Response: 200
+2025-05-07 20:16:41,270 - INFO - Shutting down the application...
+2025-05-07 20:16:41,274 - INFO - Disconnected from the database
+2025-05-07 20:16:41,274 - INFO - Application shut down successfully.
+2025-05-07 20:16:59,233 - INFO - Starting up the application...
+2025-05-07 20:16:59,409 - INFO - Application started up successfully.
+2025-05-07 20:17:06,493 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 20:17:06,493 - INFO - Response: 200
+2025-05-07 20:17:06,493 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 20:17:07,053 - INFO - Response: 200
+2025-05-07 20:17:09,282 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:17:09,282 - INFO - Response: 200
+2025-05-07 20:17:09,289 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:17:09,295 - INFO - Response: 200
+2025-05-07 20:17:27,259 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 20:17:27,259 - INFO - Response: 200
+2025-05-07 20:17:27,264 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 20:17:50,415 - INFO - Response: 200
+2025-05-07 20:17:50,459 - INFO - Shutting down the application...
+2025-05-07 20:17:50,465 - INFO - Disconnected from the database
+2025-05-07 20:17:50,465 - INFO - Application shut down successfully.
+2025-05-07 20:31:43,266 - INFO - Starting up the application...
+2025-05-07 20:31:43,410 - INFO - Application started up successfully.
+2025-05-07 20:31:46,836 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 20:31:46,838 - INFO - Response: 200
+2025-05-07 20:31:46,840 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 20:31:47,397 - INFO - Response: 200
+2025-05-07 20:31:48,661 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:31:48,662 - INFO - Response: 200
+2025-05-07 20:31:48,666 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:31:48,672 - INFO - Response: 200
+2025-05-07 20:31:52,551 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:31:52,557 - INFO - Response: 200
+2025-05-07 20:32:15,730 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:32:15,738 - INFO - Response: 200
+2025-05-07 20:33:24,213 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:33:24,220 - INFO - Response: 200
+2025-05-07 20:33:39,508 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 20:33:39,989 - INFO - Response: 200
+2025-05-07 20:33:41,394 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:33:41,401 - INFO - Response: 200
+2025-05-07 20:34:45,202 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:34:45,209 - INFO - Response: 200
+2025-05-07 20:36:31,802 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:36:31,809 - INFO - Response: 200
+2025-05-07 20:36:46,960 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:36:46,967 - INFO - Response: 200
+2025-05-07 20:47:11,612 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 20:47:11,612 - INFO - Response: 200
+2025-05-07 20:47:11,619 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 20:47:12,107 - INFO - Response: 200
+2025-05-07 20:47:13,447 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:47:13,447 - INFO - Response: 200
+2025-05-07 20:47:13,449 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:47:13,457 - INFO - Response: 200
+2025-05-07 20:47:23,335 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 20:47:23,835 - INFO - Response: 200
+2025-05-07 20:47:25,262 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:47:25,269 - INFO - Response: 200
+2025-05-07 20:47:55,145 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 20:47:55,640 - INFO - Response: 200
+2025-05-07 20:47:56,313 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:47:56,320 - INFO - Response: 200
+2025-05-07 20:48:19,155 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 20:48:19,156 - INFO - Response: 200
+2025-05-07 20:48:19,159 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 20:48:47,064 - INFO - Response: 200
+2025-05-07 20:48:49,250 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/result/ee8ebcac-a455-4660-9f57-8277cfa556e7
+2025-05-07 20:48:49,250 - INFO - Response: 200
+2025-05-07 20:48:49,254 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/ee8ebcac-a455-4660-9f57-8277cfa556e7
+2025-05-07 20:48:49,258 - INFO - Response: 200
+2025-05-07 20:49:04,607 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:49:04,613 - INFO - Response: 200
+2025-05-07 20:49:36,508 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 20:49:37,000 - INFO - Response: 200
+2025-05-07 20:49:38,192 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:49:38,197 - INFO - Response: 200
+2025-05-07 20:50:16,357 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 20:50:16,851 - INFO - Response: 200
+2025-05-07 20:50:19,615 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:50:19,621 - INFO - Response: 200
+2025-05-07 20:53:51,949 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 20:53:52,446 - INFO - Response: 200
+2025-05-07 20:53:53,697 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:53:53,702 - INFO - Response: 200
+2025-05-07 20:54:06,313 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:54:06,320 - INFO - Response: 200
+2025-05-07 20:56:07,847 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 20:56:08,344 - INFO - Response: 200
+2025-05-07 20:56:09,734 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:56:09,742 - INFO - Response: 200
+2025-05-07 20:56:46,217 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 20:57:20,418 - INFO - Response: 200
+2025-05-07 20:57:22,434 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/result/aed3c650-3b27-4db7-8ddf-4ac0e843d206
+2025-05-07 20:57:22,434 - INFO - Response: 200
+2025-05-07 20:57:22,440 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/aed3c650-3b27-4db7-8ddf-4ac0e843d206
+2025-05-07 20:57:22,445 - INFO - Response: 200
+2025-05-07 20:57:35,499 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:57:35,499 - INFO - Response: 200
+2025-05-07 20:57:35,507 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 20:57:35,515 - INFO - Response: 200
+2025-05-07 20:59:16,482 - INFO - Shutting down the application...
+2025-05-07 20:59:16,488 - INFO - Disconnected from the database
+2025-05-07 20:59:16,488 - INFO - Application shut down successfully.
+2025-05-07 21:06:01,718 - INFO - Starting up the application...
+2025-05-07 21:06:01,904 - INFO - Application started up successfully.
+2025-05-07 21:06:02,001 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 21:06:02,001 - INFO - Response: 200
+2025-05-07 21:06:02,006 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 21:06:02,593 - INFO - Response: 200
+2025-05-07 21:06:04,265 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 21:06:04,270 - INFO - Response: 200
+2025-05-07 21:08:21,426 - INFO - Request: GET http://127.0.0.1:8000/api/v1/video/users/1
+2025-05-07 21:08:21,426 - INFO - Response: 401
+2025-05-07 21:08:44,310 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 21:08:44,855 - INFO - Response: 200
+2025-05-07 21:09:08,555 - INFO - Request: GET http://127.0.0.1:8000/api/v1/video/users/2
+2025-05-07 21:09:08,567 - INFO - Response: 400
+2025-05-07 21:09:18,661 - INFO - Request: GET http://127.0.0.1:8000/api/v1/video/users/1
+2025-05-07 21:09:18,666 - INFO - Response: 400
+2025-05-07 21:09:48,703 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 21:10:26,765 - INFO - Response: 200
+2025-05-07 21:13:03,016 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 21:13:03,017 - INFO - Response: 200
+2025-05-07 21:13:03,018 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 21:13:29,582 - INFO - Response: 200
+2025-05-07 21:13:32,238 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/result/4d13d9ff-c131-48d0-87b0-c9e7566c52c4
+2025-05-07 21:13:32,238 - INFO - Response: 200
+2025-05-07 21:13:32,239 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/4d13d9ff-c131-48d0-87b0-c9e7566c52c4
+2025-05-07 21:13:32,253 - INFO - Response: 200
+2025-05-07 21:13:38,763 - INFO - Request: POST http://127.0.0.1:8000/api/v1/analysis/
+2025-05-07 21:13:38,801 - INFO - Response: 400
+2025-05-07 21:14:45,036 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 21:14:45,036 - INFO - Response: 200
+2025-05-07 21:14:45,039 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 21:14:45,042 - INFO - Response: 200
+2025-05-07 21:17:25,505 - INFO - Shutting down the application...
+2025-05-07 21:17:25,507 - INFO - Disconnected from the database
+2025-05-07 21:17:25,507 - INFO - Application shut down successfully.
+2025-05-07 23:03:54,161 - INFO - Starting up the application...
+2025-05-07 23:03:54,329 - INFO - Application started up successfully.
+2025-05-07 23:11:27,347 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 23:11:27,347 - INFO - Response: 200
+2025-05-07 23:11:27,352 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 23:11:36,034 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 23:11:36,035 - INFO - Response: 200
+2025-05-07 23:11:36,039 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 23:11:36,587 - INFO - Response: 200
+2025-05-07 23:11:37,885 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 23:11:37,890 - INFO - Response: 200
+2025-05-07 23:11:46,225 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 23:11:46,232 - INFO - Response: 200
+2025-05-07 23:11:56,486 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 23:11:56,974 - INFO - Response: 200
+2025-05-07 23:11:58,169 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 23:11:58,175 - INFO - Response: 200
+2025-05-07 23:12:02,474 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 23:12:02,481 - INFO - Response: 200
+2025-05-07 23:12:09,596 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 23:12:09,599 - INFO - Response: 200
+2025-05-07 23:12:11,865 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 23:12:11,868 - INFO - Response: 200
+2025-05-07 23:12:20,969 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-07 23:12:21,449 - INFO - Response: 200
+2025-05-07 23:12:22,822 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 23:12:22,827 - INFO - Response: 200
+2025-05-07 23:12:24,923 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 23:12:24,927 - INFO - Response: 200
+2025-05-07 23:12:30,750 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 23:12:30,750 - INFO - Response: 200
+2025-05-07 23:12:30,756 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 23:12:57,283 - INFO - Response: 200
+2025-05-07 23:12:59,295 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/result/82416464-33a0-4a82-9f79-0d7c2a589ebc
+2025-05-07 23:12:59,295 - INFO - Response: 200
+2025-05-07 23:12:59,299 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/82416464-33a0-4a82-9f79-0d7c2a589ebc
+2025-05-07 23:12:59,307 - INFO - Response: 200
+2025-05-07 23:16:04,065 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 23:16:04,073 - INFO - Response: 200
+2025-05-07 23:18:48,277 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 23:18:48,283 - INFO - Response: 200
+2025-05-07 23:18:55,465 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-07 23:20:12,762 - INFO - Response: 200
+2025-05-07 23:20:14,772 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/result/f18835c8-4d29-4300-903b-72d29b1edb94
+2025-05-07 23:20:14,772 - INFO - Response: 200
+2025-05-07 23:20:14,776 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/f18835c8-4d29-4300-903b-72d29b1edb94
+2025-05-07 23:20:14,781 - INFO - Response: 200
+2025-05-07 23:20:14,866 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-07 23:20:14,875 - INFO - Response: 200
+2025-05-07 23:20:32,007 - INFO - Shutting down the application...
+2025-05-07 23:20:32,007 - INFO - Disconnected from the database
+2025-05-07 23:20:32,007 - INFO - Application shut down successfully.
+2025-05-08 00:10:53,035 - INFO - Starting up the application...
+2025-05-08 00:10:53,227 - INFO - Application started up successfully.
+2025-05-08 00:11:00,240 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 00:11:00,240 - INFO - Response: 200
+2025-05-08 00:11:00,246 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 00:11:00,808 - INFO - Response: 200
+2025-05-08 00:11:04,287 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 00:11:04,290 - INFO - Response: 200
+2025-05-08 00:11:04,293 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 00:11:04,300 - INFO - Response: 200
+2025-05-08 00:11:06,700 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 00:11:06,706 - INFO - Response: 200
+2025-05-08 00:11:12,244 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-08 00:11:12,244 - INFO - Response: 200
+2025-05-08 00:11:12,246 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-08 00:11:38,993 - INFO - Response: 200
+2025-05-08 00:11:41,011 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/result/3cd12b7a-326d-4c39-92b8-f6d865061c13
+2025-05-08 00:11:41,011 - INFO - Response: 200
+2025-05-08 00:11:41,014 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/3cd12b7a-326d-4c39-92b8-f6d865061c13
+2025-05-08 00:11:41,033 - INFO - Response: 200
+2025-05-08 00:11:41,136 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 00:11:41,144 - INFO - Response: 200
+2025-05-08 00:11:58,986 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/report/undefined
+2025-05-08 00:11:58,989 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/report/undefined
+2025-05-08 00:11:58,989 - INFO - Response: 200
+2025-05-08 00:11:58,992 - INFO - Response: 200
+2025-05-08 00:11:58,992 - INFO - Request: GET http://127.0.0.1:8000/api/v1/report/undefined
+2025-05-08 00:11:58,992 - INFO - Response: 404
+2025-05-08 00:11:58,997 - INFO - Request: GET http://127.0.0.1:8000/api/v1/report/undefined
+2025-05-08 00:11:58,998 - INFO - Response: 404
+2025-05-08 00:16:22,252 - INFO - Request: POST http://127.0.0.1:8000/api/v1/analysis/
+2025-05-08 00:16:24,313 - INFO - Request: POST http://127.0.0.1:8000/api/v1/analysis/
+2025-05-08 00:20:35,899 - INFO - Shutting down the application...
+2025-05-08 00:20:35,902 - INFO - Disconnected from the database
+2025-05-08 00:20:35,902 - INFO - Application shut down successfully.
+2025-05-08 00:33:34,595 - INFO - Starting up the application...
+2025-05-08 00:33:34,658 - INFO - Application started up successfully.
+2025-05-08 00:33:47,233 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 00:33:47,233 - INFO - Response: 200
+2025-05-08 00:33:47,235 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 00:33:47,498 - INFO - Response: 200
+2025-05-08 00:33:48,695 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 00:33:48,695 - INFO - Response: 200
+2025-05-08 00:33:48,697 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 00:33:48,700 - INFO - Response: 200
+2025-05-08 00:33:50,155 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 00:33:50,158 - INFO - Response: 200
+2025-05-08 00:33:55,293 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-08 00:33:55,293 - INFO - Response: 200
+2025-05-08 00:33:55,295 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-08 00:34:19,061 - INFO - Response: 200
+2025-05-08 00:34:21,066 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/result/5e5d382f-3a27-492a-b728-570f66920a7c
+2025-05-08 00:34:21,067 - INFO - Response: 200
+2025-05-08 00:34:21,067 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/5e5d382f-3a27-492a-b728-570f66920a7c
+2025-05-08 00:34:21,082 - INFO - Response: 200
+2025-05-08 00:34:21,466 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 00:34:21,469 - INFO - Response: 200
+2025-05-08 00:38:46,300 - INFO - Shutting down the application...
+2025-05-08 00:38:46,302 - INFO - Disconnected from the database
+2025-05-08 00:38:46,303 - INFO - Application shut down successfully.
+2025-05-08 00:46:28,192 - INFO - Starting up the application...
+2025-05-08 00:46:28,362 - INFO - Application started up successfully.
+2025-05-08 00:46:35,181 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 00:46:35,182 - INFO - Response: 200
+2025-05-08 00:46:35,184 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 00:46:35,433 - INFO - Response: 200
+2025-05-08 00:46:36,639 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 00:46:36,640 - INFO - Response: 200
+2025-05-08 00:46:36,643 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 00:46:36,648 - INFO - Response: 200
+2025-05-08 00:46:37,795 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 00:46:37,799 - INFO - Response: 200
+2025-05-08 00:46:42,393 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-08 00:46:42,393 - INFO - Response: 200
+2025-05-08 00:46:42,395 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-08 00:47:04,578 - INFO - Response: 200
+2025-05-08 00:47:06,591 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/result/82778dc6-310f-4fb4-a535-8eb060ac78d8
+2025-05-08 00:47:06,594 - INFO - Response: 200
+2025-05-08 00:47:06,595 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/82778dc6-310f-4fb4-a535-8eb060ac78d8
+2025-05-08 00:47:06,610 - INFO - Response: 200
+2025-05-08 00:47:06,677 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 00:47:06,683 - INFO - Response: 200
+2025-05-08 00:48:11,470 - INFO - Shutting down the application...
+2025-05-08 00:48:11,472 - INFO - Disconnected from the database
+2025-05-08 00:48:11,472 - INFO - Application shut down successfully.
+2025-05-08 01:07:10,470 - INFO - Starting up the application...
+2025-05-08 01:07:10,549 - INFO - Application started up successfully.
+2025-05-08 01:07:17,562 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 01:07:17,562 - INFO - Response: 200
+2025-05-08 01:07:17,563 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 01:07:27,794 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 01:07:27,795 - INFO - Response: 200
+2025-05-08 01:07:27,797 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 01:07:28,054 - INFO - Response: 200
+2025-05-08 01:07:29,343 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 01:07:29,349 - INFO - Response: 200
+2025-05-08 01:07:29,361 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/video/users/9
+2025-05-08 01:07:29,361 - INFO - Response: 200
+2025-05-08 01:07:29,364 - INFO - Request: GET http://127.0.0.1:8000/api/v1/video/users/9
+2025-05-08 01:07:29,372 - INFO - Response: 200
+2025-05-08 01:15:14,663 - INFO - Shutting down the application...
+2025-05-08 01:15:14,663 - INFO - Disconnected from the database
+2025-05-08 01:15:14,663 - INFO - Application shut down successfully.
+2025-05-08 01:15:20,850 - INFO - Starting up the application...
+2025-05-08 01:15:20,928 - INFO - Application started up successfully.
+2025-05-08 01:15:28,199 - INFO - Shutting down the application...
+2025-05-08 01:15:28,201 - INFO - Disconnected from the database
+2025-05-08 01:15:28,201 - INFO - Application shut down successfully.
+2025-05-08 01:15:34,356 - INFO - Starting up the application...
+2025-05-08 01:15:34,417 - INFO - Application started up successfully.
+2025-05-08 01:18:07,272 - INFO - Shutting down the application...
+2025-05-08 01:18:07,274 - INFO - Disconnected from the database
+2025-05-08 01:18:07,274 - INFO - Application shut down successfully.
+2025-05-08 01:18:13,333 - INFO - Starting up the application...
+2025-05-08 01:18:13,397 - INFO - Application started up successfully.
+2025-05-08 01:18:38,808 - INFO - Shutting down the application...
+2025-05-08 01:18:38,810 - INFO - Disconnected from the database
+2025-05-08 01:18:38,810 - INFO - Application shut down successfully.
+2025-05-08 01:27:39,263 - INFO - Starting up the application...
+2025-05-08 01:27:39,343 - INFO - Application started up successfully.
+2025-05-08 01:27:46,657 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 01:27:46,658 - INFO - Response: 200
+2025-05-08 01:27:46,660 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 01:27:46,912 - INFO - Response: 200
+2025-05-08 01:27:48,149 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 01:27:48,149 - INFO - Response: 200
+2025-05-08 01:27:48,155 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 01:27:48,159 - INFO - Response: 200
+2025-05-08 01:27:48,171 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/video/users/9
+2025-05-08 01:27:48,173 - INFO - Response: 200
+2025-05-08 01:27:48,174 - INFO - Request: GET http://127.0.0.1:8000/api/v1/video/users/9
+2025-05-08 01:27:48,182 - INFO - Response: 400
+2025-05-08 01:30:16,708 - INFO - Shutting down the application...
+2025-05-08 01:30:16,711 - INFO - Disconnected from the database
+2025-05-08 01:30:16,711 - INFO - Application shut down successfully.
+2025-05-08 01:30:22,887 - INFO - Starting up the application...
+2025-05-08 01:30:22,953 - INFO - Application started up successfully.
+2025-05-08 01:30:28,926 - INFO - Starting up the application...
+2025-05-08 01:30:28,985 - INFO - Application started up successfully.
+2025-05-08 01:30:42,173 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 01:30:42,415 - INFO - Response: 401
+2025-05-08 01:30:48,494 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 01:30:48,720 - INFO - Response: 200
+2025-05-08 01:30:50,284 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 01:30:50,288 - INFO - Response: 200
+2025-05-08 01:30:50,292 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/video/users/6
+2025-05-08 01:30:50,293 - INFO - Response: 200
+2025-05-08 01:30:50,295 - INFO - Request: GET http://127.0.0.1:8000/api/v1/video/users/6
+2025-05-08 01:30:50,304 - INFO - Response: 200
+2025-05-08 01:31:17,153 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/register
+2025-05-08 01:31:17,153 - INFO - Response: 200
+2025-05-08 01:31:17,154 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/register
+2025-05-08 01:31:17,387 - INFO - Response: 200
+2025-05-08 01:31:31,175 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 01:31:31,404 - INFO - Response: 200
+2025-05-08 01:31:32,418 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 01:31:32,421 - INFO - Response: 200
+2025-05-08 01:31:32,426 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/video/users/10
+2025-05-08 01:31:32,427 - INFO - Response: 200
+2025-05-08 01:31:32,430 - INFO - Request: GET http://127.0.0.1:8000/api/v1/video/users/10
+2025-05-08 01:31:32,434 - INFO - Response: 400
+2025-05-08 01:34:16,781 - INFO - Shutting down the application...
+2025-05-08 01:34:16,787 - INFO - Disconnected from the database
+2025-05-08 01:34:16,787 - INFO - Application shut down successfully.
+2025-05-08 02:05:10,878 - INFO - Starting up the application...
+2025-05-08 02:05:11,044 - INFO - Application started up successfully.
+2025-05-08 02:06:05,946 - INFO - Starting up the application...
+2025-05-08 02:06:06,071 - INFO - Application started up successfully.
+2025-05-08 02:07:21,143 - INFO - Starting up the application...
+2025-05-08 02:07:21,288 - INFO - Application started up successfully.
+2025-05-08 02:07:29,628 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 02:07:29,633 - INFO - Response: 200
+2025-05-08 02:07:29,635 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 02:07:30,188 - INFO - Response: 200
+2025-05-08 02:07:31,830 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 02:07:31,831 - INFO - Response: 200
+2025-05-08 02:07:31,834 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 02:07:31,840 - INFO - Response: 200
+2025-05-08 02:07:31,868 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/download/count
+2025-05-08 02:07:31,868 - INFO - Response: 200
+2025-05-08 02:07:31,871 - INFO - Request: GET http://127.0.0.1:8000/api/v1/download/count
+2025-05-08 02:13:02,574 - INFO - Shutting down the application...
+2025-05-08 02:13:02,577 - INFO - Disconnected from the database
+2025-05-08 02:13:02,577 - INFO - Application shut down successfully.
+2025-05-08 02:13:45,374 - INFO - Starting up the application...
+2025-05-08 02:13:45,514 - INFO - Application started up successfully.
+2025-05-08 02:14:51,221 - INFO - Shutting down the application...
+2025-05-08 02:14:51,225 - INFO - Disconnected from the database
+2025-05-08 02:14:51,225 - INFO - Application shut down successfully.
+2025-05-08 02:15:18,807 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-08 02:15:18,807 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 02:15:18,807 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 02:15:18,807 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 02:15:18,807 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 02:15:18,807 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 02:15:18,807 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 02:15:18,807 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 02:15:18,807 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 02:15:18,807 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 02:15:18,807 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 02:15:18,807 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 02:15:18,823 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 02:15:18,823 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 02:15:18,823 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 02:15:18,823 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-08 02:15:18,823 - INFO - Response: 200
+2025-05-08 02:15:18,823 - INFO - Response: 200
+2025-05-08 02:15:18,823 - INFO - Response: 200
+2025-05-08 02:15:18,823 - INFO - Response: 200
+2025-05-08 02:15:18,823 - INFO - Response: 200
+2025-05-08 02:15:18,823 - INFO - Response: 200
+2025-05-08 02:15:18,823 - INFO - Response: 200
+2025-05-08 02:15:18,823 - INFO - Response: 200
+2025-05-08 02:15:19,206 - INFO - Response: 200
+2025-05-08 05:22:56,725 - INFO - Starting up the application...
+2025-05-08 05:22:56,878 - INFO - Application started up successfully.
+2025-05-08 05:23:14,376 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 05:23:14,376 - INFO - Response: 200
+2025-05-08 05:23:14,380 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-05-08 05:23:14,965 - INFO - Response: 200
+2025-05-08 05:23:16,852 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 05:23:16,852 - INFO - Response: 200
+2025-05-08 05:23:16,857 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 05:23:16,862 - INFO - Response: 200
+2025-05-08 05:23:16,911 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/download/count
+2025-05-08 05:23:16,911 - INFO - Response: 200
+2025-05-08 05:23:16,915 - INFO - Request: GET http://127.0.0.1:8000/api/v1/download/count
+2025-05-08 05:24:51,958 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 05:24:51,965 - INFO - Response: 200
+2025-05-08 05:24:57,027 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-08 05:24:57,027 - INFO - Response: 200
+2025-05-08 05:24:57,033 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-05-08 05:25:26,695 - INFO - Response: 200
+2025-05-08 05:25:28,706 - INFO - Request: OPTIONS http://127.0.0.1:8000/api/v1/model/result/9cc23ea6-8dfe-4954-a8c0-1d99fbcdc922
+2025-05-08 05:25:28,706 - INFO - Response: 200
+2025-05-08 05:25:28,713 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/9cc23ea6-8dfe-4954-a8c0-1d99fbcdc922
+2025-05-08 05:25:28,734 - INFO - Response: 200
+2025-05-08 05:25:28,882 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 05:25:28,895 - INFO - Response: 200
+2025-05-08 05:26:07,671 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 05:26:07,678 - INFO - Response: 200
+2025-05-08 05:26:07,684 - INFO - Request: GET http://127.0.0.1:8000/api/v1/download/count
+2025-05-08 05:26:12,089 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-05-08 05:26:12,095 - INFO - Response: 200
+2025-05-08 05:26:12,103 - INFO - Request: GET http://127.0.0.1:8000/api/v1/download/count

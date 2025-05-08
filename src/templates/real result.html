@@ -6,7 +6,7 @@
     <title>Real result - LookOut</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="real result.css" />
+    <link rel="stylesheet" href="../templates/css/real result.css" />
   </head>
   <body>
     <div class="main-container">
@@ -28,33 +28,36 @@
 
         <!-- Navigation (Desktop) -->
         <nav class="navbar-links desktop-only">
-          <a href="../../lookout/src/templates/index.html#about" class="nav-link">ABOUT</a>
-          <a href="../../lookout/src/templates/index.html#why-lookout" class="nav-link">WHY LOOKOUT</a>
-          <a href="../../lookout/src/templates/index.html#how-it-works" class="nav-link">HOW IT WORKS</a>
-          <a href="../../lookout/src/templates/index.html#try-it-out" class="nav-link">TRY IT OUT</a>
+          <a href="index.html#about" class="nav-link">ABOUT</a>
+          <a href="index.html#why-lookout" class="nav-link">WHY LOOKOUT</a>
+          <a href="index.html#how-it-works" class="nav-link">HOW IT WORKS</a>
+          <a href="index.html#try-it-out" class="nav-link">TRY IT OUT</a>
         </nav>
 
         <!-- Action Buttons (Desktop) -->
         <div class="header-right desktop-only">
-            <div class="user-name">Alua Kusman</div>
-            <a href="../../lookout/src/templates/profile.html" class="icon-circle" aria-label="Profile">
+            <div class="user-name">??</div>
+
+            <a href="profile.html" class="icon-circle" aria-label="Profile">
               <div class="profile-icon-gradient"></div>
             </a>
+
+
             <div class="icon logout-icon"></div>
         </div>
-        <div class="user-name-mobile">Alua Kusman</div>
+        <div class="user-name-mobile">??</div>
         <!-- Mobile Dropdown -->
         <div class="mobile-nav" id="mobileNav">
           <div style="display: flex; flex-direction: row; justify-content: space-between; width: 100%">
-            <a href="../../lookout/src/templates/profile.html" class="icon-circle" aria-label="Profile">
+            <a href="profile.html" class="icon-circle" aria-label="Profile">
               <div class="profile-icon-gradient"></div>
             </a>
           <div class="icon logout-icon"></div>
           </div>
-          <a href="../../lookout/src/templates/index.html#about">ABOUT</a>
-          <a href="../../lookout/src/templates/index.html#why-lookout">WHY LOOKOUT</a>
-          <a href="../../lookout/src/templates/index.html#how-it-works">HOW IT WORKS</a>
-          <a href="../../lookout/src/templates/index.html#try-it-out">TRY IT OUT</a>
+          <a href="index.html#about">ABOUT</a>
+          <a href="index.html#why-lookout">WHY LOOKOUT</a>
+          <a href="index.html#how-it-works">HOW IT WORKS</a>
+          <a href="index.html#try-it-out">TRY IT OUT</a>
         </div>
       </div>
 <!--        WRITE YOUR CODE HERE  -->
@@ -74,7 +77,7 @@
                           <img src="https://cdn-icons-png.flaticon.com/512/845/845646.png" alt="Check" class="result-icon" />
                           <span class="result-text">REAL</span>
                         </div>
-                        <div class="result-score">CONFIDENCE SCORE: <span>83%</span></div>
+                        <div class="result-score">CONFIDENCE SCORE: <span id="confidence-score">83%</span></div>
                         <button class="download-btn">DOWNLOAD REPORT (PDF)</button>
                       </div>
 
@@ -85,24 +88,25 @@
                   <div class="analysis-block">
                     <h3>DETAILED ANALYSIS</h3>
                     <ul>
-                      <li>Video: Fake (85%)</li>
-                      <li>Audio: Real (92%)</li>
-                      <li>Combined: Fake (8%)</li>
+                      <li>Video: Fake (<strong id="videoConfidence">??%</strong>)</li>
+<!--                      <li>Audio: Real (92%)</li>-->
+<!--                      <li>Combined: Fake (8%)</li>-->
                     </ul>
                   </div>
 
                   <div class="file-info-block">
                     <h3>FILE INFORMATION</h3>
-                      <p><i class="icon-file file-icon"></i>Filename: myvideo.mp4 </p>
-                      <p><i class="icon-file clock-icon"></i>Uploaded: 10 April 2025, 14:32</p></div>
-              </div>
+                    <p><i class="icon-file file-icon"></i>Filename: <strong id="fileName">???</strong></p>
+                    <p><i class="icon-file clock-icon"></i>Uploaded: <strong id="uploadTime">??</strong></p>
+                  </div>
+                </div>
 
                 <div class="upload-buttons">
-                  <a href="../../lookout/src/templates/upload.html">
+                  <a href="upload.html">
                     <button class="btn-outline">ANALYZE ANOTHER VIDEO</button>
                   </a>
-                  <a href="../../lookout/src/templates/profile.html">
-                    <button class="btn-outline">GO TO DASHBOARD</button>
+                  <a href="profile.html">
+                    <button class="btn-outline">GO TO PROFILE</button>
                   </a>
                   
                 </div>
@@ -174,8 +178,9 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
-        <script>
+    <script>
       function toggleMobileMenu() {
         const nav = document.getElementById("mobileNav");
         nav.classList.toggle("show");
@@ -187,6 +192,129 @@
           document.getElementById("mobileNav").classList.remove("show");
         })
       );
+      document.addEventListener("DOMContentLoaded", async () => {
+        try {
+          const token = localStorage.getItem("access_token");
+
+          if (!token) return; // silently fail on other pages
+
+          const response = await fetch("http://127.0.0.1:8000/api/v1/auth/info", {
+            method: "GET",
+            headers: {
+              Authorization: `Bearer ${token}`
+            }
+          });
+
+          if (!response.ok) {
+            console.warn("User token invalid, logging out");
+            localStorage.removeItem("access_token");
+            return;
+          }
+
+          const data = await response.json();
+
+          const userDesktop = document.querySelector(".user-name");
+          const userMobile = document.querySelector(".user-name-mobile");
+
+          if (userDesktop) userDesktop.textContent = data.username;
+          if (userMobile) userMobile.textContent = data.username;
+        } catch (err) {
+          console.error("User fetch error:", err);
+        }
+      });
+
+      document.querySelectorAll(".logout-icon").forEach(btn => {
+        btn.addEventListener("click", () => {
+          localStorage.removeItem("access_token");
+          window.location.href = "login.html";
+        });
+      });
+
+document.querySelector(".download-btn").addEventListener("click", async () => {
+  try {
+    const token = localStorage.getItem("access_token");
+    const urlParams = new URLSearchParams(window.location.search);
+    const confidence = urlParams.get("confidence");
+    const filename = decodeURIComponent(urlParams.get("filename"));
+    const uploaded = decodeURIComponent(urlParams.get("uploaded"));
+    const verdict = window.location.pathname.includes("real") ? "REAL" : "FAKE";
+    const videoId = urlParams.get("video_id"); // <-- make sure this is passed in URL
+
+    // 🔥 Call backend to log the download
+    if (token && videoId) {
+      await fetch("http://127.0.0.1:8000/api/v1/download/log", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`
+        },
+        body: JSON.stringify({
+          video_id: parseInt(videoId),
+          result: verdict,
+          confidence: parseFloat(confidence)
+        })
+      });
+    }
+
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+    const logo = new Image();
+    logo.src = "logo.jpg";
+
+    logo.onload = () => {
+      doc.addImage(logo, "JPEG", 140, 10, 50, 15);
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(18);
+      doc.text("LOOKOUT - Deepfake Analysis Report", 20, 30);
+      doc.setLineWidth(0.5);
+      doc.line(20, 34, 190, 34);
+
+      doc.setFontSize(12);
+      doc.text("Filename:", 20, 50);
+      doc.text("Uploaded:", 20, 60);
+      doc.text("Prediction:", 20, 70);
+      doc.text("Confidence:", 20, 80);
+      doc.text("Generated:", 20, 90);
+
+      doc.setFont("helvetica", "normal");
+      doc.text(filename, 60, 50);
+      doc.text(uploaded, 60, 60);
+      doc.text(verdict, 60, 70);
+      doc.text(`${(confidence * 100).toFixed(2)}%`, 60, 80);
+      doc.text(new Date().toLocaleString(), 60, 90);
+
+      doc.setFontSize(10);
+      doc.setTextColor(150);
+      doc.text("This report was generated using LookOut", 20, 280);
+      doc.save(`report_${filename}.pdf`);
+    };
+  } catch (err) {
+    alert("PDF generation failed");
+    console.error(err);
+  }
+});
+
     </script>
+  <script>
+const params = new URLSearchParams(window.location.search);
+const confidence = params.get("confidence");
+const filename = params.get("filename");
+const uploaded = params.get("uploaded");
+
+document.getElementById("videoConfidence").textContent = confidence ? `${confidence}%` : "N/A";
+document.getElementById("fileName").textContent = filename || "Unknown file";
+document.getElementById("uploadTime").textContent = uploaded ? decodeURIComponent(uploaded) : "Unknown time";
+
+if (confidence) {
+  document.getElementById("confidence-score").textContent = `CONFIDENCE SCORE: ${confidence}%`;
+}
+if (filename) {
+  document.getElementById("file-name").textContent = `Filename: ${filename}`;
+}
+if (uploaded) {
+  document.getElementById("upload-time").textContent = `Uploaded: ${uploaded}`;
+}
+  </script>
+
   </body>
 </html>

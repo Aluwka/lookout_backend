@@ -434,6 +434,7 @@ html, body {
   justify-content: center;
 }
 .logout-icon {
+    cursor: pointer;
     padding: 0.2vw;
     background-image: url('https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-15/3WDzG9nGAk.png');
 }

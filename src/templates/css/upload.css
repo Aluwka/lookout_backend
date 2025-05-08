@@ -433,6 +433,7 @@ html, body {
   justify-content: center;
 }
 .logout-icon {
+    cursor: pointer;
     padding: 0.2vw;
     background-image: url('https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-15/3WDzG9nGAk.png');
 }
@@ -699,4 +700,33 @@ html, body {
   font-size: 1vw;
   letter-spacing: 0.7vw;
   color: white;
+}
+.spinner-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: none;
+}
+
+.spinner {
+  margin: 2vw auto;
+  width: 4.2vw;
+  height: 4vw;
+  border: 0.5vw solid #c0b7e8;
+  border-top: 0.5vw solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loading-text {
+  font-size: 2.2vw;
+  color: white;
+  font-weight: 600;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

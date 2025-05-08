@@ -149,13 +149,20 @@ async def upload_video_file(
         if not user_info:
             raise HTTPException(status_code=404, detail="User not found")
         
-        file_name = f"{user_info.email}/{file.filename}"
-        video_url = await video_use_case.upload_video_file(user_info.id, file.file, file_name)
-        
+        # file_name = f"{user_info.email}/{file.filename}"
+        video_url = await video_use_case.upload_video_file(user_info.id, file.file, f"{user_info.email}/{file.filename}")
+
+        video = VideoCreate(
+            user_id=user_info.id,
+            file_url=video_url,
+            file_name=file.filename  # ✅ now passed to DB
+        )
+        new_video = await video_use_case.create_video(video)
+
         return GeneralResponse[VideoResponse](
             status="success",
             message="Video uploaded successfully",
-            data=video_url
+            data=new_video
         )
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
