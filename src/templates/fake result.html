@@ -251,7 +251,8 @@ document.querySelector(".download-btn").addEventListener("click", async () => {
         body: JSON.stringify({
           video_id: parseInt(videoId),
           result: verdict,
-          confidence: parseFloat(confidence)
+          confidence: parseFloat(confidence),
+          file_name: filename  // ✅ include filename for DB
         })
       });
     }

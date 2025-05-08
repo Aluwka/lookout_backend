@@ -215,9 +215,7 @@
       // Fetch user info
       const response = await fetch("http://127.0.0.1:8000/api/v1/auth/info", {
         method: "GET",
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
+        headers: { Authorization: `Bearer ${token}` }
       });
 
       if (!response.ok) {
@@ -234,66 +232,77 @@
       document.querySelector(".user-name").textContent = data.username;
       document.querySelector(".user-name-mobile").textContent = data.username;
       document.querySelector(".profile-header h5:nth-child(1)").textContent = data.email;
-
       const date = new Date(data.created_at);
       document.querySelector(".profile-header h5:nth-child(2)").textContent =
         `Member since: ${date.toLocaleDateString("en-US", { year: 'numeric', month: 'long', day: 'numeric' })}`;
 
-      // Fetch document download count
+      // Default stat box for videos
+      const videoStatBox = document.querySelector(".stats-box .stat-item span");
+      videoStatBox.textContent = "0 videos analyzed";
+
+      // Add doc stat box
       const docStatBox = document.createElement("div");
       docStatBox.className = "stat-item";
-      docStatBox.innerHTML = `<div class="stat-icon"></div><span id="doc-count">Loading...</span>`;
+      docStatBox.innerHTML = `<div class="stat-icon"></div><span id="doc-count">0 documents downloaded</span>`;
       document.querySelector(".stats-box").appendChild(docStatBox);
 
-      const docRes = await fetch("http://127.0.0.1:8000/api/v1/download/count", {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-      const docData = await docRes.json();
-      document.getElementById("doc-count").textContent =
-        `${docData.count} document${docData.count === 1 ? '' : 's'} downloaded`;
-      // Fetch download history
-      const historyRes = await fetch("http://127.0.0.1:8000/api/v1/download/history", {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-      if (historyRes.ok) {
-        const historyData = await historyRes.json();
-        const historyBody = document.getElementById("download-history-body");
+      // Fetch document download count
+      try {
+        const docRes = await fetch("http://127.0.0.1:8000/api/v1/download/count", {
+          headers: { Authorization: `Bearer ${token}` }
+        });
+        if (docRes.ok) {
+          const docData = await docRes.json();
+          document.getElementById("doc-count").textContent =
+            `${docData.count} document${docData.count === 1 ? '' : 's'} downloaded`;
+        }
+      } catch (err) {
+        document.getElementById("doc-count").textContent = "0 documents downloaded";
+      }
 
+      // Fetch download history
+      try {
+        const historyRes = await fetch("http://127.0.0.1:8000/api/v1/download/history", {
+          headers: { Authorization: `Bearer ${token}` }
+        });
+
+        const historyBody = document.getElementById("download-history-body");
         historyBody.innerHTML = "";
 
-        if (historyData.length === 0) {
-          historyBody.innerHTML = `<tr><td colspan="4" style="text-align: center;">No reports downloaded yet.</td></tr>`;
-        } else {
-          historyData.forEach(d => {
-            const row = `
-              <tr>
-                <td>${d.video_id}</td>
-                <td><span class="badge ${d.result.toLowerCase()}">${d.result}</span></td>
-                <td>${(d.confidence * 100).toFixed(2)}%</td>
-                <td>${new Date(d.timestamp).toLocaleString()}</td>
-              </tr>`;
-            historyBody.insertAdjacentHTML("beforeend", row);
-          });
+        if (historyRes.ok) {
+          const historyData = await historyRes.json();
+          if (historyData.length === 0) {
+            historyBody.innerHTML = `<tr><td colspan="4" style="text-align: center;">No reports downloaded yet.</td></tr>`;
+          } else {
+            historyData.forEach(d => {
+              const row = `
+                <tr>
+                  <td>${d.video_id}</td>
+                  <td><span class="badge ${d.result.toLowerCase()}">${d.result}</span></td>
+                  <td>${(d.confidence * 100).toFixed(2)}%</td>
+                  <td>${new Date(d.timestamp).toLocaleString()}</td>
+                </tr>`;
+              historyBody.insertAdjacentHTML("beforeend", row);
+            });
+          }
         }
+      } catch (err) {
+        console.warn("No download history found");
       }
+
       // Fetch user videos
       const videoRes = await fetch(`http://127.0.0.1:8000/api/v1/video/users/${userId}`, {
         method: "GET",
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
+        headers: { Authorization: `Bearer ${token}` }
       });
 
       const tbody = document.querySelector("tbody");
-      const statBox = document.querySelector(".stats-box .stat-item span");
 
       if (videoRes.status === 404) {
-        // No videos
         tbody.innerHTML = `
           <tr>
             <td colspan="4" style="text-align:center; font-style: italic; color: gray;">No videos uploaded yet.</td>
           </tr>`;
-        statBox.textContent = "0 videos analyzed";
         return;
       }
 
@@ -304,8 +313,8 @@
       }
 
       const videos = videoData.data;
-      statBox.textContent = `${videos.length} video${videos.length === 1 ? '' : 's'} analyzed`;
-      tbody.innerHTML = ""; // Clear table
+      videoStatBox.textContent = `${videos.length} video${videos.length === 1 ? '' : 's'} analyzed`;
+      tbody.innerHTML = "";
 
       videos.forEach(video => {
         const row = `
@@ -319,12 +328,10 @@
       });
 
     } catch (err) {
-      console.error("Error:", err);
-      alert("An error occurred while loading profile data.");
+      console.warn("Handled gracefully:", err);
     }
   });
 
-  // Logout logic
   document.querySelectorAll(".logout-icon").forEach(icon => {
     icon.addEventListener("click", () => {
       localStorage.removeItem("access_token");

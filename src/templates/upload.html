@@ -186,12 +186,12 @@
             })
           );
         </script>
+
 <script>
   const dropZone = document.getElementById("drop-zone");
   const fileInput = document.getElementById("fileInput");
   const submitBtn = document.getElementById("submitBtn");
   const clearBtn = document.getElementById("clearBtn");
-  const progressBar = document.getElementById("progressBar");
 
   let selectedFile = null;
 
@@ -242,7 +242,6 @@
       document.getElementById("drop-zone").style.display = "none";
       document.getElementById("spinner-section").style.display = "block";
 
-
       const response = await fetch("http://127.0.0.1:8000/api/v1/model/analyze", {
         method: "POST",
         headers: {
@@ -267,10 +266,28 @@
 
         const verdict = resultData?.data?.result?.prediction?.toLowerCase();
         const confidence = resultData?.data?.result?.confidence;
+        const videoId = resultData?.data?.video_id;
         const now = new Date().toLocaleString();
         const filenameEncoded = encodeURIComponent(selectedFile.name);
         const uploadedEncoded = encodeURIComponent(now);
-       if (verdict === "real") {
+
+        // Save analysis to downloads table
+        await fetch("http://127.0.0.1:8000/api/v1/download/log", {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            video_id: videoId,
+            result: verdict.toUpperCase(),
+            confidence: confidence,
+            file_name: selectedFile.name  // 👈 optional: store actual name if needed
+          })
+        });
+
+        // ✅ Redirect
+        if (verdict === "real") {
           window.location.href = `real result.html?confidence=${confidence}&filename=${filenameEncoded}&uploaded=${uploadedEncoded}`;
         } else if (verdict === "fake") {
           window.location.href = `fake result.html?confidence=${confidence}&filename=${filenameEncoded}&uploaded=${uploadedEncoded}`;
@@ -288,11 +305,11 @@
       alert("Error: " + err.message);
     }
   });
-    document.addEventListener("DOMContentLoaded", async () => {
+
+  document.addEventListener("DOMContentLoaded", async () => {
     try {
       const token = localStorage.getItem("access_token");
-
-      if (!token) return; // silently fail on other pages
+      if (!token) return;
 
       const response = await fetch("http://127.0.0.1:8000/api/v1/auth/info", {
         method: "GET",
@@ -302,18 +319,13 @@
       });
 
       if (!response.ok) {
-        console.warn("User token invalid, logging out");
         localStorage.removeItem("access_token");
         return;
       }
 
       const data = await response.json();
-
-      const userDesktop = document.querySelector(".user-name");
-      const userMobile = document.querySelector(".user-name-mobile");
-
-      if (userDesktop) userDesktop.textContent = data.username;
-      if (userMobile) userMobile.textContent = data.username;
+      document.querySelector(".user-name").textContent = data.username;
+      document.querySelector(".user-name-mobile").textContent = data.username;
     } catch (err) {
       console.error("User fetch error:", err);
     }
@@ -325,8 +337,6 @@
       window.location.href = "login.html";
     });
   });
-
-
 </script>
 
 

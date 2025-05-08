@@ -19,10 +19,15 @@ depends_on: Union[str, Sequence[str], None] = None
 
 
 def upgrade() -> None:
-    """Upgrade schema."""
-    pass
-
+    op.create_table(
+        'downloads',
+        sa.Column('id', sa.Integer, primary_key=True),
+        sa.Column('user_id', sa.Integer, sa.ForeignKey('users.id', ondelete='CASCADE'), nullable=False),
+        sa.Column('video_id', sa.Integer, sa.ForeignKey('videos.id', ondelete='CASCADE'), nullable=False),
+        sa.Column('timestamp', sa.DateTime, server_default=sa.func.now(), nullable=False),
+        sa.Column('result', sa.String(length=10), nullable=False, server_default='FAKE'),
+        sa.Column('confidence', sa.Float, nullable=False, server_default='0')
+    )
 
 def downgrade() -> None:
-    """Downgrade schema."""
-    pass
+    op.drop_table('downloads')

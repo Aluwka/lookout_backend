@@ -33,5 +33,8 @@ class PostgresConnection(Connection, WithConnectionPool):
             logger.error(f"Failed to disconnect from the database: {e}")
             raise e
 
+    async def get_db(self):
+        async with postgres.connection_pool_factory()() as session:
+            yield session
 
 postgres = PostgresConnection(settings)
