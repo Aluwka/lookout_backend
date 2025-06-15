@@ -109,4 +109,4 @@ class ModelInferenceImpl(ModelInference):
 
 
 
-model_inference = ModelInferenceImpl(model_path="models/best_model.pt")
+model_inference = ModelInferenceImpl(model_path="models/best_model_2.pt")
