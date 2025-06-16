@@ -3095,3 +3095,52 @@
 2025-06-16 15:11:43,748 - INFO - Shutting down the application...
 2025-06-16 15:11:43,751 - INFO - Disconnected from the database
 2025-06-16 15:11:43,753 - INFO - Application shut down successfully.
+2025-06-16 15:27:19,648 - INFO - Starting up the application...
+2025-06-16 15:27:19,801 - INFO - Application started up successfully.
+2025-06-16 15:27:34,261 - INFO - Request: GET http://127.0.0.1:8000/login.html
+2025-06-16 15:27:34,347 - INFO - Response: 304
+2025-06-16 15:27:41,296 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-06-16 15:27:41,871 - INFO - Response: 200
+2025-06-16 15:27:43,490 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 15:27:43,497 - INFO - Response: 200
+2025-06-16 15:27:43,510 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/3/history
+2025-06-16 15:27:43,531 - INFO - Response: 200
+2025-06-16 15:27:47,315 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-16 15:27:47,319 - INFO - Response: 200
+2025-06-16 15:27:47,489 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 15:27:47,496 - INFO - Response: 200
+2025-06-16 15:28:30,631 - INFO - Shutting down the application...
+2025-06-16 15:28:30,636 - INFO - Disconnected from the database
+2025-06-16 15:28:30,637 - INFO - Application shut down successfully.
+2025-06-16 15:36:51,429 - INFO - Starting up the application...
+2025-06-16 15:36:51,564 - INFO - Application started up successfully.
+2025-06-16 15:36:58,403 - INFO - Request: GET http://127.0.0.1:8000/login.html
+2025-06-16 15:36:58,494 - INFO - Response: 304
+2025-06-16 15:37:06,103 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-06-16 15:37:06,665 - INFO - Response: 200
+2025-06-16 15:37:08,119 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 15:37:08,126 - INFO - Response: 200
+2025-06-16 15:37:08,143 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/2/history
+2025-06-16 15:37:08,164 - INFO - Response: 200
+2025-06-16 15:37:20,523 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-16 15:37:20,526 - INFO - Response: 200
+2025-06-16 15:37:20,666 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 15:37:20,672 - INFO - Response: 200
+2025-06-16 15:56:34,631 - INFO - Shutting down the application...
+2025-06-16 15:56:34,637 - INFO - Disconnected from the database
+2025-06-16 15:56:34,638 - INFO - Application shut down successfully.
+2025-06-16 15:56:56,431 - INFO - Starting up the application...
+2025-06-16 15:56:56,618 - INFO - Application started up successfully.
+2025-06-16 15:57:03,471 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-06-16 15:57:04,031 - INFO - Response: 200
+2025-06-16 15:57:05,046 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 15:57:05,056 - INFO - Response: 200
+2025-06-16 15:57:05,066 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/3/history
+2025-06-16 15:57:05,086 - INFO - Response: 200
+2025-06-16 15:57:06,197 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-16 15:57:06,280 - INFO - Response: 304
+2025-06-16 15:57:06,327 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 15:57:06,331 - INFO - Response: 200
+2025-06-16 16:00:25,632 - INFO - Shutting down the application...
+2025-06-16 16:00:25,637 - INFO - Disconnected from the database
+2025-06-16 16:00:25,639 - INFO - Application shut down successfully.

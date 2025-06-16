@@ -60,8 +60,12 @@
               <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/QChYT49XhD.png" alt="Upload Icon" />
             </div>
             <p class="click-upload">Click to Upload</p>
-            <p class="drop-file">or <br />drop your file here</p>
-            <p class="mp4-mov-supported">(MP4, MOV supported)</p>
+            <!-- ✅ Wrap these lines -->
+            <div class="upload-hint-texts" id="uploadHintTexts">
+              <p class="drop-file">or <br />drop your file here</p>
+              <p class="mp4-mov-supported">(MP4, MOV supported)</p>
+            </div>
+
           </div>
           <div class="upload-bg">
             <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/54hFLNu7Ph.png" alt="Upload Background" />
@@ -134,6 +138,16 @@
             document.getElementById("mobileNav").classList.remove("show");
           })
   );
+  function hideHintTexts() {
+    const hint = document.getElementById("uploadHintTexts");
+    if (hint) hint.style.display = "none";
+  }
+
+  function showHintTexts() {
+    const hint = document.getElementById("uploadHintTexts");
+    if (hint) hint.style.display = "block";
+  }
+
 
   const dropZone = document.getElementById("drop-zone");
   const fileInput = document.getElementById("fileInput");
@@ -165,6 +179,7 @@
   fileInput.addEventListener("change", (e) => {
     selectedFile = e.target.files[0];
     dropZone.querySelector(".click-upload").textContent = selectedFile.name;
+    hideHintTexts(); // ✅
   });
 
   dropZone.addEventListener("dragover", (e) => {
@@ -200,6 +215,7 @@
       selectedFile = file;
       selectedURL = null;
       dropZone.querySelector(".click-upload").textContent = file.name;
+      hideHintTexts();
     } else if (item.kind === "string" && item.type === "text/uri-list") {
       item.getAsString((url) => {
         if (isDangerousURL(url)) {
@@ -215,6 +231,7 @@
         selectedFile = null;
         selectedURL = url;
         dropZone.querySelector(".click-upload").textContent = url;
+        hideHintTexts();
       });
     } else {
       alert("Unsupported drop item. Please drop a video file or direct video URL.");
@@ -238,13 +255,15 @@
     selectedFile = null;
     selectedURL = pastedData;
     dropZone.querySelector(".click-upload").textContent = pastedData;
+    hideHintTexts();
   });
 
   clearBtn.addEventListener("click", () => {
     selectedFile = null;
-    selectedURL = url;
+    selectedURL = null;
     fileInput.value = "";
     dropZone.querySelector(".click-upload").textContent = "Click to Upload";
+    showHintTexts(); // ✅
   });
 
   submitBtn.addEventListener("click", async () => {
