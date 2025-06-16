@@ -694,6 +694,10 @@ html, body {
   margin-left: 5vw;
   font-size: 1.4vw;
 }
+.file-info-block p strong {
+  word-break: break-word;
+  white-space: normal;
+}
 
 .icon-file {
   width: 1.4vw;
@@ -724,6 +728,30 @@ html, body {
   display: inline-block;
 }
 
+.filename-row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.4vw;
+  margin-left: 5vw;
+  font-size: 1.4vw;
+  color: white;
+  width: 30vw;
+}
+
+.filename-row .label {
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+#fileName {
+  display: inline;
+  max-width: 40vw;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  color: white;
+  font-weight: 600;
+}
 
 .upload-bg img {
   position: absolute;

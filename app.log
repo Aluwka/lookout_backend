@@ -3144,3 +3144,557 @@
 2025-06-16 16:00:25,632 - INFO - Shutting down the application...
 2025-06-16 16:00:25,637 - INFO - Disconnected from the database
 2025-06-16 16:00:25,639 - INFO - Application shut down successfully.
+2025-06-16 16:18:34,243 - INFO - Starting up the application...
+2025-06-16 16:18:34,374 - INFO - Application started up successfully.
+2025-06-16 16:19:04,854 - INFO - Request: GET http://127.0.0.1:8000/favicon.ico
+2025-06-16 16:19:04,857 - INFO - Response: 404
+2025-06-16 16:19:11,192 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-06-16 16:19:11,478 - INFO - Response: 401
+2025-06-16 16:19:17,264 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-06-16 16:19:17,510 - INFO - Response: 200
+2025-06-16 16:19:18,710 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 16:19:18,715 - INFO - Response: 200
+2025-06-16 16:19:18,732 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/3/history
+2025-06-16 16:19:18,761 - INFO - Response: 200
+2025-06-16 16:19:20,015 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-16 16:19:20,075 - INFO - Response: 304
+2025-06-16 16:19:20,100 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 16:19:20,103 - INFO - Response: 200
+2025-06-16 16:19:46,350 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze/url
+2025-06-16 16:20:00,702 - INFO - Response: 200
+2025-06-16 16:20:02,714 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/19b20940-7254-4e59-bc8d-008946707d4b
+2025-06-16 16:20:02,753 - INFO - Response: 200
+2025-06-16 16:20:02,760 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%204%3A20%3A02%20PM
+2025-06-16 16:20:02,762 - INFO - Response: 200
+2025-06-16 16:20:02,864 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 16:20:02,867 - INFO - Response: 200
+2025-06-16 16:20:43,778 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 16:20:43,783 - INFO - Response: 200
+2025-06-16 16:20:43,790 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/3/history
+2025-06-16 16:20:43,794 - INFO - Response: 200
+2025-06-16 16:21:01,121 - INFO - Shutting down the application...
+2025-06-16 16:21:01,126 - INFO - Disconnected from the database
+2025-06-16 16:21:01,126 - INFO - Application shut down successfully.
+2025-06-16 16:38:01,999 - INFO - Starting up the application...
+2025-06-16 16:38:02,059 - INFO - Application started up successfully.
+2025-06-16 16:38:19,581 - INFO - Request: GET http://127.0.0.1:8000/login.html
+2025-06-16 16:38:19,614 - INFO - Response: 304
+2025-06-16 16:38:20,359 - INFO - Request: GET http://127.0.0.1:8000/login.html
+2025-06-16 16:38:20,362 - INFO - Response: 304
+2025-06-16 16:38:21,099 - INFO - Request: GET http://127.0.0.1:8000/login.html
+2025-06-16 16:38:21,099 - INFO - Response: 304
+2025-06-16 16:38:28,617 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-06-16 16:38:28,875 - INFO - Response: 200
+2025-06-16 16:38:29,957 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 16:38:29,961 - INFO - Response: 200
+2025-06-16 16:38:29,968 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/2/history
+2025-06-16 16:38:29,980 - INFO - Response: 200
+2025-06-16 16:38:31,428 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-16 16:38:31,429 - INFO - Response: 304
+2025-06-16 16:38:31,448 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 16:38:31,450 - INFO - Response: 200
+2025-06-16 16:39:27,827 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-06-16 16:39:39,885 - INFO - Response: 200
+2025-06-16 16:39:41,891 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/3e0c0e56-5529-4476-ab3f-eb4e9195c4ee
+2025-06-16 16:39:41,928 - INFO - Response: 200
+2025-06-16 16:39:41,939 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=85.36&filename=video5204449869586002606.mp4&uploaded=6%2F16%2F2025%2C%204%3A39%3A41%20PM
+2025-06-16 16:39:41,941 - INFO - Response: 200
+2025-06-16 16:39:41,992 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 16:39:41,994 - INFO - Response: 200
+2025-06-16 16:39:50,635 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 16:39:50,639 - INFO - Response: 200
+2025-06-16 16:40:12,851 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze/url
+2025-06-16 16:40:24,041 - INFO - Response: 200
+2025-06-16 16:40:26,056 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/b6e75efc-1634-4d24-9c12-39a7971d9ec5
+2025-06-16 16:40:26,056 - INFO - Response: 200
+2025-06-16 16:40:26,073 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%204%3A40%3A26%20PM
+2025-06-16 16:40:26,074 - INFO - Response: 200
+2025-06-16 16:40:26,116 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 16:40:26,119 - INFO - Response: 200
+2025-06-16 16:43:41,847 - INFO - Shutting down the application...
+2025-06-16 16:43:41,850 - INFO - Disconnected from the database
+2025-06-16 16:43:41,850 - INFO - Application shut down successfully.
+2025-06-16 16:47:57,824 - INFO - Starting up the application...
+2025-06-16 16:47:57,883 - INFO - Application started up successfully.
+2025-06-16 16:48:02,408 - INFO - Request: GET http://127.0.0.1:8000/login.html
+2025-06-16 16:48:02,441 - INFO - Response: 304
+2025-06-16 16:48:03,113 - INFO - Request: GET http://127.0.0.1:8000/login.html
+2025-06-16 16:48:03,114 - INFO - Response: 304
+2025-06-16 16:48:03,724 - INFO - Request: GET http://127.0.0.1:8000/login.html
+2025-06-16 16:48:03,726 - INFO - Response: 304
+2025-06-16 16:48:10,057 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-06-16 16:48:10,323 - INFO - Response: 200
+2025-06-16 16:48:14,928 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 16:48:14,934 - INFO - Response: 200
+2025-06-16 16:48:14,940 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/3/history
+2025-06-16 16:48:14,944 - INFO - Response: 200
+2025-06-16 16:48:18,597 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-16 16:48:18,599 - INFO - Response: 304
+2025-06-16 16:48:18,619 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 16:48:18,624 - INFO - Response: 200
+2025-06-16 16:48:51,006 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze/url
+2025-06-16 16:49:03,119 - INFO - Response: 200
+2025-06-16 16:49:05,128 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/38ee1bb5-336f-445c-894e-df93054ca530
+2025-06-16 16:49:05,164 - INFO - Response: 200
+2025-06-16 16:49:05,174 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%204%3A49%3A05%20PM
+2025-06-16 16:49:05,176 - INFO - Response: 200
+2025-06-16 16:49:05,229 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 16:49:05,236 - INFO - Response: 200
+2025-06-16 16:49:21,242 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 16:49:21,246 - INFO - Response: 200
+2025-06-16 16:50:06,260 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-16 16:50:06,261 - INFO - Response: 304
+2025-06-16 16:50:06,275 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 16:50:06,278 - INFO - Response: 200
+2025-06-16 16:50:23,141 - INFO - Shutting down the application...
+2025-06-16 16:50:23,143 - INFO - Disconnected from the database
+2025-06-16 16:50:23,143 - INFO - Application shut down successfully.
+2025-06-16 16:50:30,812 - INFO - Starting up the application...
+2025-06-16 16:50:30,876 - INFO - Application started up successfully.
+2025-06-16 16:50:33,967 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-16 16:50:34,006 - INFO - Response: 200
+2025-06-16 16:50:34,063 - INFO - Request: GET http://127.0.0.1:8000/css/upload.css
+2025-06-16 16:50:34,063 - INFO - Response: 200
+2025-06-16 16:51:19,724 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-16 16:51:19,726 - INFO - Response: 304
+2025-06-16 16:51:19,738 - INFO - Request: GET http://127.0.0.1:8000/css/upload.css
+2025-06-16 16:51:19,740 - INFO - Response: 200
+2025-06-16 16:52:23,663 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-16 16:52:23,664 - INFO - Response: 304
+2025-06-16 16:52:23,678 - INFO - Request: GET http://127.0.0.1:8000/css/upload.css
+2025-06-16 16:52:23,680 - INFO - Response: 200
+2025-06-16 16:52:52,702 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-16 16:52:52,703 - INFO - Response: 304
+2025-06-16 16:52:52,714 - INFO - Request: GET http://127.0.0.1:8000/css/upload.css
+2025-06-16 16:52:52,716 - INFO - Response: 200
+2025-06-16 16:53:09,154 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-16 16:53:09,155 - INFO - Response: 304
+2025-06-16 16:53:09,165 - INFO - Request: GET http://127.0.0.1:8000/css/upload.css
+2025-06-16 16:53:09,167 - INFO - Response: 200
+2025-06-16 16:53:48,496 - INFO - Request: GET http://127.0.0.1:8000/login.html
+2025-06-16 16:53:48,498 - INFO - Response: 200
+2025-06-16 16:53:48,560 - INFO - Request: GET http://127.0.0.1:8000/css/login.css
+2025-06-16 16:53:48,561 - INFO - Response: 200
+2025-06-16 16:54:07,541 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-06-16 16:54:07,803 - INFO - Response: 200
+2025-06-16 16:54:08,891 - INFO - Request: GET http://127.0.0.1:8000/profile.html
+2025-06-16 16:54:08,893 - INFO - Response: 200
+2025-06-16 16:54:08,941 - INFO - Request: GET http://127.0.0.1:8000/css/profile.css
+2025-06-16 16:54:08,941 - INFO - Response: 200
+2025-06-16 16:54:08,974 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 16:54:08,976 - INFO - Response: 200
+2025-06-16 16:54:08,991 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/3/history
+2025-06-16 16:54:09,000 - INFO - Response: 200
+2025-06-16 16:54:10,679 - INFO - Request: GET http://127.0.0.1:8000/css/upload.css
+2025-06-16 16:54:10,679 - INFO - Response: 304
+2025-06-16 16:54:10,685 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 16:54:10,689 - INFO - Response: 200
+2025-06-16 16:54:22,498 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze/url
+2025-06-16 16:54:34,298 - INFO - Response: 200
+2025-06-16 16:54:36,310 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/5af92b37-1392-4cd4-845d-d5b941686bb7
+2025-06-16 16:54:36,352 - INFO - Response: 200
+2025-06-16 16:54:36,362 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%204%3A54%3A36%20PM
+2025-06-16 16:54:36,366 - INFO - Response: 200
+2025-06-16 16:54:36,381 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 16:54:36,383 - INFO - Response: 200
+2025-06-16 16:54:36,625 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 16:54:36,628 - INFO - Response: 200
+2025-06-16 16:56:58,406 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%204%3A54%3A36%20PM
+2025-06-16 16:56:58,407 - INFO - Response: 304
+2025-06-16 16:56:58,417 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 16:56:58,418 - INFO - Response: 200
+2025-06-16 16:56:58,458 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 16:56:58,462 - INFO - Response: 200
+2025-06-16 16:57:18,010 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%204%3A54%3A36%20PM
+2025-06-16 16:57:18,011 - INFO - Response: 304
+2025-06-16 16:57:18,020 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 16:57:18,022 - INFO - Response: 200
+2025-06-16 16:57:18,052 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 16:57:18,056 - INFO - Response: 200
+2025-06-16 16:58:53,599 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%204%3A54%3A36%20PM
+2025-06-16 16:58:53,600 - INFO - Response: 304
+2025-06-16 16:58:53,609 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 16:58:53,610 - INFO - Response: 200
+2025-06-16 16:58:53,638 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 16:58:53,643 - INFO - Response: 200
+2025-06-16 16:59:48,249 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%204%3A54%3A36%20PM
+2025-06-16 16:59:48,250 - INFO - Response: 304
+2025-06-16 16:59:48,260 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 16:59:48,262 - INFO - Response: 200
+2025-06-16 16:59:48,288 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 16:59:48,294 - INFO - Response: 200
+2025-06-16 17:00:33,886 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%204%3A54%3A36%20PM
+2025-06-16 17:00:33,887 - INFO - Response: 304
+2025-06-16 17:00:33,896 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:00:33,897 - INFO - Response: 200
+2025-06-16 17:00:33,928 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:00:33,932 - INFO - Response: 200
+2025-06-16 17:00:54,343 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%204%3A54%3A36%20PM
+2025-06-16 17:00:54,344 - INFO - Response: 304
+2025-06-16 17:00:54,354 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:00:54,356 - INFO - Response: 200
+2025-06-16 17:00:54,383 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:00:54,388 - INFO - Response: 200
+2025-06-16 17:01:19,868 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%204%3A54%3A36%20PM
+2025-06-16 17:01:19,869 - INFO - Response: 304
+2025-06-16 17:01:19,880 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:01:19,881 - INFO - Response: 200
+2025-06-16 17:01:19,912 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:01:19,916 - INFO - Response: 200
+2025-06-16 17:01:50,912 - INFO - Shutting down the application...
+2025-06-16 17:01:50,914 - INFO - Disconnected from the database
+2025-06-16 17:01:50,915 - INFO - Application shut down successfully.
+2025-06-16 17:12:49,372 - INFO - Starting up the application...
+2025-06-16 17:12:49,434 - INFO - Application started up successfully.
+2025-06-16 17:13:04,858 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-06-16 17:13:05,116 - INFO - Response: 200
+2025-06-16 17:13:06,175 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:13:06,178 - INFO - Response: 200
+2025-06-16 17:13:06,191 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/3/history
+2025-06-16 17:13:06,200 - INFO - Response: 200
+2025-06-16 17:13:31,803 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-16 17:13:31,834 - INFO - Response: 200
+2025-06-16 17:13:31,845 - INFO - Request: GET http://127.0.0.1:8000/css/upload.css
+2025-06-16 17:13:31,847 - INFO - Response: 304
+2025-06-16 17:13:31,870 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:13:31,874 - INFO - Response: 200
+2025-06-16 17:13:38,559 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze/url
+2025-06-16 17:13:50,321 - INFO - Response: 200
+2025-06-16 17:13:52,335 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/fc604a8a-c1f2-48c9-8b57-322b3b52396f
+2025-06-16 17:13:52,359 - INFO - Response: 200
+2025-06-16 17:13:52,369 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A13%3A52%20PM
+2025-06-16 17:13:52,370 - INFO - Response: 200
+2025-06-16 17:13:52,387 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:13:52,388 - INFO - Response: 200
+2025-06-16 17:13:52,425 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:13:52,431 - INFO - Response: 200
+2025-06-16 17:14:10,823 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:14:10,828 - INFO - Response: 200
+2025-06-16 17:14:10,832 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/3/history
+2025-06-16 17:14:10,837 - INFO - Response: 200
+2025-06-16 17:17:12,783 - INFO - Shutting down the application...
+2025-06-16 17:17:12,787 - INFO - Disconnected from the database
+2025-06-16 17:17:12,787 - INFO - Application shut down successfully.
+2025-06-16 17:17:40,345 - INFO - Starting up the application...
+2025-06-16 17:17:40,465 - INFO - Application started up successfully.
+2025-06-16 17:17:44,571 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-06-16 17:17:45,135 - INFO - Response: 200
+2025-06-16 17:17:47,178 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:17:47,180 - INFO - Response: 200
+2025-06-16 17:17:47,198 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/2/history
+2025-06-16 17:17:47,216 - INFO - Response: 200
+2025-06-16 17:17:49,482 - INFO - Request: GET http://127.0.0.1:8000/css/upload.css
+2025-06-16 17:17:49,577 - INFO - Response: 304
+2025-06-16 17:17:49,602 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:17:49,615 - INFO - Response: 200
+2025-06-16 17:17:59,811 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze/url
+2025-06-16 17:18:17,666 - INFO - Response: 200
+2025-06-16 17:18:19,685 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/a6d75f78-2c87-4866-ab81-dc70f2337fff
+2025-06-16 17:18:19,712 - INFO - Response: 200
+2025-06-16 17:18:19,730 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A18%3A19%20PM
+2025-06-16 17:18:19,732 - INFO - Response: 200
+2025-06-16 17:18:19,862 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:18:19,866 - INFO - Response: 200
+2025-06-16 17:18:19,921 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:18:19,929 - INFO - Response: 200
+2025-06-16 17:24:36,988 - INFO - Shutting down the application...
+2025-06-16 17:24:36,993 - INFO - Disconnected from the database
+2025-06-16 17:24:36,993 - INFO - Application shut down successfully.
+2025-06-16 17:27:32,883 - INFO - Starting up the application...
+2025-06-16 17:27:33,039 - INFO - Application started up successfully.
+2025-06-16 17:27:34,523 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-06-16 17:27:35,081 - INFO - Response: 200
+2025-06-16 17:27:50,181 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:27:50,189 - INFO - Response: 200
+2025-06-16 17:27:50,201 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/3/history
+2025-06-16 17:27:50,219 - INFO - Response: 200
+2025-06-16 17:28:52,388 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-16 17:28:52,486 - INFO - Response: 304
+2025-06-16 17:28:52,504 - INFO - Request: GET http://127.0.0.1:8000/css/upload.css
+2025-06-16 17:28:52,506 - INFO - Response: 304
+2025-06-16 17:28:52,533 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:28:52,539 - INFO - Response: 200
+2025-06-16 17:29:24,528 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze/url
+2025-06-16 17:29:40,937 - INFO - Response: 200
+2025-06-16 17:29:42,956 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/2c03c6b4-1058-4c20-bcd4-1804b4926dea
+2025-06-16 17:29:42,993 - INFO - Response: 200
+2025-06-16 17:29:43,007 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A29%3A42%20PM
+2025-06-16 17:29:43,008 - INFO - Response: 200
+2025-06-16 17:29:43,138 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:29:43,142 - INFO - Response: 200
+2025-06-16 17:29:43,215 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:29:43,223 - INFO - Response: 200
+2025-06-16 17:32:20,946 - INFO - Shutting down the application...
+2025-06-16 17:32:20,951 - INFO - Disconnected from the database
+2025-06-16 17:32:20,951 - INFO - Application shut down successfully.
+2025-06-16 17:36:31,201 - INFO - Starting up the application...
+2025-06-16 17:36:31,338 - INFO - Application started up successfully.
+2025-06-16 17:37:42,139 - INFO - Request: GET http://127.0.0.1:8000/login.html
+2025-06-16 17:37:42,240 - INFO - Response: 304
+2025-06-16 17:37:44,465 - INFO - Request: GET http://127.0.0.1:8000/favicon.ico
+2025-06-16 17:37:44,468 - INFO - Response: 404
+2025-06-16 17:37:48,131 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-06-16 17:37:48,679 - INFO - Response: 200
+2025-06-16 17:37:50,721 - INFO - Request: GET http://127.0.0.1:8000/profile.html
+2025-06-16 17:37:50,726 - INFO - Response: 304
+2025-06-16 17:37:50,802 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:37:50,808 - INFO - Response: 200
+2025-06-16 17:37:50,830 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/2/history
+2025-06-16 17:37:50,846 - INFO - Response: 200
+2025-06-16 17:37:52,129 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-16 17:37:52,133 - INFO - Response: 200
+2025-06-16 17:37:52,212 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:37:52,218 - INFO - Response: 200
+2025-06-16 17:38:06,301 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze/url
+2025-06-16 17:38:20,953 - INFO - Response: 200
+2025-06-16 17:38:22,963 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/5217657e-6ef0-44cd-9cfb-fc62ae8ddc15
+2025-06-16 17:38:23,008 - INFO - Response: 200
+2025-06-16 17:38:23,023 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A38%3A23%20PM
+2025-06-16 17:38:23,026 - INFO - Response: 200
+2025-06-16 17:38:23,155 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:38:23,157 - INFO - Response: 200
+2025-06-16 17:38:23,239 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:38:23,245 - INFO - Response: 200
+2025-06-16 17:38:46,343 - INFO - Shutting down the application...
+2025-06-16 17:38:46,349 - INFO - Disconnected from the database
+2025-06-16 17:38:46,349 - INFO - Application shut down successfully.
+2025-06-16 17:39:51,919 - INFO - Starting up the application...
+2025-06-16 17:39:52,063 - INFO - Application started up successfully.
+2025-06-16 17:40:11,782 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-06-16 17:40:12,351 - INFO - Response: 200
+2025-06-16 17:40:13,709 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:40:13,715 - INFO - Response: 200
+2025-06-16 17:40:13,757 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/2/history
+2025-06-16 17:40:13,778 - INFO - Response: 200
+2025-06-16 17:40:17,827 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:40:17,835 - INFO - Response: 200
+2025-06-16 17:40:21,365 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze/url
+2025-06-16 17:40:35,694 - INFO - Response: 200
+2025-06-16 17:40:37,712 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/003b21e4-08b2-48f5-9a44-57774f0d7d05
+2025-06-16 17:40:37,753 - INFO - Response: 200
+2025-06-16 17:40:37,767 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:40:37,858 - INFO - Response: 200
+2025-06-16 17:40:37,957 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:40:37,957 - INFO - Response: 200
+2025-06-16 17:40:38,031 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:40:38,035 - INFO - Response: 200
+2025-06-16 17:43:43,413 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:43:43,413 - INFO - Response: 304
+2025-06-16 17:43:43,467 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:43:43,468 - INFO - Response: 200
+2025-06-16 17:43:43,566 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:43:43,573 - INFO - Response: 200
+2025-06-16 17:45:28,711 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:45:28,713 - INFO - Response: 200
+2025-06-16 17:45:28,862 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:45:28,864 - INFO - Response: 304
+2025-06-16 17:45:28,900 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:45:28,905 - INFO - Response: 200
+2025-06-16 17:46:41,598 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:46:41,600 - INFO - Response: 200
+2025-06-16 17:46:41,711 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:46:41,712 - INFO - Response: 304
+2025-06-16 17:46:41,808 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:46:41,815 - INFO - Response: 200
+2025-06-16 17:46:58,155 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:46:58,159 - INFO - Response: 304
+2025-06-16 17:46:58,210 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:46:58,217 - INFO - Response: 200
+2025-06-16 17:47:08,532 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:47:08,536 - INFO - Response: 304
+2025-06-16 17:47:08,558 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:47:08,560 - INFO - Response: 200
+2025-06-16 17:47:08,708 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:47:08,715 - INFO - Response: 200
+2025-06-16 17:47:47,170 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:47:47,172 - INFO - Response: 304
+2025-06-16 17:47:47,198 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:47:47,201 - INFO - Response: 200
+2025-06-16 17:47:47,359 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:47:47,365 - INFO - Response: 200
+2025-06-16 17:49:29,875 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:49:29,881 - INFO - Response: 200
+2025-06-16 17:49:30,056 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:49:30,059 - INFO - Response: 304
+2025-06-16 17:49:30,090 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:49:30,098 - INFO - Response: 200
+2025-06-16 17:49:45,532 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:49:45,535 - INFO - Response: 200
+2025-06-16 17:49:45,675 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:49:45,677 - INFO - Response: 304
+2025-06-16 17:49:45,709 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:49:45,716 - INFO - Response: 200
+2025-06-16 17:50:01,114 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:50:01,118 - INFO - Response: 200
+2025-06-16 17:50:01,275 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:50:01,278 - INFO - Response: 304
+2025-06-16 17:50:01,319 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:50:01,326 - INFO - Response: 200
+2025-06-16 17:50:17,271 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:50:17,273 - INFO - Response: 200
+2025-06-16 17:50:17,440 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:50:17,443 - INFO - Response: 304
+2025-06-16 17:50:17,476 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:50:17,482 - INFO - Response: 200
+2025-06-16 17:50:32,830 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:50:32,832 - INFO - Response: 200
+2025-06-16 17:50:32,988 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:50:32,990 - INFO - Response: 304
+2025-06-16 17:50:33,026 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:50:33,034 - INFO - Response: 200
+2025-06-16 17:50:58,133 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:50:58,137 - INFO - Response: 200
+2025-06-16 17:50:58,248 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:50:58,252 - INFO - Response: 304
+2025-06-16 17:50:58,295 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:50:58,302 - INFO - Response: 200
+2025-06-16 17:51:08,161 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:51:08,164 - INFO - Response: 200
+2025-06-16 17:51:08,355 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:51:08,360 - INFO - Response: 200
+2025-06-16 17:51:17,489 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:51:17,492 - INFO - Response: 200
+2025-06-16 17:51:17,589 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:51:17,593 - INFO - Response: 304
+2025-06-16 17:51:17,684 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:51:17,692 - INFO - Response: 200
+2025-06-16 17:51:58,776 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:51:58,781 - INFO - Response: 200
+2025-06-16 17:51:58,928 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:51:58,930 - INFO - Response: 304
+2025-06-16 17:51:58,965 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:51:58,973 - INFO - Response: 200
+2025-06-16 17:52:10,743 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:52:10,746 - INFO - Response: 200
+2025-06-16 17:52:10,949 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:52:10,956 - INFO - Response: 200
+2025-06-16 17:52:16,804 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:52:16,807 - INFO - Response: 200
+2025-06-16 17:52:16,986 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:52:16,991 - INFO - Response: 200
+2025-06-16 17:52:23,886 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:52:23,889 - INFO - Response: 200
+2025-06-16 17:52:24,041 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:52:24,045 - INFO - Response: 304
+2025-06-16 17:52:24,090 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:52:24,097 - INFO - Response: 200
+2025-06-16 17:52:53,999 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:52:53,999 - INFO - Response: 200
+2025-06-16 17:52:54,165 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:52:54,167 - INFO - Response: 304
+2025-06-16 17:52:54,200 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:52:54,208 - INFO - Response: 200
+2025-06-16 17:53:10,886 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:53:10,888 - INFO - Response: 200
+2025-06-16 17:53:11,069 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:53:11,076 - INFO - Response: 200
+2025-06-16 17:53:46,099 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:53:46,103 - INFO - Response: 200
+2025-06-16 17:53:46,238 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:53:46,241 - INFO - Response: 304
+2025-06-16 17:53:46,276 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:53:46,283 - INFO - Response: 200
+2025-06-16 17:54:32,545 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:54:32,550 - INFO - Response: 200
+2025-06-16 17:54:32,682 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:54:32,685 - INFO - Response: 200
+2025-06-16 17:54:32,741 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:54:32,749 - INFO - Response: 200
+2025-06-16 17:55:11,860 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:55:11,863 - INFO - Response: 304
+2025-06-16 17:55:11,891 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:55:11,895 - INFO - Response: 200
+2025-06-16 17:55:12,037 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 17:56:38,352 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:56:38,354 - INFO - Response: 304
+2025-06-16 17:56:38,382 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:56:38,386 - INFO - Response: 304
+2025-06-16 17:57:45,524 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:57:45,526 - INFO - Response: 304
+2025-06-16 17:57:45,554 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:57:45,556 - INFO - Response: 200
+2025-06-16 17:58:04,925 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:58:04,928 - INFO - Response: 304
+2025-06-16 17:58:04,959 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:58:04,961 - INFO - Response: 200
+2025-06-16 17:58:18,516 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:58:18,519 - INFO - Response: 304
+2025-06-16 17:58:18,544 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:58:18,547 - INFO - Response: 200
+2025-06-16 17:58:25,788 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:58:25,790 - INFO - Response: 304
+2025-06-16 17:58:25,816 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:58:25,819 - INFO - Response: 200
+2025-06-16 17:58:35,354 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:58:35,356 - INFO - Response: 304
+2025-06-16 17:58:35,381 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:58:35,385 - INFO - Response: 200
+2025-06-16 17:58:58,412 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:58:58,415 - INFO - Response: 304
+2025-06-16 17:58:58,438 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:58:58,442 - INFO - Response: 200
+2025-06-16 17:59:30,084 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 17:59:30,087 - INFO - Response: 304
+2025-06-16 17:59:30,111 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 17:59:30,115 - INFO - Response: 200
+2025-06-16 18:03:06,724 - INFO - Shutting down the application...
+2025-06-16 18:03:06,730 - INFO - Disconnected from the database
+2025-06-16 18:03:06,730 - INFO - Application shut down successfully.
+2025-06-16 18:08:41,877 - INFO - Starting up the application...
+2025-06-16 18:08:42,015 - INFO - Application started up successfully.
+2025-06-16 18:08:45,216 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 18:08:45,299 - INFO - Response: 200
+2025-06-16 18:08:45,405 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 18:08:45,409 - INFO - Response: 200
+2025-06-16 18:09:30,464 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 18:09:30,467 - INFO - Response: 304
+2025-06-16 18:09:30,504 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 18:09:30,508 - INFO - Response: 200
+2025-06-16 18:09:39,537 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 18:09:39,539 - INFO - Response: 304
+2025-06-16 18:09:39,575 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 18:09:39,578 - INFO - Response: 200
+2025-06-16 18:09:51,985 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 18:09:51,988 - INFO - Response: 304
+2025-06-16 18:09:52,016 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 18:09:52,018 - INFO - Response: 200
+2025-06-16 18:10:20,162 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=76.08&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F16%2F2025%2C%205%3A40%3A37%20PM
+2025-06-16 18:10:20,165 - INFO - Response: 304
+2025-06-16 18:10:20,191 - INFO - Request: GET http://127.0.0.1:8000/css/fake result.css
+2025-06-16 18:10:20,193 - INFO - Response: 200
+2025-06-16 18:10:49,109 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-06-16 18:10:49,666 - INFO - Response: 200
+2025-06-16 18:10:50,842 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 18:10:50,849 - INFO - Response: 200
+2025-06-16 18:10:50,895 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/2/history
+2025-06-16 18:10:50,912 - INFO - Response: 200
+2025-06-16 18:10:54,322 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-16 18:10:54,328 - INFO - Response: 304
+2025-06-16 18:10:54,411 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 18:10:54,419 - INFO - Response: 200
+2025-06-16 18:11:07,491 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-06-16 18:11:17,864 - INFO - Response: 200
+2025-06-16 18:11:19,881 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/d3c48717-1235-4910-b3f8-56511bf01cb0
+2025-06-16 18:11:19,923 - INFO - Response: 200
+2025-06-16 18:11:19,935 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=32.60&filename=01__exit_phone_room(real).mp4&uploaded=6%2F16%2F2025%2C%206%3A11%3A19%20PM
+2025-06-16 18:11:19,935 - INFO - Response: 200
+2025-06-16 18:11:20,075 - INFO - Request: GET http://127.0.0.1:8000/css/real result.css
+2025-06-16 18:11:20,078 - INFO - Response: 200
+2025-06-16 18:11:20,143 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 18:11:20,152 - INFO - Response: 200
+2025-06-16 18:11:27,048 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 18:11:27,053 - INFO - Response: 200
+2025-06-16 18:11:27,087 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/2/history
+2025-06-16 18:11:27,093 - INFO - Response: 200
+2025-06-16 18:11:53,779 - INFO - Request: GET http://127.0.0.1:8000/index.html
+2025-06-16 18:11:53,779 - INFO - Response: 304
+2025-06-16 18:11:53,961 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-16 18:11:53,970 - INFO - Response: 200
+2025-06-16 18:22:57,959 - INFO - Request: GET http://127.0.0.1:8000/index.html
+2025-06-16 18:22:57,962 - INFO - Response: 200
+2025-06-16 18:22:58,716 - INFO - Request: GET http://127.0.0.1:8000/index.html
+2025-06-16 18:22:58,719 - INFO - Response: 304
+2025-06-16 18:23:09,764 - INFO - Request: GET http://127.0.0.1:8000/index.html
+2025-06-16 18:23:09,770 - INFO - Response: 304
+2025-06-16 18:23:17,884 - INFO - Request: GET http://127.0.0.1:8000/index.html
+2025-06-16 18:23:17,887 - INFO - Response: 304

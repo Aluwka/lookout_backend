@@ -244,7 +244,7 @@
             <section class="upload-section" id="try-it-out">
               <div class="upload-wrapper">
                  <div class="upload-content" >
-                  <div class="upload-box">
+                   <div class="upload-box" id="home-upload-box">
                     <div class="upload-icon">
                       <img
                         src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/QChYT49XhD.png"
@@ -387,6 +387,16 @@
           document.getElementById("mobileNav").classList.remove("show");
         })
       );
+      document.addEventListener("DOMContentLoaded", () => {
+        const uploadBox = document.getElementById("home-upload-box");
+        if (!uploadBox) return;
+
+        uploadBox.style.cursor = "pointer";
+        uploadBox.addEventListener("click", () => {
+          alert("Please login to analyze the video.");
+          window.location.href = "login.html";
+        });
+      });
     </script>
 
 

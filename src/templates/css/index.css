@@ -41,7 +41,15 @@ html, body {
   background-color: #302c42;
   overflow-x: hidden;
 }
+#home-upload-box {
+  pointer-events: auto;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
 
+#home-upload-box:hover {
+  opacity: 0.75;
+}
 .main-container {
   overflow: hidden;
   /*width: auto;*/
