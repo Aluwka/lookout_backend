@@ -3698,3 +3698,6 @@
 2025-06-16 18:23:09,770 - INFO - Response: 304
 2025-06-16 18:23:17,884 - INFO - Request: GET http://127.0.0.1:8000/index.html
 2025-06-16 18:23:17,887 - INFO - Response: 304
+2025-06-16 18:25:34,937 - INFO - Shutting down the application...
+2025-06-16 18:25:34,942 - INFO - Disconnected from the database
+2025-06-16 18:25:34,942 - INFO - Application shut down successfully.
