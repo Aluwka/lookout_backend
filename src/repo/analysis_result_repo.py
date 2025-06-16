@@ -2,9 +2,10 @@ from contextlib import AbstractAsyncContextManager
 from typing import Callable, List, TypeVar, Type
 
 from sqlalchemy import select
-from src.schemas.analysis_result_schema import AnalysisResultCreate, AnalysisResultUpdate, AnalysisResultResponse
+from src.schemas.analysis_result_schema import AnalysisResultCreate, AnalysisResultUpdate, AnalysisResultResponse, VideoAnalysisHistoryResponse
 from src.utils.model_adapter import model_to_schema
-from src.models.analysis_result_model import AnalysisResultModel
+from src.models.video_model import VideoModel as Video
+from src.models.analysis_result_model import AnalysisResultModel as AnalysisResult
 from src.models.base_model import BaseModel
 from src.usecases.repository import Repository
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -85,5 +86,22 @@ class AnalysisResultRepository(Repository):
             analysis_results = result.scalars().all()
             return [model_to_schema(analysis_result, AnalysisResultResponse) for analysis_result in analysis_results]
         
+    async def get_history_for_user(self, user_id: int):
+        async with self.connection_pool() as session:
+            query = (
+                select(
+                    Video.file_name,
+                    AnalysisResult.prediction,
+                    AnalysisResult.confidence,
+                    AnalysisResult.created_at
+                )
+                .join(AnalysisResult, AnalysisResult.video_id == Video.id)
+                .where(Video.user_id == user_id)
+                .order_by(AnalysisResult.created_at.desc())
+            )
+            result = await session.execute(query)
+            # returns List[Row(file_name=..., prediction=..., etc.)]
+            return result.all()
+        
 
-analysis_result_repository = AnalysisResultRepository(postgres.connection_pool_factory(), AnalysisResultModel)
+analysis_result_repository = AnalysisResultRepository(postgres.connection_pool_factory(), AnalysisResult)

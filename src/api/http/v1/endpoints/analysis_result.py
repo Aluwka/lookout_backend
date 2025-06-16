@@ -4,7 +4,10 @@ from src.schemas.responses.general_response import GeneralResponse
 from src.usecases.analysis_result_usecase import AnalysisResultUseCase, get_analysis_result_use_case
 from src.api.http.dependencies import security
 from typing import List
-
+from src.schemas.analysis_result_schema import VideoAnalysisHistoryResponse
+from sqlalchemy import select
+from src.models.video_model import VideoModel as Video
+from src.models.analysis_result_model import AnalysisResultModel as AnalysisResult
 
 router = APIRouter(prefix="/analysis", tags=["analysis"])
 
@@ -135,3 +138,22 @@ async def get_analysis_results_by_video_id(
         )
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
+    
+@router.get(
+    "/users/{user_id}/history",
+    dependencies=[Depends(security.access_token_required)],
+    response_model=GeneralResponse[List[VideoAnalysisHistoryResponse]]
+)
+async def get_user_history(
+    user_id: int,
+    use_case: AnalysisResultUseCase = Depends(get_analysis_result_use_case),
+):
+    """
+    Get full analysis history for a given user.
+    """
+    records = await use_case.get_history_by_user(user_id)
+    return GeneralResponse(
+        status="success",
+        message="History fetched",
+        data=records
+    )

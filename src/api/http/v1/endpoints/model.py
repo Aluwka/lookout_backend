@@ -14,19 +14,14 @@ class VideoURLRequest(BaseModel):
 
 @router.post("/analyze", response_model=GeneralResponse[ModelSchema])
 async def analyze_video(
-    file: UploadFile = File(...),
-    model_use_case: ModelUseCase = Depends(get_model_use_case),
-    user_use_case: UserUseCase = Depends(get_user_use_case),
-    token_payload: TokenPayload = Depends(security.access_token_required),
+        file: UploadFile = File(...),
+        model_use_case: ModelUseCase = Depends(get_model_use_case),
+        user_use_case: UserUseCase = Depends(get_user_use_case),
+        token_payload: TokenPayload = Depends(security.access_token_required),
 ) -> GeneralResponse[ModelSchema]:
-    """
-    Analyze a video file and return the result.
-    """
     user = await user_use_case.get_user_by_fields(email=token_payload.sub)
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
-    
-    print(f"Received file: {file.filename}")
 
     file_name = f"{user.email}/{file.filename}"
     result = await model_use_case.analyze_video(user_id=user.id, file=file.file, file_name=file_name)
@@ -37,20 +32,22 @@ async def analyze_video(
         data=result
     )
 
-
 @router.post("/analyze/url", response_model=GeneralResponse[ModelSchema])
 async def analyze_video_url(
-    request: VideoURLRequest,
-    model_use_case: ModelUseCase = Depends(get_model_use_case),
-    user_use_case: UserUseCase = Depends(get_user_use_case),
-    token_payload: TokenPayload = Depends(security.access_token_required),
+        request: VideoURLRequest,
+        model_use_case: ModelUseCase = Depends(get_model_use_case),
+        user_use_case: UserUseCase = Depends(get_user_use_case),
+        token_payload: TokenPayload = Depends(security.access_token_required),
 ) -> GeneralResponse[ModelSchema]:
     user = await user_use_case.get_user_by_fields(email=token_payload.sub)
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
 
     video_url = request.video_url
-    result = await model_use_case.analyze_video(user_id=user.id, file=video_url, file_name=video_url)
+    try:
+        result = await model_use_case.analyze_video(user_id=user.id, file=video_url, file_name=video_url)
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
 
     return GeneralResponse[ModelSchema](
         status="success",
@@ -60,12 +57,9 @@ async def analyze_video_url(
 
 @router.get("/result/{task_id}", dependencies=[Depends(security.access_token_required)], response_model=GeneralResponse[ModelSchema])
 async def get_result(
-    task_id: str,
-    use_case: ModelUseCase = Depends(get_model_use_case),
+        task_id: str,
+        use_case: ModelUseCase = Depends(get_model_use_case),
 ) -> GeneralResponse[ModelResultSchema]:
-    """
-    Retrieve the analysis result for a given task ID.
-    """
     try:
         result = await use_case.get_result(task_id)
         if not result:
@@ -77,4 +71,3 @@ async def get_result(
         )
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
-    

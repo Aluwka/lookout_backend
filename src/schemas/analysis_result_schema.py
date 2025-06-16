@@ -1,3 +1,4 @@
+from datetime import datetime
 from pydantic import BaseModel, Field
 from .mixins.id_mixin import IDMixin
 from typing import Optional
@@ -31,3 +32,17 @@ class AnalysisResultResponse(AnalysisResultBase, IDMixin, CreatedAtMixin):
     Schema for responding with analysis result entry details.
     """
     pass
+
+class VideoAnalysisHistoryResponse(BaseModel):
+    """
+    Joined video + analysis_result for profile history.
+    """
+    file_name: Optional[str]  = Field(None, description="Original file name")
+    prediction: str           = Field(..., description="REAL or FAKE")
+    confidence: float         = Field(..., description="0.0–1.0")
+    created_at:  datetime     = Field(..., description="When analysis finished")
+
+    model_config = {
+        "from_attributes": True,
+        "arbitrary_types_allowed": True
+    }

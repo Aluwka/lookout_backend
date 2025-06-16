@@ -1,18 +1,17 @@
 from sqlalchemy.orm import Mapped, mapped_column
-from sqlalchemy import Integer, Float, String, ForeignKey, Column
-from sqlalchemy.sql import func  # ✅ add this
+from sqlalchemy import Integer, Float, String, ForeignKey
+from sqlalchemy.sql import func
 from datetime import datetime
 from .base_model import BaseModel
 
-
-class DownloadModel(Base):
+class DownloadModel(BaseModel):
     __tablename__ = "downloads"
 
-    id = mapped_column(Integer, primary_key=True, index=True)
-    user_id = mapped_column(Integer, nullable=False)
-    video_id = mapped_column(Integer, nullable=False)
-    result = mapped_column(String, nullable=False)
-    confidence = mapped_column(Float, nullable=False)
-    file_name = mapped_column(String, nullable=True)  # ✅ already included
-    download_count = mapped_column(Integer, default=0)  # ✅ already included
-    timestamp = mapped_column(DateTime, server_default=func.now(), nullable=False)
+    id: Mapped[int] = mapped_column(primary_key=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    video_id: Mapped[int] = mapped_column(ForeignKey("videos.id", ondelete="CASCADE"), nullable=False)
+    result: Mapped[str] = mapped_column(String(10), nullable=False, default="FAKE")
+    confidence: Mapped[float] = mapped_column(nullable=False, default=0.0)
+    file_name: Mapped[str] = mapped_column(String(255), nullable=True, default="")  # ✅ Added
+    download_count: Mapped[int] = mapped_column(Integer, nullable=False, default=1)  # ✅ Added
+    timestamp: Mapped[datetime] = mapped_column(server_default=func.now(), nullable=False)

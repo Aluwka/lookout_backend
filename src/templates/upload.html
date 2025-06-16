@@ -1,199 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Upload page - Lookout</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../templates/css/upload.css" />
-  </head>
-  <body>
-    <div class="main-container">
-      <div class="desktop">
-          <div class="vector"></div>
-        <div class="frame" id="header">
-        <!-- Logo -->
-        <div class="logo">
-          <div class="logo-icon"></div>
-          <span class="logo-text">LOOKOUT</span>
-        </div>
-
-        <!-- Hamburger menu (mobile only) -->
-        <div class="hamburger" onclick="toggleMobileMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-        <!-- Navigation (Desktop) -->
-        <nav class="navbar-links desktop-only">
-          <a href="index.html#about" class="nav-link">ABOUT</a>
-          <a href="index.html#why-lookout" class="nav-link">WHY LOOKOUT</a>
-          <a href="index.html#how-it-works" class="nav-link">HOW IT WORKS</a>
-          <a href="index.html#try-it-out" class="nav-link">TRY IT OUT</a>
-        </nav>
-
-        <!-- Action Buttons (Desktop) -->
-        <div class="header-right desktop-only">
-            <div class="user-name">??</div>
-
-            <a href="profile.html" class="icon-circle" aria-label="Profile">
-              <div class="profile-icon-gradient"></div>
-            </a>
-
-
-            <div class="icon logout-icon"></div>
-        </div>
-        <div class="user-name-mobile">??</div>
-        <!-- Mobile Dropdown -->
-        <div class="mobile-nav" id="mobileNav">
-          <div style="display: flex; flex-direction: row; justify-content: space-between; width: 100%">
-            <a href="profile.html" class="icon-circle" aria-label="Profile">
-              <div class="profile-icon-gradient"></div>
-            </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload page - Lookout</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/upload.css" />
+</head>
+<body>
+<div class="main-container">
+  <div class="desktop">
+    <div class="vector"></div>
+    <div class="frame" id="header">
+      <div class="logo">
+        <div class="logo-icon"></div>
+        <span class="logo-text">LOOKOUT</span>
+      </div>
+      <div class="hamburger" onclick="toggleMobileMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <nav class="navbar-links desktop-only">
+        <a href="index.html#about" class="nav-link">ABOUT</a>
+        <a href="index.html#why-lookout" class="nav-link">WHY LOOKOUT</a>
+        <a href="index.html#how-it-works" class="nav-link">HOW IT WORKS</a>
+        <a href="index.html#try-it-out" class="nav-link">TRY IT OUT</a>
+      </nav>
+      <div class="header-right desktop-only">
+        <div class="user-name">??</div>
+        <a href="profile.html" class="icon-circle" aria-label="Profile">
+          <div class="profile-icon-gradient"></div>
+        </a>
+        <div class="icon logout-icon"></div>
+      </div>
+      <div class="user-name-mobile">??</div>
+      <div class="mobile-nav" id="mobileNav">
+        <div style="display: flex; justify-content: space-between; width: 100%">
+          <a href="profile.html" class="icon-circle" aria-label="Profile">
+            <div class="profile-icon-gradient"></div>
+          </a>
           <div class="icon logout-icon"></div>
+        </div>
+        <a href="index.html#about">ABOUT</a>
+        <a href="index.html#why-lookout">WHY LOOKOUT</a>
+        <a href="index.html#how-it-works">HOW IT WORKS</a>
+        <a href="index.html#try-it-out">TRY IT OUT</a>
+      </div>
+    </div>
+
+    <main class="upload-section" id="upload-section">
+      <h1 class="upload-title">ANALYZE YOUR CONTENT IN SECONDS</h1>
+      <p class="upload-subtitle">DROP IT RIGHT HERE AND LET LOOKOUT DO THE REST</p>
+
+      <div class="upload-wrapper">
+        <div class="upload-content" id="uploadContent">
+          <div class="upload-box" id="drop-zone">
+            <input type="file" id="fileInput" accept="video/mp4,video/quicktime" hidden />
+            <div class="upload-icon">
+              <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/QChYT49XhD.png" alt="Upload Icon" />
+            </div>
+            <p class="click-upload">Click to Upload</p>
+            <p class="drop-file">or <br />drop your file here</p>
+            <p class="mp4-mov-supported">(MP4, MOV supported)</p>
           </div>
-          <a href="index.html#about">ABOUT</a>
-          <a href="index.html#why-lookout">WHY LOOKOUT</a>
-          <a href="index.html#how-it-works">HOW IT WORKS</a>
-          <a href="index.html#try-it-out">TRY IT OUT</a>
+          <div class="upload-bg">
+            <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/54hFLNu7Ph.png" alt="Upload Background" />
+          </div>
+          <div class="spinner-section" id="spinner-section" style="display: none;">
+            <div class="spinner"></div>
+            <p class="loading-text">Analyzing your video...</p>
+          </div>
+        </div>
+        <div class="upload-arrow" style="position: absolute; margin-top: 6em; z-index: -2"></div>
+      </div>
+
+      <div style="margin-top: 20px; text-align: center">
+        <div class="upload-buttons mt-3">
+          <button class="btn-outline" id="clearBtn">CLEAR SELECTION</button>
+          <button class="btn-filled" id="submitBtn">VIEW RESULTS</button>
         </div>
       </div>
-<!--        WRITE YOUR CODE HERE  -->
+    </main>
 
-
-
-
-         <!-- ✅ MAIN CONTENT -->
-<main class="upload-section" id="upload-section">
-  <h1 class="upload-title">ANALYZE YOUR CONTENT IN SECONDS</h1>
-  <p class="upload-subtitle">DROP IT RIGHT HERE AND LET LOOKOUT DO THE REST</p>
-
-  <div class="upload-wrapper">
-    <div class="upload-content" id="uploadContent">
-      <div class="upload-box" id="drop-zone">
-        <input type="file" id="fileInput" accept="video/mp4,video/quicktime" hidden />
-        <div class="upload-icon">
-          <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/QChYT49XhD.png" alt="Upload Icon" />
+    <footer class="footer">
+      <div class="footer-background"></div>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="footer-logo-icon"></div>
+          <span class="footer-logo-text">LOOKOUT</span>
         </div>
-        <p class="click-upload">Click to Upload</p>
-        <p class="drop-file">or <br />drop your file here</p>
-        <p class="mp4-mov-supported">(MP4, MOV supported)</p>
+        <div class="footer-divider"></div>
+        <div class="footer-column">
+          <h5><a href="../../lookout/src/templates/index.html#about">About</a></h5>
+          <h5><a href="../../lookout/src/templates/index.html#why-lookout">Why Lookout</a></h5>
+          <h5><a href="../../lookout/src/templates/index.html#how-it-works">How it Works</a></h5>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-column">
+          <h5><a href="../../lookout/src/templates/index.html#faq">F.A.Q</a></h5>
+          <h5><a href="../../lookout/src/templates/index.html#header">Sitemap</a></h5>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-column">
+          <h5>Socialize with Lookout</h5>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/lookoutapp" target="_blank"><img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/c7z2ZSvmCj.png" alt="Facebook" /></a>
+            <a href="https://twitter.com/lookoutapp" target="_blank"><img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/i4Y310fnY6.png" alt="Twitter" /></a>
+            <a href="https://www.linkedin.com/company/lookoutapp" target="_blank"><img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/bQOUO7mF4k.png" alt="LinkedIn" /></a>
+            <a href="https://www.youtube.com/@lookoutapp" target="_blank"><img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/DpEvVZuXOE.png" alt="YouTube" /></a>
+            <a href="https://www.instagram.com/lookoutapp" target="_blank"><img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/M2DwYnSJiQ.png" alt="Instagram" /></a>
+            <a href="https://www.pinterest.com/lookoutapp" target="_blank"><img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-17/ZZaQ5CYZ3H.png" alt="Pinterest" /></a>
+          </div>
+          <div class="footer-button">PROTECT THE TRUTH</div>
+        </div>
       </div>
-      <div class="upload-bg">
-        <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/54hFLNu7Ph.png" alt="Upload Background" />
-      </div>
-      <div class="spinner-section" id="spinner-section">
-        <div class="spinner"></div>
-        <p class="loading-text">Analyzing your video...</p>
-      </div>
-    </div>
-    <div class="upload-arrow" style="position: absolute; margin-top: 6em; z-index: -2"></div>
+      <hr class="footer-line" />
+      <p class="copyright">2025© LOOKOUT - ALL RIGHTS RESERVED</p>
+    </footer>
   </div>
+</div>
 
-  <div style="margin-top: 20px; text-align: center">
-    <div class="upload-buttons mt-3">
-      <button class="btn-outline" id="clearBtn">CLEAR SELECTION</button>
-      <button class="btn-filled" id="submitBtn">VIEW RESULTS</button>
-    </div>
-  </div>
-</main>
-
-<!-- 🔄 Spinner Section -->
-<!--<div class="spinner-section" id="spinner-section">-->
-<!--  <div class="spinner"></div>-->
-<!--  <p class="loading-text">Analyzing your video...</p>-->
-<!--</div>-->
-
-
-
-
-<!--            FOOTER CODE START-->
-            <footer class="footer">
-              <div class="footer-background"></div>
-
-              <div class="footer-content">
-                <div class="footer-logo" >
-                  <div class="footer-logo-icon"></div>
-                  <span class="footer-logo-text">LOOKOUT</span>
-                </div>
-
-                <div class="footer-divider"></div>
-
-                <div class="footer-column">
-                  <h5><a href="../../lookout/src/templates/index.html#about" style="text-decoration: none; color: white">About</a></h5>
-                  <h5><a href="../../lookout/src/templates/index.html#why-lookout" style="text-decoration: none; color: white">Why Lookout</a></h5>
-                  <h5><a href="../../lookout/src/templates/index.html#how-it-works" style="text-decoration: none; color: white">How it Works</a></h5>
-<!--                  <h5><a href="#why-lookout" style="text-decoration: none; color: white">How To</a></h5>-->
-                </div>
-
-                <div class="footer-divider"></div>
-
-                <div class="footer-column">
-                  <h5><a href="../../lookout/src/templates/index.html#faq" style="text-decoration: none; color: white">F.A.Q</a></h5>
-                  <h5><a href="../../lookout/src/templates/index.html#header" style="text-decoration: none; color: white">Sitemap</a></h5>
-<!--                  <h5>Conditions</h5>-->
-<!--                  <h5>Licenses</h5>-->
-                </div>
-
-                <div class="footer-divider"></div>
-
-                <div class="footer-column">
-                  <h5>Socialize with Lookout</h5>
-                  <div class="social-icons">
-                    <a href="https://www.facebook.com/lookoutapp" target="_blank" aria-label="Facebook">
-                      <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/c7z2ZSvmCj.png" alt="Facebook" />
-                    </a>
-                    <a href="https://twitter.com/lookoutapp" target="_blank" aria-label="Twitter">
-                      <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/i4Y310fnY6.png" alt="Twitter" />
-                    </a>
-                    <a href="https://www.linkedin.com/company/lookoutapp" target="_blank" aria-label="LinkedIn">
-                      <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/bQOUO7mF4k.png" alt="LinkedIn" />
-                    </a>
-                    <a href="https://www.youtube.com/@lookoutapp" target="_blank" aria-label="YouTube">
-                      <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/DpEvVZuXOE.png" alt="YouTube" />
-                    </a>
-                    <a href="https://www.instagram.com/lookoutapp" target="_blank" aria-label="Instagram">
-                      <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/M2DwYnSJiQ.png" alt="Instagram" />
-                    </a>
-                    <a href="https://www.pinterest.com/lookoutapp" target="_blank" aria-label="Pinterest">
-                      <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-17/ZZaQ5CYZ3H.png" alt="Pinterest" />
-                    </a>
-                  </div>
-                  <div class="footer-button">PROTECT THE TRUTH</div>
-                </div>
-              </div>
-
-              <hr class="footer-line" />
-              <p class="copyright">2025© LOOKOUT - ALL RIGHTS RESERVED</p>
-            </footer>
-     </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
-        <script>
-          function toggleMobileMenu() {
-            const nav = document.getElementById("mobileNav");
-            nav.classList.toggle("show");
-          }
-
-
-          document.querySelectorAll(".mobile-nav a").forEach(link =>
-            link.addEventListener("click", () => {
-              document.getElementById("mobileNav").classList.remove("show");
-            })
-          );
-        </script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 
 <script>
+  function toggleMobileMenu() {
+    const nav = document.getElementById("mobileNav");
+    nav.classList.toggle("show");
+  }
+
+  document.querySelectorAll(".mobile-nav a").forEach(link =>
+          link.addEventListener("click", () => {
+            document.getElementById("mobileNav").classList.remove("show");
+          })
+  );
+
   const dropZone = document.getElementById("drop-zone");
   const fileInput = document.getElementById("fileInput");
   const submitBtn = document.getElementById("submitBtn");
   const clearBtn = document.getElementById("clearBtn");
+  const MAX_FILE_SIZE_MB = 100;
+  const VALID_FORMATS = ["video/mp4", "video/quicktime"];
+  const VALID_EXTENSIONS = [".mp4", ".mov"];
 
   let selectedFile = null;
+  let selectedURL = null;
+
+  function isValidExtension(filename) {
+    return VALID_EXTENSIONS.some(ext => filename.toLowerCase().endsWith(ext));
+  }
+
+  function isDangerousURL(url) {
+    const invalidSchemes = ["ftp:", "file:", "javascript:"];
+    try {
+      const parsed = new URL(url);
+      return invalidSchemes.includes(parsed.protocol);
+    } catch (e) {
+      return true;
+    }
+  }
 
   dropZone.addEventListener("click", () => fileInput.click());
 
@@ -213,12 +178,71 @@
 
   dropZone.addEventListener("drop", (e) => {
     e.preventDefault();
-    selectedFile = e.dataTransfer.files[0];
-    dropZone.querySelector(".click-upload").textContent = selectedFile.name;
+    dropZone.classList.remove("dragover");
+
+    const items = e.dataTransfer.items;
+    if (items.length === 0) return;
+
+    const item = items[0];
+
+    if (item.kind === "file") {
+      const file = e.dataTransfer.files[0];
+      if (file.size > MAX_FILE_SIZE_MB * 1024 * 1024) {
+        alert(`File is too big. Limit is ${MAX_FILE_SIZE_MB}MB.`);
+        return;
+      }
+
+      if (!VALID_FORMATS.includes(file.type)) {
+        alert("File format is invalid. Please upload a .mp4 or .mov file.");
+        return;
+      }
+
+      selectedFile = file;
+      selectedURL = null;
+      dropZone.querySelector(".click-upload").textContent = file.name;
+    } else if (item.kind === "string" && item.type === "text/uri-list") {
+      item.getAsString((url) => {
+        if (isDangerousURL(url)) {
+          alert("Invalid or unsafe URL. Please check the link and try again.");
+          return;
+        }
+
+        if (!isValidExtension(url) && !url.includes("youtube.com") && !url.includes("youtu.be")) {
+          alert("Only direct .mp4/.mov links or YouTube URLs are supported.");
+          return;
+        }
+
+        selectedFile = null;
+        selectedURL = url;
+        dropZone.querySelector(".click-upload").textContent = url;
+      });
+    } else {
+      alert("Unsupported drop item. Please drop a video file or direct video URL.");
+    }
+  });
+
+  dropZone.addEventListener("paste", (e) => {
+    const pastedData = e.clipboardData.getData("text");
+    if (!pastedData.startsWith("http")) return;
+
+    if (isDangerousURL(pastedData)) {
+      alert("Invalid or unsafe URL. Please check the link and try again.");
+      return;
+    }
+
+    if (!isValidExtension(pastedData) && !pastedData.includes("youtube.com") && !pastedData.includes("youtu.be")) {
+      alert("Only direct .mp4/.mov links or YouTube URLs are supported.");
+      return;
+    }
+
+    selectedFile = null;
+    selectedURL = pastedData;
+    dropZone.querySelector(".click-upload").textContent = pastedData;
   });
 
   clearBtn.addEventListener("click", () => {
     selectedFile = null;
+    selectedURL = url;
     fileInput.value = "";
     dropZone.querySelector(".click-upload").textContent = "Click to Upload";
   });
@@ -231,22 +255,38 @@
       return;
     }
 
-    if (!selectedFile) {
-      alert("Please upload a file first.");
+    if (!selectedFile && !selectedURL) {
+      alert("Please upload a video or paste a URL.");
       return;
     }
 
     try {
-      const body = new FormData();
-      body.append("file", selectedFile);
+      let body;
+      let endpoint;
+
+      if (selectedFile) {
+        body = new FormData();
+        body.append("file", selectedFile);
+        endpoint = "http://127.0.0.1:8000/api/v1/model/analyze";
+      } else if (selectedURL) {
+        body = JSON.stringify({ video_url: selectedURL }); // ✅ correct field name
+        endpoint = "http://127.0.0.1:8000/api/v1/model/analyze/url";
+      } else {
+        alert("Unexpected error: no file or URL selected.");
+        return;
+      }
+
       document.getElementById("drop-zone").style.display = "none";
       document.getElementById("spinner-section").style.display = "block";
 
-      const response = await fetch("http://127.0.0.1:8000/api/v1/model/analyze", {
+      const response = await fetch(endpoint, {
         method: "POST",
-        headers: {
-          Authorization: `Bearer ${token}`
-        },
+        headers: selectedFile
+                ? { Authorization: `Bearer ${token}` }
+                : {
+                  Authorization: `Bearer ${token}`,
+                  "Content-Type": "application/json"
+                },
         body: body
       });
 
@@ -266,31 +306,14 @@
 
         const verdict = resultData?.data?.result?.prediction?.toLowerCase();
         const confidence = resultData?.data?.result?.confidence;
-        const videoId = resultData?.data?.video_id;
-        const now = new Date().toLocaleString();
-        const filenameEncoded = encodeURIComponent(selectedFile.name);
-        const uploadedEncoded = encodeURIComponent(now);
+        const confidencePct = (confidence * 100).toFixed(2);
+        const uploadedEncoded = encodeURIComponent(new Date().toLocaleString());
+        const filenameEncoded = encodeURIComponent(selectedFile?.name || selectedURL);
 
-        // Save analysis to downloads table
-        await fetch("http://127.0.0.1:8000/api/v1/download/log", {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${token}`,
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify({
-            video_id: videoId,
-            result: verdict.toUpperCase(),
-            confidence: confidence,
-            file_name: selectedFile.name  // 👈 optional: store actual name if needed
-          })
-        });
-
-        // ✅ Redirect
         if (verdict === "real") {
-          window.location.href = `real result.html?confidence=${confidence}&filename=${filenameEncoded}&uploaded=${uploadedEncoded}`;
+          window.location.href = `real result.html?confidence=${confidencePct}&filename=${filenameEncoded}&uploaded=${uploadedEncoded}`;
         } else if (verdict === "fake") {
-          window.location.href = `fake result.html?confidence=${confidence}&filename=${filenameEncoded}&uploaded=${uploadedEncoded}`;
+          window.location.href = `fake result.html?confidence=${confidencePct}&filename=${filenameEncoded}&uploaded=${uploadedEncoded}`;
         } else {
           alert("Unexpected result: " + JSON.stringify(resultData));
         }
@@ -300,11 +323,15 @@
         clearInterval(checkInterval);
         alert("Timeout: analysis still pending.");
       }, 30000);
-
     } catch (err) {
-      alert("Error: " + err.message);
+      if (err.message.includes("Failed to fetch")) {
+        alert("URL can’t be processed due to source limits. Try a different link or upload the video.");
+      } else {
+        alert("Error: " + err.message);
+      }
     }
   });
+
 
   document.addEventListener("DOMContentLoaded", async () => {
     try {
@@ -339,6 +366,5 @@
   });
 </script>
 
-
-  </body>
+</body>
 </html>

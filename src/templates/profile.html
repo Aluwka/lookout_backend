@@ -6,7 +6,7 @@
     <title>Profile page - Lookout</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../templates/css/profile.css" />
+    <link rel="stylesheet" href="css/profile.css" />
   </head>
   <body>
     <div class="main-container">
@@ -202,142 +202,86 @@
       );
     </script>
 <script>
-  document.addEventListener("DOMContentLoaded", async () => {
-    try {
-      const token = localStorage.getItem("access_token");
+document.addEventListener("DOMContentLoaded", async () => {
+  const token = localStorage.getItem("access_token");
+  if (!token) return window.location.href = "login.html";
 
-      if (!token) {
-        alert("Please log in to view your profile.");
-        window.location.href = "login.html";
-        return;
-      }
-
-      // Fetch user info
-      const response = await fetch("http://127.0.0.1:8000/api/v1/auth/info", {
-        method: "GET",
-        headers: { Authorization: `Bearer ${token}` }
-      });
-
-      if (!response.ok) {
-        localStorage.removeItem("access_token");
-        alert("Please log in to view your profile.");
-        window.location.href = "login.html";
-        return;
-      }
-
-      const data = await response.json();
-      const userId = data.id;
-
-      // Update profile info
-      document.querySelector(".user-name").textContent = data.username;
-      document.querySelector(".user-name-mobile").textContent = data.username;
-      document.querySelector(".profile-header h5:nth-child(1)").textContent = data.email;
-      const date = new Date(data.created_at);
-      document.querySelector(".profile-header h5:nth-child(2)").textContent =
-        `Member since: ${date.toLocaleDateString("en-US", { year: 'numeric', month: 'long', day: 'numeric' })}`;
-
-      // Default stat box for videos
-      const videoStatBox = document.querySelector(".stats-box .stat-item span");
-      videoStatBox.textContent = "0 videos analyzed";
-
-      // Add doc stat box
-      const docStatBox = document.createElement("div");
-      docStatBox.className = "stat-item";
-      docStatBox.innerHTML = `<div class="stat-icon"></div><span id="doc-count">0 documents downloaded</span>`;
-      document.querySelector(".stats-box").appendChild(docStatBox);
-
-      // Fetch document download count
-      try {
-        const docRes = await fetch("http://127.0.0.1:8000/api/v1/download/count", {
-          headers: { Authorization: `Bearer ${token}` }
-        });
-        if (docRes.ok) {
-          const docData = await docRes.json();
-          document.getElementById("doc-count").textContent =
-            `${docData.count} document${docData.count === 1 ? '' : 's'} downloaded`;
-        }
-      } catch (err) {
-        document.getElementById("doc-count").textContent = "0 documents downloaded";
-      }
-
-      // Fetch download history
-      try {
-        const historyRes = await fetch("http://127.0.0.1:8000/api/v1/download/history", {
-          headers: { Authorization: `Bearer ${token}` }
-        });
-
-        const historyBody = document.getElementById("download-history-body");
-        historyBody.innerHTML = "";
-
-        if (historyRes.ok) {
-          const historyData = await historyRes.json();
-          if (historyData.length === 0) {
-            historyBody.innerHTML = `<tr><td colspan="4" style="text-align: center;">No reports downloaded yet.</td></tr>`;
-          } else {
-            historyData.forEach(d => {
-              const row = `
-                <tr>
-                  <td>${d.video_id}</td>
-                  <td><span class="badge ${d.result.toLowerCase()}">${d.result}</span></td>
-                  <td>${(d.confidence * 100).toFixed(2)}%</td>
-                  <td>${new Date(d.timestamp).toLocaleString()}</td>
-                </tr>`;
-              historyBody.insertAdjacentHTML("beforeend", row);
-            });
-          }
-        }
-      } catch (err) {
-        console.warn("No download history found");
-      }
-
-      // Fetch user videos
-      const videoRes = await fetch(`http://127.0.0.1:8000/api/v1/video/users/${userId}`, {
-        method: "GET",
-        headers: { Authorization: `Bearer ${token}` }
-      });
-
-      const tbody = document.querySelector("tbody");
-
-      if (videoRes.status === 404) {
-        tbody.innerHTML = `
-          <tr>
-            <td colspan="4" style="text-align:center; font-style: italic; color: gray;">No videos uploaded yet.</td>
-          </tr>`;
-        return;
-      }
-
-      const videoData = await videoRes.json();
-
-      if (!videoRes.ok) {
-        throw new Error(videoData.detail || "Failed to fetch videos");
-      }
-
-      const videos = videoData.data;
-      videoStatBox.textContent = `${videos.length} video${videos.length === 1 ? '' : 's'} analyzed`;
-      tbody.innerHTML = "";
-
-      videos.forEach(video => {
-        const row = `
-          <tr>
-            <td>${video.file_name || "Untitled"}</td>
-            <td><span class="badge">—</span></td>
-            <td>—</td>
-            <td>${new Date(video.created_at).toLocaleString()}</td>
-          </tr>`;
-        tbody.insertAdjacentHTML("beforeend", row);
-      });
-
-    } catch (err) {
-      console.warn("Handled gracefully:", err);
-    }
+  // 1) Get user info
+  const infoRes = await fetch("http://127.0.0.1:8000/api/v1/auth/info", {
+    headers: { Authorization: `Bearer ${token}` }
   });
+  if (!infoRes.ok) {
+    localStorage.removeItem("access_token");
+    return window.location.href = "login.html";
+  }
+  const user = await infoRes.json();
+  const userId = user.id;
 
-  document.querySelectorAll(".logout-icon").forEach(icon => {
-    icon.addEventListener("click", () => {
-      localStorage.removeItem("access_token");
-      window.location.href = "login.html";
+  // 2) Render profile header
+  document.querySelector(".user-name").textContent = user.username;
+  document.querySelector(".user-name-mobile").textContent = user.username;
+  document.querySelector(".profile-header h5:nth-child(1)").textContent = user.email;
+  const joined = new Date(user.created_at);
+  document.querySelector(".profile-header h5:nth-child(2)").textContent =
+    `Member since: ${joined.toLocaleDateString("en-US", { year:'numeric', month:'long' })}`;
+
+  // 3) Fetch analysis history
+  const historyRes = await fetch(
+    `http://127.0.0.1:8000/api/v1/analysis/users/${userId}/history`,
+    { headers: { Authorization: `Bearer ${token}` } }
+  );
+  const tbody = document.getElementById("download-history-body");
+  tbody.innerHTML = "";
+
+  if (!historyRes.ok) {
+    tbody.innerHTML = `
+      <tr><td colspan="4" style="text-align:center;color:gray;">
+        No videos analyzed yet.
+      </td></tr>`;
+    document.querySelector(".stats-box .stat-item span")
+            .textContent = "0 videos analyzed";
+    return;
+  }
+
+  const { data: history } = await historyRes.json();
+
+  // 4) Update stats
+  document.querySelector(".stats-box .stat-item span")
+          .textContent = `${history.length} video${history.length===1?'':'s'} analyzed`;
+
+  // 5) Populate table rows
+  history.forEach(item => {
+    // file_name might be the full S3 key—take only the basename
+    const name = item.file_name?.split("/").pop() || "Untitled";
+
+    const date = new Date(item.created_at + "Z").toLocaleString("en-US", {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
     });
+
+    const cls = item.prediction.toLowerCase() === "real" ? "real" : "fake";
+
+    const row = `
+      <tr>
+        <td>${name}</td>
+        <td><span class="badge ${cls}">${item.prediction.toUpperCase()}</span></td>
+        <td>${(item.confidence * 100).toFixed(2)}%</td>
+        <td>${date}</td>
+      </tr>`;
+    tbody.insertAdjacentHTML("beforeend", row);
   });
+});
+
+// Logout handler
+document.querySelectorAll(".logout-icon").forEach(icon =>
+  icon.addEventListener("click", () => {
+    localStorage.removeItem("access_token");
+    window.location.href = "login.html";
+  })
+);
 </script>
 
 
