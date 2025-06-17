@@ -660,6 +660,7 @@ html, body {
   margin-bottom: 1vw;
   position: relative;
   z-index: 17;
+  text-decoration: none;
 }
 
 .footer-column p {
@@ -752,4 +753,19 @@ html, body {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+#detailed-info {
+  text-align: center;
+  margin-top: 1.5vw;
+}
+
+#model-comment {
+  font-weight: 700;
+  color: #4caf50; /* green success */
+  font-size: 1.4vw;
+}
+
+#model-probability {
+  font-size: 1.1vw;
+  color: #aaa;
 }

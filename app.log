@@ -3701,3 +3701,314 @@
 2025-06-16 18:25:34,937 - INFO - Shutting down the application...
 2025-06-16 18:25:34,942 - INFO - Disconnected from the database
 2025-06-16 18:25:34,942 - INFO - Application shut down successfully.
+2025-06-17 10:23:50,274 - INFO - Starting up the application...
+2025-06-17 10:23:50,460 - INFO - Application started up successfully.
+2025-06-17 10:25:00,875 - INFO - Request: GET http://127.0.0.1:8000/login.html
+2025-06-17 10:25:00,958 - INFO - Response: 304
+2025-06-17 10:25:02,237 - INFO - Request: GET http://127.0.0.1:8000/favicon.ico
+2025-06-17 10:25:02,243 - INFO - Response: 404
+2025-06-17 10:30:13,537 - INFO - Shutting down the application...
+2025-06-17 10:30:13,555 - INFO - Disconnected from the database
+2025-06-17 10:30:13,555 - INFO - Application shut down successfully.
+2025-06-17 10:30:32,468 - INFO - Starting up the application...
+2025-06-17 10:30:32,610 - INFO - Application started up successfully.
+2025-06-17 10:30:35,713 - INFO - Request: GET http://127.0.0.1:8000/login.html
+2025-06-17 10:30:35,793 - INFO - Response: 304
+2025-06-17 10:30:36,400 - INFO - Request: GET http://127.0.0.1:8000/login.html
+2025-06-17 10:30:36,403 - INFO - Response: 304
+2025-06-17 10:30:46,154 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-06-17 10:30:46,795 - INFO - Response: 200
+2025-06-17 10:30:48,115 - INFO - Request: GET http://127.0.0.1:8000/profile.html
+2025-06-17 10:30:48,118 - INFO - Response: 304
+2025-06-17 10:30:48,185 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 10:30:48,194 - INFO - Response: 200
+2025-06-17 10:30:48,226 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/3/history
+2025-06-17 10:30:48,250 - INFO - Response: 200
+2025-06-17 10:30:52,419 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-17 10:30:52,422 - INFO - Response: 200
+2025-06-17 10:30:52,588 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 10:30:52,594 - INFO - Response: 200
+2025-06-17 10:31:32,887 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze/url
+2025-06-17 10:31:48,995 - INFO - Response: 200
+2025-06-17 10:31:51,474 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/03c686d4-2431-4af1-bb20-1136e49a3d4d
+2025-06-17 10:31:51,517 - INFO - Response: 200
+2025-06-17 10:31:51,533 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=10000.00&filename=https%3A%2F%2Fwww.youtube.com%2Fshorts%2F_ig0M0th-oI%3Ffeature%3Dshare&uploaded=6%2F17%2F2025%2C%2010%3A31%3A51%20AM&comment=%E2%9C%85%20Based%20on%20the%20analysis%2C%20the%20model%20considers%20this%20video%20to%20be%20authentic%20with%20high%20confidence.&probability=0.0000
+2025-06-17 10:31:51,536 - INFO - Response: 200
+2025-06-17 10:31:51,669 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 10:31:51,677 - INFO - Response: 200
+2025-06-17 10:33:01,928 - INFO - Request: GET http://127.0.0.1:8000/logo.jpg
+2025-06-17 10:33:01,932 - INFO - Response: 304
+2025-06-17 10:34:25,546 - INFO - Shutting down the application...
+2025-06-17 10:34:25,552 - INFO - Disconnected from the database
+2025-06-17 10:34:25,552 - INFO - Application shut down successfully.
+2025-06-17 10:43:43,840 - INFO - Starting up the application...
+2025-06-17 10:43:43,981 - INFO - Application started up successfully.
+2025-06-17 10:43:44,081 - INFO - Request: GET http://127.0.0.1:8000/login.html
+2025-06-17 10:43:44,153 - INFO - Response: 304
+2025-06-17 10:43:54,628 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-06-17 10:43:54,669 - INFO - Response: 401
+2025-06-17 10:44:08,130 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/register
+2025-06-17 10:44:08,692 - INFO - Response: 400
+2025-06-17 10:44:11,146 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/register
+2025-06-17 10:44:11,634 - INFO - Response: 400
+2025-06-17 10:44:19,467 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-06-17 10:44:19,965 - INFO - Response: 200
+2025-06-17 10:44:21,343 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 10:44:21,352 - INFO - Response: 200
+2025-06-17 10:44:21,381 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/7/history
+2025-06-17 10:44:21,397 - INFO - Response: 200
+2025-06-17 10:44:23,652 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-17 10:44:23,656 - INFO - Response: 200
+2025-06-17 10:44:23,831 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 10:44:23,838 - INFO - Response: 200
+2025-06-17 10:44:34,503 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-06-17 10:44:45,809 - INFO - Response: 200
+2025-06-17 10:44:47,821 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/55399aec-0d79-44e0-8ac8-e07e12c7539d
+2025-06-17 10:44:47,862 - INFO - Response: 200
+2025-06-17 10:44:47,876 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=9746.00&filename=01__exit_phone_room(real).mp4&uploaded=6%2F17%2F2025%2C%2010%3A44%3A47%20AM&comment=%E2%9C%85%20Based%20on%20the%20analysis%2C%20the%20model%20considers%20this%20video%20to%20be%20authentic%20with%20high%20confidence.&probability=0.0254
+2025-06-17 10:44:47,878 - INFO - Response: 200
+2025-06-17 10:44:47,978 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 10:44:47,983 - INFO - Response: 200
+2025-06-17 10:44:54,561 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 10:44:54,567 - INFO - Response: 200
+2025-06-17 10:44:59,468 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-06-17 10:45:24,567 - INFO - Response: 200
+2025-06-17 10:45:26,579 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/c777d63c-9e7a-47a7-bb02-8d849501ebfd
+2025-06-17 10:45:26,605 - INFO - Response: 200
+2025-06-17 10:45:26,619 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=5479.00&filename=01_11__talking_against_wall__9229VVZ3(fake).mp4&uploaded=6%2F17%2F2025%2C%2010%3A45%3A26%20AM&comment=%E2%9A%A0%EF%B8%8F%20The%20model%20is%20uncertain%20about%20the%20result.%20We%20recommend%20further%20verification%20for%20greater%20confidence.&probability=0.5479
+2025-06-17 10:45:26,623 - INFO - Response: 200
+2025-06-17 10:45:26,806 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 10:45:26,813 - INFO - Response: 200
+2025-06-17 10:45:35,387 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-17 10:45:35,389 - INFO - Response: 304
+2025-06-17 10:45:35,447 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 10:45:35,454 - INFO - Response: 200
+2025-06-17 10:45:42,053 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-06-17 10:46:07,035 - INFO - Response: 200
+2025-06-17 10:46:09,472 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/93f997fe-b7b3-473f-b0b8-17e8229481e1
+2025-06-17 10:46:09,495 - INFO - Response: 200
+2025-06-17 10:46:09,508 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=6102.00&filename=06_02__talking_against_wall__GH8TGTBS(fake).mp4&uploaded=6%2F17%2F2025%2C%2010%3A46%3A09%20AM&comment=%E2%9C%85%20Based%20on%20the%20analysis%2C%20the%20model%20considers%20this%20video%20to%20be%20authentic%20with%20high%20confidence.&probability=0.3898
+2025-06-17 10:46:09,510 - INFO - Response: 200
+2025-06-17 10:46:09,559 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 10:46:09,566 - INFO - Response: 200
+2025-06-17 10:46:24,316 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-17 10:46:24,318 - INFO - Response: 304
+2025-06-17 10:46:24,370 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 10:46:24,376 - INFO - Response: 200
+2025-06-17 10:46:28,991 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-06-17 10:46:36,203 - INFO - Response: 200
+2025-06-17 10:46:38,211 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/c7ea9f06-32d9-43b9-9f39-212bc58f3a88
+2025-06-17 10:46:38,237 - INFO - Response: 200
+2025-06-17 10:46:38,250 - INFO - Request: GET http://127.0.0.1:8000/fake result.html?confidence=9194.00&filename=id0_id9_0001(fake).mp4&uploaded=6%2F17%2F2025%2C%2010%3A46%3A38%20AM&comment=%F0%9F%9A%A9%20Based%20on%20the%20analysis%2C%20the%20model%20considers%20this%20video%20to%20be%20manipulated%20with%20high%20confidence.&probability=0.9194
+2025-06-17 10:46:38,254 - INFO - Response: 200
+2025-06-17 10:46:38,314 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 10:46:38,320 - INFO - Response: 200
+2025-06-17 10:47:43,158 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-17 10:47:43,162 - INFO - Response: 304
+2025-06-17 10:47:43,220 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 10:47:43,227 - INFO - Response: 200
+2025-06-17 10:47:50,256 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-06-17 10:48:27,306 - INFO - Response: 200
+2025-06-17 10:48:29,316 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/8a796753-2d5f-4b5b-99d7-61d492449b67
+2025-06-17 10:48:29,342 - INFO - Response: 200
+2025-06-17 10:48:29,356 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=9470.00&filename=realvideo(real).mp4&uploaded=6%2F17%2F2025%2C%2010%3A48%3A29%20AM&comment=%E2%9C%85%20Based%20on%20the%20analysis%2C%20the%20model%20considers%20this%20video%20to%20be%20authentic%20with%20high%20confidence.&probability=0.0530
+2025-06-17 10:48:29,359 - INFO - Response: 200
+2025-06-17 10:48:29,442 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 10:48:29,450 - INFO - Response: 200
+2025-06-17 10:48:31,731 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 10:48:31,738 - INFO - Response: 200
+2025-06-17 10:48:37,370 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-06-17 10:48:47,188 - INFO - Response: 200
+2025-06-17 10:48:49,198 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/e02bfde4-802d-48a4-80d9-884b3df0ec66
+2025-06-17 10:48:49,224 - INFO - Response: 200
+2025-06-17 10:48:49,239 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=8570.00&filename=test_video1(real).mp4&uploaded=6%2F17%2F2025%2C%2010%3A48%3A49%20AM&comment=%E2%9C%85%20Based%20on%20the%20analysis%2C%20the%20model%20considers%20this%20video%20to%20be%20authentic%20with%20high%20confidence.&probability=0.1430
+2025-06-17 10:48:49,242 - INFO - Response: 200
+2025-06-17 10:48:49,334 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 10:48:49,341 - INFO - Response: 200
+2025-06-17 10:49:01,766 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 10:49:01,773 - INFO - Response: 200
+2025-06-17 10:49:01,779 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/7/history
+2025-06-17 10:49:01,790 - INFO - Response: 200
+2025-06-17 10:49:25,737 - INFO - Shutting down the application...
+2025-06-17 10:49:25,750 - INFO - Disconnected from the database
+2025-06-17 10:49:25,750 - INFO - Application shut down successfully.
+2025-06-17 11:04:53,918 - INFO - Starting up the application...
+2025-06-17 11:04:53,980 - INFO - Application started up successfully.
+2025-06-17 11:05:07,186 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-17 11:05:07,218 - INFO - Response: 304
+2025-06-17 11:05:07,303 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:05:17,527 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-06-17 11:05:17,786 - INFO - Response: 200
+2025-06-17 11:05:18,815 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:05:18,818 - INFO - Response: 200
+2025-06-17 11:05:18,833 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/7/history
+2025-06-17 11:05:18,844 - INFO - Response: 200
+2025-06-17 11:05:32,503 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:05:32,507 - INFO - Response: 200
+2025-06-17 11:08:31,037 - INFO - Request: GET http://127.0.0.1:8000/index.html
+2025-06-17 11:08:31,039 - INFO - Response: 200
+2025-06-17 11:08:31,773 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-17 11:08:31,775 - INFO - Response: 304
+2025-06-17 11:08:31,800 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:08:31,803 - INFO - Response: 200
+2025-06-17 11:08:49,492 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-06-17 11:09:11,393 - INFO - Response: 200
+2025-06-17 11:09:13,462 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/57c93779-da87-4cc2-a4ff-64c5ecd4221f
+2025-06-17 11:09:13,479 - INFO - Response: 200
+2025-06-17 11:09:13,487 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=6102.00&filename=06_02__talking_against_wall__GH8TGTBS(fake).mp4&uploaded=6%2F17%2F2025%2C%2011%3A09%3A13%20AM&comment=%E2%9C%85%20Based%20on%20the%20analysis%2C%20the%20model%20considers%20this%20video%20to%20be%20authentic%20with%20high%20confidence.&probability=0.3898
+2025-06-17 11:09:13,488 - INFO - Response: 200
+2025-06-17 11:09:13,572 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:09:13,576 - INFO - Response: 200
+2025-06-17 11:10:11,585 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=6102.00&filename=06_02__talking_against_wall__GH8TGTBS(fake).mp4&uploaded=6%2F17%2F2025%2C%2011%3A09%3A13%20AM&comment=%E2%9C%85%20Based%20on%20the%20analysis%2C%20the%20model%20considers%20this%20video%20to%20be%20authentic%20with%20high%20confidence.&probability=0.3898
+2025-06-17 11:10:11,587 - INFO - Response: 304
+2025-06-17 11:10:11,607 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:10:11,609 - INFO - Response: 200
+2025-06-17 11:10:34,081 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:10:34,084 - INFO - Response: 200
+2025-06-17 11:10:35,846 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-17 11:10:35,847 - INFO - Response: 304
+2025-06-17 11:10:35,865 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:10:35,870 - INFO - Response: 200
+2025-06-17 11:11:06,775 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-17 11:11:06,776 - INFO - Response: 200
+2025-06-17 11:11:06,822 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:11:06,825 - INFO - Response: 200
+2025-06-17 11:12:53,804 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-17 11:12:53,805 - INFO - Response: 200
+2025-06-17 11:12:53,901 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:12:53,904 - INFO - Response: 200
+2025-06-17 11:23:49,259 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-17 11:23:49,260 - INFO - Response: 200
+2025-06-17 11:23:49,315 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:24:24,267 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-06-17 11:24:24,481 - INFO - Response: 200
+2025-06-17 11:24:25,502 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:24:25,506 - INFO - Response: 200
+2025-06-17 11:24:25,510 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/3/history
+2025-06-17 11:24:25,516 - INFO - Response: 200
+2025-06-17 11:25:02,699 - INFO - Request: GET http://127.0.0.1:8000/profile.html
+2025-06-17 11:25:02,700 - INFO - Response: 200
+2025-06-17 11:25:02,749 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:25:02,752 - INFO - Response: 200
+2025-06-17 11:25:02,756 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/3/history
+2025-06-17 11:25:02,761 - INFO - Response: 200
+2025-06-17 11:25:13,287 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-17 11:25:13,288 - INFO - Response: 200
+2025-06-17 11:25:13,342 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:25:13,346 - INFO - Response: 200
+2025-06-17 11:25:18,172 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-06-17 11:26:10,016 - INFO - Response: 200
+2025-06-17 11:26:12,030 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/adb5a882-25d3-4690-bbaf-fb29d59fa41a
+2025-06-17 11:26:12,039 - INFO - Response: 200
+2025-06-17 11:26:12,049 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=93.74&filename=21__podium_speech_happy(real).mp4&uploaded=6%2F17%2F2025%2C%2011%3A26%3A12%20AM&comment=%E2%9C%85%20Based%20on%20the%20analysis%2C%20the%20model%20considers%20this%20video%20to%20be%20authentic%20with%20high%20confidence.&probability=0.0626
+2025-06-17 11:26:12,050 - INFO - Response: 200
+2025-06-17 11:26:12,099 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:26:12,101 - INFO - Response: 200
+2025-06-17 11:34:50,176 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=93.74&filename=21__podium_speech_happy(real).mp4&uploaded=6%2F17%2F2025%2C%2011%3A26%3A12%20AM&comment=%E2%9C%85%20Based%20on%20the%20analysis%2C%20the%20model%20considers%20this%20video%20to%20be%20authentic%20with%20high%20confidence.&probability=0.0626
+2025-06-17 11:34:50,176 - INFO - Response: 304
+2025-06-17 11:34:50,229 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:34:50,233 - INFO - Response: 200
+2025-06-17 11:34:55,073 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=93.74&filename=21__podium_speech_happy(real).mp4&uploaded=6%2F17%2F2025%2C%2011%3A26%3A12%20AM&comment=%E2%9C%85%20Based%20on%20the%20analysis%2C%20the%20model%20considers%20this%20video%20to%20be%20authentic%20with%20high%20confidence.&probability=0.0626
+2025-06-17 11:34:55,075 - INFO - Response: 304
+2025-06-17 11:34:55,093 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:34:55,096 - INFO - Response: 200
+2025-06-17 11:35:13,365 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=93.74&filename=21__podium_speech_happy(real).mp4&uploaded=6%2F17%2F2025%2C%2011%3A26%3A12%20AM&comment=%E2%9C%85%20Based%20on%20the%20analysis%2C%20the%20model%20considers%20this%20video%20to%20be%20authentic%20with%20high%20confidence.&probability=0.0626
+2025-06-17 11:35:13,366 - INFO - Response: 304
+2025-06-17 11:35:13,385 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:35:13,388 - INFO - Response: 200
+2025-06-17 11:35:14,611 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=93.74&filename=21__podium_speech_happy(real).mp4&uploaded=6%2F17%2F2025%2C%2011%3A26%3A12%20AM&comment=%E2%9C%85%20Based%20on%20the%20analysis%2C%20the%20model%20considers%20this%20video%20to%20be%20authentic%20with%20high%20confidence.&probability=0.0626
+2025-06-17 11:35:14,612 - INFO - Response: 304
+2025-06-17 11:35:14,628 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:35:14,631 - INFO - Response: 200
+2025-06-17 11:35:15,424 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=93.74&filename=21__podium_speech_happy(real).mp4&uploaded=6%2F17%2F2025%2C%2011%3A26%3A12%20AM&comment=%E2%9C%85%20Based%20on%20the%20analysis%2C%20the%20model%20considers%20this%20video%20to%20be%20authentic%20with%20high%20confidence.&probability=0.0626
+2025-06-17 11:35:15,425 - INFO - Response: 304
+2025-06-17 11:35:15,442 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:35:15,445 - INFO - Response: 200
+2025-06-17 11:35:23,841 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=93.74&filename=21__podium_speech_happy(real).mp4&uploaded=6%2F17%2F2025%2C%2011%3A26%3A12%20AM&comment=%E2%9C%85%20Based%20on%20the%20analysis%2C%20the%20model%20considers%20this%20video%20to%20be%20authentic%20with%20high%20confidence.&probability=0.0626
+2025-06-17 11:35:23,842 - INFO - Response: 304
+2025-06-17 11:35:23,858 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:35:23,861 - INFO - Response: 200
+2025-06-17 11:44:27,622 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=93.74&filename=21__podium_speech_happy(real).mp4&uploaded=6%2F17%2F2025%2C%2011%3A26%3A12%20AM&comment=%E2%9C%85%20Based%20on%20the%20analysis%2C%20the%20model%20considers%20this%20video%20to%20be%20authentic%20with%20high%20confidence.&probability=0.0626
+2025-06-17 11:44:27,625 - INFO - Response: 200
+2025-06-17 11:44:27,865 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:48:05,228 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=93.74&filename=21__podium_speech_happy(real).mp4&uploaded=6%2F17%2F2025%2C%2011%3A26%3A12%20AM&comment=%E2%9C%85%20Based%20on%20the%20analysis%2C%20the%20model%20considers%20this%20video%20to%20be%20authentic%20with%20high%20confidence.&probability=0.0626
+2025-06-17 11:48:05,231 - INFO - Response: 304
+2025-06-17 11:48:26,040 - INFO - Shutting down the application...
+2025-06-17 11:48:26,056 - INFO - Disconnected from the database
+2025-06-17 11:48:26,056 - INFO - Application shut down successfully.
+2025-06-17 11:48:50,250 - INFO - Starting up the application...
+2025-06-17 11:48:50,398 - INFO - Application started up successfully.
+2025-06-17 11:48:58,230 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-06-17 11:48:58,824 - INFO - Response: 200
+2025-06-17 11:49:00,094 - INFO - Request: GET http://127.0.0.1:8000/profile.html
+2025-06-17 11:49:00,187 - INFO - Response: 304
+2025-06-17 11:49:00,231 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:49:00,237 - INFO - Response: 200
+2025-06-17 11:49:00,246 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/7/history
+2025-06-17 11:49:00,267 - INFO - Response: 200
+2025-06-17 11:49:02,397 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-17 11:49:02,400 - INFO - Response: 304
+2025-06-17 11:49:02,458 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:49:02,463 - INFO - Response: 200
+2025-06-17 11:49:13,338 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-06-17 11:49:28,171 - INFO - Response: 200
+2025-06-17 11:49:30,181 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/16c4554d-9331-483c-a26e-ff45eef2e0cc
+2025-06-17 11:49:30,229 - INFO - Response: 200
+2025-06-17 11:49:30,241 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=79.44&filename=029.mp4&uploaded=6%2F17%2F2025%2C%2011%3A49%3A30%20AM&comment=%E2%9C%85%20Based%20on%20the%20analysis%2C%20the%20model%20considers%20this%20video%20to%20be%20authentic%20with%20high%20confidence.&probability=0.2056
+2025-06-17 11:49:30,246 - INFO - Response: 200
+2025-06-17 11:49:30,320 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:49:30,326 - INFO - Response: 200
+2025-06-17 11:50:50,935 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=79.44&filename=029.mp4&uploaded=6%2F17%2F2025%2C%2011%3A49%3A30%20AM&comment=%E2%9C%85%20Based%20on%20the%20analysis%2C%20the%20model%20considers%20this%20video%20to%20be%20authentic%20with%20high%20confidence.&probability=0.2056
+2025-06-17 11:50:50,938 - INFO - Response: 304
+2025-06-17 11:50:50,997 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:50:51,004 - INFO - Response: 200
+2025-06-17 11:50:59,317 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=79.44&filename=029.mp4&uploaded=6%2F17%2F2025%2C%2011%3A49%3A30%20AM&comment=%E2%9C%85%20Based%20on%20the%20analysis%2C%20the%20model%20considers%20this%20video%20to%20be%20authentic%20with%20high%20confidence.&probability=0.2056
+2025-06-17 11:50:59,319 - INFO - Response: 200
+2025-06-17 11:50:59,378 - INFO - Request: GET http://127.0.0.1:8000/css/real result.css
+2025-06-17 11:50:59,383 - INFO - Response: 200
+2025-06-17 11:50:59,579 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:50:59,926 - INFO - Request: GET http://127.0.0.1:8000/favicon.ico
+2025-06-17 11:50:59,935 - INFO - Response: 404
+2025-06-17 11:51:01,544 - INFO - Request: GET http://127.0.0.1:8000/logo.jpg
+2025-06-17 11:51:01,556 - INFO - Response: 200
+2025-06-17 11:51:11,617 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=79.44&filename=029.mp4&uploaded=6%2F17%2F2025%2C%2011%3A49%3A30%20AM&comment=%E2%9C%85%20Based%20on%20the%20analysis%2C%20the%20model%20considers%20this%20video%20to%20be%20authentic%20with%20high%20confidence.&probability=0.2056
+2025-06-17 11:51:11,617 - INFO - Response: 304
+2025-06-17 11:51:23,374 - INFO - Request: GET http://127.0.0.1:8000/login.html
+2025-06-17 11:51:23,380 - INFO - Response: 200
+2025-06-17 11:51:23,524 - INFO - Request: GET http://127.0.0.1:8000/css/login.css
+2025-06-17 11:51:23,526 - INFO - Response: 200
+2025-06-17 11:51:31,871 - INFO - Request: POST http://127.0.0.1:8000/api/v1/auth/login
+2025-06-17 11:51:32,368 - INFO - Response: 200
+2025-06-17 11:51:33,307 - INFO - Request: GET http://127.0.0.1:8000/profile.html
+2025-06-17 11:51:33,315 - INFO - Response: 200
+2025-06-17 11:51:33,408 - INFO - Request: GET http://127.0.0.1:8000/css/profile.css
+2025-06-17 11:51:33,408 - INFO - Response: 200
+2025-06-17 11:51:33,483 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:51:33,489 - INFO - Response: 200
+2025-06-17 11:51:33,513 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/2/history
+2025-06-17 11:51:33,522 - INFO - Response: 200
+2025-06-17 11:51:35,829 - INFO - Request: GET http://127.0.0.1:8000/upload.html
+2025-06-17 11:51:35,831 - INFO - Response: 200
+2025-06-17 11:51:35,907 - INFO - Request: GET http://127.0.0.1:8000/css/upload.css
+2025-06-17 11:51:35,911 - INFO - Response: 200
+2025-06-17 11:51:35,976 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:51:35,982 - INFO - Response: 200
+2025-06-17 11:51:44,512 - INFO - Request: POST http://127.0.0.1:8000/api/v1/model/analyze
+2025-06-17 11:51:57,136 - INFO - Response: 200
+2025-06-17 11:51:59,466 - INFO - Request: GET http://127.0.0.1:8000/api/v1/model/result/498059c3-e777-46e3-a04d-ddb53b3a534a
+2025-06-17 11:51:59,483 - INFO - Response: 200
+2025-06-17 11:51:59,495 - INFO - Request: GET http://127.0.0.1:8000/real result.html?confidence=56.60&filename=022_489.mp4&uploaded=6%2F17%2F2025%2C%2011%3A51%3A59%20AM&comment=%E2%9A%A0%EF%B8%8F%20The%20model%20is%20uncertain%20about%20the%20result.%20We%20recommend%20further%20verification%20for%20greater%20confidence.&probability=0.4340
+2025-06-17 11:51:59,495 - INFO - Response: 200
+2025-06-17 11:51:59,540 - INFO - Request: GET http://127.0.0.1:8000/css/real result.css
+2025-06-17 11:51:59,545 - INFO - Response: 200
+2025-06-17 11:52:00,061 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:52:00,069 - INFO - Response: 200
+2025-06-17 11:52:23,625 - INFO - Request: GET http://127.0.0.1:8000/logo.jpg
+2025-06-17 11:52:23,627 - INFO - Response: 200
+2025-06-17 11:52:36,596 - INFO - Request: GET http://127.0.0.1:8000/api/v1/auth/info
+2025-06-17 11:52:36,604 - INFO - Response: 200
+2025-06-17 11:52:36,608 - INFO - Request: GET http://127.0.0.1:8000/api/v1/analysis/users/2/history
+2025-06-17 11:52:36,616 - INFO - Response: 200
+2025-06-17 11:52:47,131 - INFO - Shutting down the application...
+2025-06-17 11:52:47,137 - INFO - Disconnected from the database
+2025-06-17 11:52:47,137 - INFO - Application shut down successfully.

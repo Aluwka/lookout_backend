@@ -393,10 +393,19 @@
 
         uploadBox.style.cursor = "pointer";
         uploadBox.addEventListener("click", () => {
-          alert("Please login to analyze the video.");
-          window.location.href = "login.html";
+          const token = localStorage.getItem("access_token");
+
+          if (token) {
+            // User is logged in
+            window.location.href = "upload.html";
+          } else {
+            // User is not logged in
+            alert("Please login to analyze the video.");
+            window.location.href = "login.html";
+          }
         });
       });
+
     </script>
 
 

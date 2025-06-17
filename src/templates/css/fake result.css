@@ -927,3 +927,15 @@ html, body {
   letter-spacing: 0.7vw;
   color: white;
 }
+#detailed-info #model-comment {
+  color: #ffffff !important;
+  font-size: 1.4vw !important;
+  font-weight: 600 !important;
+}
+
+#detailed-info #model-probability {
+  color: #dddddd !important;
+  font-size: 1.2vw !important;
+  font-style: italic !important;
+  margin-top: -1vw !important;
+}

@@ -57,7 +57,7 @@
           <div class="upload-box" id="drop-zone">
             <input type="file" id="fileInput" accept="video/mp4,video/quicktime" hidden />
             <div class="upload-icon">
-              <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/QChYT49XhD.png" alt="Upload Icon" />
+              <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/QChYT49XhD.png" style="width: 70px; height: 70px;" alt="Upload Icon" />
             </div>
             <p class="click-upload">Click to Upload</p>
             <!-- ✅ Wrap these lines -->
@@ -89,31 +89,52 @@
     <footer class="footer">
       <div class="footer-background"></div>
       <div class="footer-content">
-        <div class="footer-logo">
+        <div class="footer-logo" >
           <div class="footer-logo-icon"></div>
           <span class="footer-logo-text">LOOKOUT</span>
         </div>
+
         <div class="footer-divider"></div>
+
         <div class="footer-column">
-          <h5><a href="../../lookout/src/templates/index.html#about">About</a></h5>
-          <h5><a href="../../lookout/src/templates/index.html#why-lookout">Why Lookout</a></h5>
-          <h5><a href="../../lookout/src/templates/index.html#how-it-works">How it Works</a></h5>
+          <h5><a href="index.html#about" style="text-decoration: none; color: white">ABOUT</a></h5>
+          <h5><a href="index.html#why-lookout" style="text-decoration: none; color: white">Why Lookout</a></h5>
+          <h5><a href="index.html#how-it-works" style="text-decoration: none; color: white">How it Works</a></h5>
+          <!--                  <h5><a href="#why-lookout" style="text-decoration: none; color: white">How To</a></h5>-->
         </div>
+
         <div class="footer-divider"></div>
+
         <div class="footer-column">
-          <h5><a href="../../lookout/src/templates/index.html#faq">F.A.Q</a></h5>
-          <h5><a href="../../lookout/src/templates/index.html#header">Sitemap</a></h5>
+          <h5><a href="index.html#faq" style="text-decoration: none; color: white">F.A.Q</a></h5>
+          <h5><a href="index.html#header" style="text-decoration: none; color: white">Sitemap</a></h5>
+          <!--                  <h5>Conditions</h5>-->
+          <!--                  <h5>Licenses</h5>-->
         </div>
+
         <div class="footer-divider"></div>
+
         <div class="footer-column">
           <h5>Socialize with Lookout</h5>
           <div class="social-icons">
-            <a href="https://www.facebook.com/lookoutapp" target="_blank"><img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/c7z2ZSvmCj.png" alt="Facebook" /></a>
-            <a href="https://twitter.com/lookoutapp" target="_blank"><img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/i4Y310fnY6.png" alt="Twitter" /></a>
-            <a href="https://www.linkedin.com/company/lookoutapp" target="_blank"><img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/bQOUO7mF4k.png" alt="LinkedIn" /></a>
-            <a href="https://www.youtube.com/@lookoutapp" target="_blank"><img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/DpEvVZuXOE.png" alt="YouTube" /></a>
-            <a href="https://www.instagram.com/lookoutapp" target="_blank"><img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/M2DwYnSJiQ.png" alt="Instagram" /></a>
-            <a href="https://www.pinterest.com/lookoutapp" target="_blank"><img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-17/ZZaQ5CYZ3H.png" alt="Pinterest" /></a>
+            <a href="https://www.facebook.com/lookoutapp" target="_blank" aria-label="Facebook">
+              <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/c7z2ZSvmCj.png" alt="Facebook" />
+            </a>
+            <a href="https://twitter.com/lookoutapp" target="_blank" aria-label="Twitter">
+              <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/i4Y310fnY6.png" alt="Twitter" />
+            </a>
+            <a href="https://www.linkedin.com/company/lookoutapp" target="_blank" aria-label="LinkedIn">
+              <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/bQOUO7mF4k.png" alt="LinkedIn" />
+            </a>
+            <a href="https://www.youtube.com/@lookoutapp" target="_blank" aria-label="YouTube">
+              <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/DpEvVZuXOE.png" alt="YouTube" />
+            </a>
+            <a href="https://www.instagram.com/lookoutapp" target="_blank" aria-label="Instagram">
+              <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-12/M2DwYnSJiQ.png" alt="Instagram" />
+            </a>
+            <a href="https://www.pinterest.com/lookoutapp" target="_blank" aria-label="Pinterest">
+              <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-17/ZZaQ5CYZ3H.png" alt="Pinterest" />
+            </a>
           </div>
           <div class="footer-button">PROTECT THE TRUTH</div>
         </div>
@@ -325,20 +346,23 @@
 
         const verdict = resultData?.data?.result?.prediction?.toLowerCase();
         const confidence = resultData?.data?.result?.confidence;
-        const confidencePct = (confidence * 100).toFixed(2);
+        const confidencePct = (confidence).toFixed(2);
         const uploadedEncoded = encodeURIComponent(new Date().toLocaleString());
         const filenameEncoded = encodeURIComponent(selectedFile?.name || selectedURL);
+        const comment = resultData?.data?.result?.comment || "No comment";
+        const probability = resultData?.data?.result?.probability || 0;
 
         if (verdict === "real") {
-          window.location.href = `real result.html?confidence=${confidencePct}&filename=${filenameEncoded}&uploaded=${uploadedEncoded}`;
+          window.location.href = `real result.html?confidence=${confidencePct}&filename=${filenameEncoded}&uploaded=${uploadedEncoded}&comment=${encodeURIComponent(comment)}&probability=${probability}`;
         } else if (verdict === "fake") {
-          window.location.href = `fake result.html?confidence=${confidencePct}&filename=${filenameEncoded}&uploaded=${uploadedEncoded}`;
+          window.location.href = `fake result.html?confidence=${confidencePct}&filename=${filenameEncoded}&uploaded=${uploadedEncoded}&comment=${encodeURIComponent(comment)}&probability=${probability}`;
+
         } else {
           alert("Unexpected result: " + JSON.stringify(resultData));
         }
       }, 2000);
 
-      setTimeout(() => {
+        setTimeout(() => {
         clearInterval(checkInterval);
         alert("Timeout: analysis still pending.");
       }, 30000);

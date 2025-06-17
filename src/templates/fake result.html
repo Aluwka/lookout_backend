@@ -77,6 +77,11 @@
                           <img src="https://cdn-icons-png.flaticon.com/512/399/399274.png" alt="Check" class="result-icon" />
                           <span class="result-text">FAKE</span>
                         </div>
+                        <div id="detailed-info" class="text-center mt-3">
+                          <p id="model-comment" class="fw-bold text-success"></p>
+                          <p id="model-probability" class="text-muted small"></p>
+                        </div>
+
                         <div class="result-score">CONFIDENCE SCORE: <span id="confidence-score">83%</span></div>
                         <button class="download-btn">DOWNLOAD REPORT (PDF)</button>
                       </div>
@@ -288,7 +293,7 @@ document.querySelector(".download-btn").addEventListener("click", async () => {
       doc.text(filename, 60, 50);
       doc.text(uploaded, 60, 60);
       doc.text(verdict, 60, 70);
-      doc.text(`${(confidence * 100).toFixed(2)}%`, 60, 80);
+      doc.text(`${(confidence).toFixed(2)}%`, 60, 80);
       doc.text(new Date().toLocaleString(), 60, 90);
 
       doc.setFontSize(10);
@@ -304,15 +309,22 @@ document.querySelector(".download-btn").addEventListener("click", async () => {
 
     </script>
 <script>
-const params = new URLSearchParams(window.location.search);
-const confidence = params.get("confidence");
-const filename = params.get("filename");
-const uploaded = params.get("uploaded");
+  const params = new URLSearchParams(window.location.search);
+  const confidence = params.get("confidence");
+  const comment = params.get("comment");
+  const probability = params.get("probability");
+  const filename = params.get("filename");
+  const uploaded = params.get("uploaded");
 
 document.getElementById("videoConfidence").textContent = confidence ? `${confidence}%` : "N/A";
 document.getElementById("fileName").textContent = filename || "Unknown file";
 document.getElementById("uploadTime").textContent = uploaded ? decodeURIComponent(uploaded) : "Unknown time";
-
+  document.getElementById("model-comment").textContent = comment || "–";
+  document.getElementById("model-probability").textContent = `Raw model output: ${probability || "–"}`;
+  document.getElementById("videoConfidence").textContent = confidence ? `${confidence}%` : "N/A";
+  document.getElementById("fileName").textContent = filename || "Unknown file";
+  document.getElementById("uploadTime").textContent = uploaded ? decodeURIComponent(uploaded) : "Unknown time";
+  
 if (confidence) {
   document.getElementById("confidence-score").textContent = `CONFIDENCE SCORE: ${confidence}%`;
 }
