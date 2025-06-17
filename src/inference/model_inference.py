@@ -3,6 +3,7 @@ from abc import ABC, abstractmethod
 import cv2
 import torch
 from PIL import Image
+from uuid import uuid4
 from torchvision.models import efficientnet_b4, EfficientNet_B4_Weights
 from torchvision import transforms
 from worker.celery_tasks import predict
@@ -63,8 +64,8 @@ class ModelInferenceImpl(ModelInference):
     def analyze_video(self, video_url: str) -> ModelSchema:
         features = self.extract_features_from_video(video_url)
         features_list = features.tolist()
-
-        task = predict.delay(self.model_path, features_list)
+        video_id = str(uuid4())[:8]  # или можно получить имя файла без расширения
+        task = predict.delay(self.model_path, features_list, video_url, video_id)
         return ModelSchema(status="pending", task_id=str(task.id))
 
     def get_result(self, task_id: str) -> ModelSchema:
@@ -84,10 +85,14 @@ class ModelInferenceImpl(ModelInference):
                     prediction=data["verdict"],
                     confidence=data["confidence"],
                     probability=data["model_output_prob"],
-                    comment=data["comment"]
+                    comment=data["comment"],
+                    heatmap_path=data.get("heatmap_path"),
+                    extreme_path=data.get("extreme_path"),
+                    gallery_path=data.get("gallery_path")
                 ),
                 task_id=task_id
             )
+
         else:
             return ModelSchema(status="error", result=result.info, task_id=task_id)
 
