@@ -257,83 +257,102 @@
       });
 
       document.querySelector(".download-btn").addEventListener("click", async () => {
-        try {
-          const { jsPDF } = window.jspdf;
-          const doc = new jsPDF();
+  try {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
 
-          const params = new URLSearchParams(window.location.search);
-          const confidence = params.get("confidence");
-          const comment = decodeURIComponent(params.get("comment") || "");
-          const probability = params.get("probability");
-          const filename = decodeURIComponent(params.get("filename"));
-          const uploaded = decodeURIComponent(params.get("uploaded"));
-          const verdict = window.location.pathname.includes("real") ? "REAL" : "FAKE";
+    const params = new URLSearchParams(window.location.search);
+    const confidence = params.get("confidence");
+    const comment = decodeURIComponent(params.get("comment") || "");
+    const probability = params.get("probability");
+    const filename = decodeURIComponent(params.get("filename"));
+    const uploaded = decodeURIComponent(params.get("uploaded"));
+    const verdict = window.location.pathname.includes("real") ? "REAL" : "FAKE";
 
-          const heatmapPath = decodeURIComponent(params.get("heatmap_path"));
-          const extremePath = decodeURIComponent(params.get("extreme_path"));
-          const galleryPath = decodeURIComponent(params.get("gallery_path"));
+    const heatmapPath = decodeURIComponent(params.get("heatmap_path"));
+    const extremePath = decodeURIComponent(params.get("extreme_path"));
+    const galleryPath = decodeURIComponent(params.get("gallery_path"));
 
-          if (heatmapPath) document.getElementById("heatmap-img").src = heatmapPath;
-          if (extremePath) document.getElementById("extreme-img").src = extremePath;
-          if (galleryPath) document.getElementById("gallery-img").src = galleryPath;
+    if (heatmapPath) document.getElementById("heatmap-img").src = heatmapPath;
+    if (extremePath) document.getElementById("extreme-img").src = extremePath;
+    if (galleryPath) document.getElementById("gallery-img").src = galleryPath;
 
-          const logo = new Image();
-          logo.src = "/static/logo.jpg";
-      async function addImageFromImgTag(doc, id, x, y, w, h) {
-        const imgTag = document.getElementById(id);
-        if (imgTag && imgTag.src) {
-          const img = new Image();
-          img.src = imgTag.src;
-          await new Promise((resolve) => (img.onload = resolve));
-          doc.addImage(img, "PNG", x, y, w, h);
-        }
+    async function getImageData(id) {
+      const img = document.getElementById(id);
+      if (!img || !img.src) return null;
+      const image = new Image();
+      image.crossOrigin = "Anonymous";
+      image.src = img.src;
+      await new Promise((resolve) => {
+        if (image.complete) resolve();
+        else image.onload = resolve;
+      });
+      const canvas = document.createElement("canvas");
+      canvas.width = image.width;
+      canvas.height = image.height;
+      const ctx = canvas.getContext("2d");
+      ctx.drawImage(image, 0, 0);
+      return canvas.toDataURL("image/png");
+    }
+
+    const logo = new Image();
+    logo.src = "/static/logo.jpg";
+
+    logo.onload = async () => {
+      doc.addImage(logo, "JPEG", 140, 10, 50, 15);
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(18);
+      doc.text("LOOKOUT - Deepfake Analysis Report", 20, 30);
+      doc.setLineWidth(0.5);
+      doc.line(20, 34, 190, 34);
+
+      doc.setFontSize(12);
+      doc.text("Filename:", 20, 50);
+      doc.text("Uploaded:", 20, 60);
+      doc.text("Prediction:", 20, 70);
+      doc.text("Confidence:", 20, 80);
+      doc.text("Generated:", 20, 90);
+
+      doc.setFont("helvetica", "normal");
+      doc.text(filename, 60, 50);
+      doc.text(uploaded, 60, 60);
+      doc.text(verdict, 60, 70);
+      doc.text(`${parseFloat(confidence).toFixed(2)}%`, 60, 80);
+      doc.text(new Date().toLocaleString(), 60, 90);
+
+      doc.setFontSize(14);
+      doc.text("Visual Analysis", 20, 110);
+
+      doc.setFontSize(12);
+
+      const heatmapData = await getImageData("heatmap-img");
+      if (heatmapData) {
+        doc.text("🔥 Heatmap", 20, 120);
+        doc.addImage(heatmapData, "PNG", 20, 125, 170, 20);
       }
 
-          logo.onload = async () => {
-            doc.addImage(logo, "JPEG", 140, 10, 50, 15);
-            doc.setFont("helvetica", "bold");
-            doc.setFontSize(18);
-            doc.text("LOOKOUT - Deepfake Analysis Report", 20, 30);
-            doc.setLineWidth(0.5);
-            doc.line(20, 34, 190, 34);
+      const extremeData = await getImageData("extreme-img");
+      if (extremeData) {
+        doc.text("🖼 Most Real / Fake Frames", 20, 150);
+        doc.addImage(extremeData, "PNG", 20, 155, 170, 30);
+      }
 
-            doc.setFontSize(12);
-            doc.text("Filename:", 20, 50);
-            doc.text("Uploaded:", 20, 60);
-            doc.text("Prediction:", 20, 70);
-            doc.text("Confidence:", 20, 80);
-            doc.text("Generated:", 20, 90);
+      const galleryData = await getImageData("gallery-img");
+      if (galleryData) {
+        doc.text("🎞 Frame Gallery", 20, 190);
+        doc.addImage(galleryData, "PNG", 20, 195, 170, 35);
+      }
 
-            doc.setFont("helvetica", "normal");
-            doc.text(filename, 60, 50);
-            doc.text(uploaded, 60, 60);
-            doc.text(verdict, 60, 70);
-            doc.text(`${parseFloat(confidence).toFixed(2)}%`, 60, 80);
-            doc.text(new Date().toLocaleString(), 60, 90);
-
-            doc.setFontSize(14);
-            doc.text("Visual Analysis", 20, 110);
-
-            doc.setFontSize(12);
-            doc.text("🔥 Heatmap", 20, 120);
-            addImageFromImgTag(doc, "heatmap-img", 20, 125, 170, 20);
-
-            doc.text("🖼 Most Real / Fake Frames", 20, 150);
-            addImageFromImgTag(doc, "extreme-img", 20, 155, 170, 30);
-
-            doc.text("🎞 Frame Gallery", 20, 190);
-            addImageFromImgTag(doc, "gallery-img", 20, 195, 170, 35);
-
-            doc.setFontSize(10);
-            doc.setTextColor(150);
-            doc.text("This report was generated using LookOut", 20, 280);
-            doc.save(`report_${filename}.pdf`);
-          };
-        } catch (err) {
-          alert("PDF generation failed");
-          console.error(err);
-        }
-      });
+      doc.setFontSize(10);
+      doc.setTextColor(150);
+      doc.text("This report was generated using LookOut", 20, 280);
+      doc.save(`report_${filename}.pdf`);
+    };
+  } catch (err) {
+    alert("PDF generation failed");
+    console.error(err);
+  }
+});
     </script>
 
   

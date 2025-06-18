@@ -353,9 +353,9 @@
         const probability = resultData?.data?.result?.probability || 0;
 
         if (verdict === "real") {
-          window.location.href = `real result.html?confidence=${confidencePct}&filename=${filenameEncoded}&uploaded=${uploadedEncoded}&comment=${encodeURIComponent(comment)}&probability=${probability}`;
+          window.location.href = `/real_result?confidence=${confidencePct}&filename=${filenameEncoded}&uploaded=${uploadedEncoded}&comment=${encodeURIComponent(comment)}&probability=${probability}`;
         } else if (verdict === "fake") {
-          window.location.href = `fake result.html?confidence=${confidencePct}&filename=${filenameEncoded}&uploaded=${uploadedEncoded}&comment=${encodeURIComponent(comment)}&probability=${probability}`;
+          window.location.href = `/fake_result?confidence=${confidencePct}&filename=${filenameEncoded}&uploaded=${uploadedEncoded}&comment=${encodeURIComponent(comment)}&probability=${probability}`;
 
         } else {
           alert("Unexpected result: " + JSON.stringify(resultData));

@@ -121,11 +121,16 @@ def predict(model_path: str, features: list, video_path: str, video_id: str):
             pred = model(f_tensor)
             probs.append(torch.sigmoid(pred).item())
 
-    # Генерация PNG файлов
-    os.makedirs("static/images", exist_ok=True)
-    heatmap_path = f"/static/images/heatmap_{video_id}.png"
-    extreme_path = f"/static/images/extreme_{video_id}.png"
-    gallery_path = f"/static/images/every10_{video_id}.png"
+  
+    # Генерация PNG файлов (в папку src/static/images)
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    images_dir = os.path.join(project_root, "src", "static", "images")
+    os.makedirs(images_dir, exist_ok=True)
+
+    heatmap_path = os.path.join(images_dir, f"heatmap_{video_id}.png")
+    extreme_path = os.path.join(images_dir, f"extreme_{video_id}.png")
+    gallery_path = os.path.join(images_dir, f"every10_{video_id}.png")
+
 
     save_frame_heatmap(probs, heatmap_path)
     save_extreme(frames, probs, extreme_path)

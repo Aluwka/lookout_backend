@@ -3,7 +3,7 @@ from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
-from src.api.http.api_router import v1_router as api_router
+from src.api.http.api_router import router as api_router
 
 
 
@@ -29,14 +29,14 @@ async def upload_page(request: Request):
     return templates.TemplateResponse("upload.html", {"request": request})
 
 # Страница результата для реального видео
-@app.get("/result/real", response_class=HTMLResponse)
+@app.get("/real_result", response_class=HTMLResponse)
 async def real_result(request: Request):
-    return templates.TemplateResponse("real result.html", {"request": request})
+    return templates.TemplateResponse("real_result.html", {"request": request})
 
 # Страница результата для фейкового видео
-@app.get("/result/fake", response_class=HTMLResponse)
+@app.get("/fake_result", response_class=HTMLResponse)
 async def fake_result(request: Request):
-    return templates.TemplateResponse("fake result.html", {"request": request})
+    return templates.TemplateResponse("fake_result.html", {"request": request})
 
 # Страница профиля (пример)
 @app.get("/profile", response_class=HTMLResponse)
