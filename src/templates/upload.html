@@ -349,15 +349,25 @@
         const confidencePct = (confidence).toFixed(2);
         const uploadedEncoded = encodeURIComponent(new Date().toLocaleString());
         const filenameEncoded = encodeURIComponent(selectedFile?.name || selectedURL);
+
         const comment = resultData?.data?.result?.comment || "No comment";
         const probability = resultData?.data?.result?.probability || 0;
+        const heatmap = resultData?.data?.result?.heatmap_path;
+        const extreme = resultData?.data?.result?.extreme_path;
+        const gallery = resultData?.data?.result?.gallery_path;
+
+        const heatmapParam = heatmap ? `&heatmap_path=${encodeURIComponent(heatmap)}` : "";
+        const extremeParam = extreme ? `&extreme_path=${encodeURIComponent(extreme)}` : "";
+        const galleryParam = gallery ? `&gallery_path=${encodeURIComponent(gallery)}` : "";
+
+        const baseParams = `confidence=${confidencePct}&filename=${filenameEncoded}&uploaded=${uploadedEncoded}&comment=${encodeURIComponent(comment)}&probability=${probability}`;
+        const imageParams = `${heatmapParam}${extremeParam}${galleryParam}`;
 
         if (verdict === "real") {
-          window.location.href = `/real_result?confidence=${confidencePct}&filename=${filenameEncoded}&uploaded=${uploadedEncoded}&comment=${encodeURIComponent(comment)}&probability=${probability}`;
+          window.location.href = `/real_result?${baseParams}${imageParams}`;
         } else if (verdict === "fake") {
-          window.location.href = `/fake_result?confidence=${confidencePct}&filename=${filenameEncoded}&uploaded=${uploadedEncoded}&comment=${encodeURIComponent(comment)}&probability=${probability}`;
-
-        } else {
+          window.location.href = `/fake_result?${baseParams}${imageParams}`;
+        }else {
           alert("Unexpected result: " + JSON.stringify(resultData));
         }
       }, 2000);
