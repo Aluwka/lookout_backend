@@ -13,3 +13,7 @@ class ModelResultSchema(BaseModel):
     confidence: float = Field(..., description="Confidence percentage (e.g. 94.7)")
     probability: str = Field(..., description="Raw model output (e.g. 0.1342)")
     comment: str = Field(..., description="Explanation of the result")
+    heatmap_path: Optional[str] = None
+    extreme_path: Optional[str] = None
+    gallery_path: Optional[str] = None
+
