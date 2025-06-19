@@ -25,6 +25,66 @@ a {
   text-align: center;
 }
 
+.user-name {
+  font-weight: 700;
+  border: 0.1vw solid #fff;
+  border-radius: 1vw;
+  padding: 0.4vw 1.6vw;
+  color: white;
+  font-size: 1.1vw;
+  width: fit-content;
+}
+.icon-circle {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  background: #2c283f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logout-icon {
+  padding: 0.2vw;
+  cursor: pointer;
+  background-image: url('https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-15/3WDzG9nGAk.png');
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  margin: -4vw 0 0 69vw;
+  /*background-color: #53d56c;*/
+  width: fit-content;
+}
+@media (max-device-width: 570px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
+@media (max-device-width:1100px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
+@media (max-device-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
+.profile-icon-gradient {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8176af, #c0b7e8);
+  mask: url('https://cdn-icons-png.flaticon.com/512/1144/1144760.png') center / contain no-repeat;
+  -webkit-mask: url('https://cdn-icons-png.flaticon.com/512/1144/1144760.png') center / contain no-repeat;
+}
+.icon {
+  width: 2.5vw;
+  height: 2.5vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .sign-btn:hover,
 .sign-btn:focus,
 .sign-btn:active {
@@ -524,7 +584,7 @@ html, body {
   font-size: 1.5vw;
   line-height: 1.7;
   margin-bottom: 1.5vw;
-  text-wrap: auto;
+  /*text-wrap: auto;*/
   width: 90%;
   /*background-color: #1e1b2e;*/
 }
