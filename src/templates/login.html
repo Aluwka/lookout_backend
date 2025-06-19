@@ -194,7 +194,22 @@
             window.location.href = "/profile";
           } else {
             const data = await response.json();
-            alert(data.detail || "Login failed.");
+            console.warn("Login failed:", data.detail);
+
+            let errorDetail = "Login failed.";
+
+            if (typeof data.detail === "string") {
+              errorDetail = data.detail;
+
+            } else if (Array.isArray(data.detail)) {
+              // FastAPI validation errors usually come in this format
+              errorDetail = data.detail[0]?.msg || "Login failed.";
+
+            } else if (typeof data.detail === "object" && data.detail?.msg) {
+              errorDetail = data.detail.msg;
+            }
+
+            alert(errorDetail);
           }
         } catch (error) {
           console.error("Login error:", error);

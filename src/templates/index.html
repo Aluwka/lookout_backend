@@ -35,10 +35,19 @@
         </nav>
 
         <!-- Action Buttons (Desktop) -->
-        <div id="header-right-guest" class="desktop-only header-right">
-          <a href="/login" class="login-btn desktop-only">LOG IN</a>
-          <a href="/signin" class="sign-btn desktop-only">SIGN UP</a>
-        </div>
+          <div id="header-right-guest" class="desktop-only header-right" style="display: none">
+            <a href="/login" class="login-btn desktop-only">LOG IN</a>
+            <a href="/signin" class="sign-btn desktop-only">SIGN UP</a>
+          </div>
+
+          <!-- Authenticated block (hidden by default, injected dynamically later) -->
+          <div id="header-right-auth" class="desktop-only header-right" style="display: none">
+            <div class="user-name" id="user-name"></div>
+            <a href="/profile" class="icon-circle" aria-label="Profile">
+              <div class="profile-icon-gradient"></div>
+            </a>
+            <div class="icon logout-icon" onclick="logoutUser()"></div>
+          </div>
 
         <!-- Mobile Dropdown -->
         <div class="mobile-nav" id="mobileNav">
@@ -408,57 +417,44 @@
         });
       });
 
-        document.addEventListener("DOMContentLoaded", async () => {
+      document.addEventListener("DOMContentLoaded", async () => {
         const token = localStorage.getItem("access_token");
 
         const guestDesktop = document.getElementById("header-right-guest");
-        const mobileGuest = document.getElementById("mobile-header-guest");
-        const mobileAuth = document.getElementById("mobile-header-auth");
+        const authDesktop = document.getElementById("header-right-auth");
+        const userName = document.getElementById("user-name");
 
         if (!token) {
-        // Guest view
-        guestDesktop.style.display = "flex";
-        if (mobileGuest) mobileGuest.style.display = "flex";
-        if (mobileAuth) mobileAuth.style.display = "none";
-        return;
-      }
+          // Unauthenticated → show login/signup
+          guestDesktop.style.display = "flex";
+          authDesktop.style.display = "none";
+          return;
+        }
 
         try {
-        const res = await fetch("http://127.0.0.1:8000/api/v1/auth/info", {
-        headers: {Authorization: `Bearer ${token}`}
+          const res = await fetch("http://127.0.0.1:8000/api/v1/auth/info", {
+            headers: { Authorization: `Bearer ${token}` }
+          });
+
+          if (!res.ok) throw new Error("Invalid token");
+
+          const user = await res.json();
+
+          guestDesktop.style.display = "none";
+          authDesktop.style.display = "flex";
+          userName.textContent = user.username;
+
+        } catch (err) {
+          // Token invalid
+          console.warn("Auth check failed:", err);
+          localStorage.removeItem("access_token");
+          guestDesktop.style.display = "flex";
+          authDesktop.style.display = "none";
+        }
       });
 
-        if (!res.ok) throw new Error("Not authenticated");
 
-        const user = await res.json();
-
-        // Hide guest view
-        guestDesktop.style.display = "none";
-        if (mobileGuest) mobileGuest.style.display = "none";
-        if (mobileAuth) mobileAuth.style.display = "flex";
-
-        // Inject authenticated header
-        const header = document.createElement("div");
-        header.className = "header-right desktop-only";
-        header.innerHTML = `
-      <div class="user-name">${user.username}</div>
-      <a href="/profile" class="icon-circle" aria-label="Profile">
-        <div class="profile-icon-gradient"></div>
-      </a>
-      <div class="icon logout-icon" onclick="logoutUser()"></div>
-    `;
-        guestDesktop.parentNode.insertBefore(header, guestDesktop.nextSibling);
-
-      } catch (err) {
-        // Token invalid → remove it
-        localStorage.removeItem("access_token");
-        guestDesktop.style.display = "flex";
-        if (mobileGuest) mobileGuest.style.display = "flex";
-        if (mobileAuth) mobileAuth.style.display = "none";
-      }
-      });
-
-        function logoutUser() {
+      function logoutUser() {
         localStorage.removeItem("access_token");
         window.location.href = "/login";
       }
